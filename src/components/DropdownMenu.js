@@ -57,12 +57,15 @@ const DropdownMenu = () => {
             <div className='menu'>
                 <DropdownItem leftIcon={<FaArrowAltCircleLeft/>}
                 goToMenu="main">
-                    S
+                    
                 </DropdownItem>
                 <DropdownItem>Hah</DropdownItem>
+                <DropdownItem>Hah</DropdownItem>
+                <DropdownItem>Hah</DropdownItem>
+                <DropdownItem>Hah</DropdownItem>
+
                 <DropdownItem
-                leftIcon="L4"
-                rightIcon="R2">
+                leftIcon="L4">
                     Content
                 </DropdownItem>
             </div>
@@ -72,3 +75,4 @@ const DropdownMenu = () => {
 }
 
 export default DropdownMenu
+
