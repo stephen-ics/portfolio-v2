@@ -1,0 +1,22 @@
+.button {
+    padding: 15px;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    margin-right: 4px;
+    background-color: rgb(68, 68, 151);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+    transition: filter 300ms;
+    margin-right: 20px;
+}
+
+.button:hover {
+
+    filter: brightness(1.3)
+    
+
+}

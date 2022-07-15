@@ -5,11 +5,17 @@ function Navbar(props) {
     return (
       <nav className='navbar'>
         <ul className='text-white flex justify-around text-3xl'>
-          <li>
-            LOL
+          <li className='mx-10'>
+            <Link to='/'>Home</Link>
           </li>
-          <li>
-            LOL2
+          <li className='mx-10'>
+            <Link to='/about'>About</Link>
+          </li>
+          <li className='mx-10'>
+            <Link to='/experiences'>Experiences</Link>
+          </li>
+          <li className='mx-10'>
+            <Link to='/projects'>Projects</Link>
           </li>
         </ul>
         <ul className='navbar-nav'>

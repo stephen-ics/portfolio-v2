@@ -8,6 +8,7 @@ import NavbarFinal from './components/NavbarFinal'
 
 import Home from './pages/Home'
 import About from './pages/About'
+import Projects from './pages/Projects'
 import ErrorPage from './pages/ErrorPage'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path='/' exact element={<Home/>}></Route>
             <Route path='/about' exact element={<About/>}></Route>
+            <Route path='/projects' exact element={<Projects></Projects>}></Route>
           </Routes>
         </div>
       </BrowserRouter>
