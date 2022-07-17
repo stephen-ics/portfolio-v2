@@ -5,7 +5,13 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <div className='text-blue-900 flex items-center justify-center top-0 left-0 w-full h-full ml-64 mt-48'>
+    <motion.div 
+      className='text-blue-900 flex items-center justify-center top-0 left-0 w-full h-full ml-64 mt-48'
+      initial={{width:0}}
+      animate={{width: '100%', transition: {duration:0.5}}}
+      exit={{x: window.innerWidth, transition: {duration:0.25}}}
+    
+    >
         <div className='flex flex-col w-2/4'>
           <h2 className='text-4xl'>Hello!</h2>
           <h1 className='text-6xl font-bold'>
@@ -35,6 +41,6 @@ export default function Home() {
     
           <img src={Logo} className='ml-40 rounded-2xl w-1/2 object-cover'/>
         </motion.div>
-    </div>
+    </motion.div>
   )
 }

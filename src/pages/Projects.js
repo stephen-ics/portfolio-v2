@@ -10,7 +10,11 @@ const Projects = () => {
     const open = () => setModalOpen(true);
     
   return (
-    <div> 
+    <motion.div className='flex justify-center w-full h-full absolute items-center'
+        initial={{width: 0}}
+        animate={{width: '100%', transition: {duration:0.5}}}
+        exit={{x: window.innerWidth, transition: {duration:0.25}}}
+    > 
         <motion.button
         whileHover={{ scale:1.1 }}
         whileTap={{ scale:0.9 }}
@@ -27,7 +31,7 @@ const Projects = () => {
         >
             {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
         </AnimatePresence>
-    </div>
+    </motion.div>
   )
 }
 
