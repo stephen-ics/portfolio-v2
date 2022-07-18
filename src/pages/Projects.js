@@ -4,6 +4,10 @@ import React from 'react';
 import Modal from '../components/Modal';
 import './page-styles/Projects.css'
 
+import Logo from '../pictures/Logo.png'
+
+import ProjectSection from '../components/Modal';
+
 const Projects = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const close = () => setModalOpen(false);
@@ -12,8 +16,8 @@ const Projects = () => {
   return (
     <motion.div className='flex justify-center w-full h-full items-center mt-48'
         initial={{opacity:0}}
-        animate={{opacity:1, transition: {duration:1}}}
-        exit={{opacity:0, transition: {duration:0}}}
+        animate={{opacity:1, transition: {duration:0.5}}}
+        exit={{opacity:0, transition: {duration:0.25}}}
     > 
         <motion.button
         whileHover={{ scale:1.1 }}
@@ -29,7 +33,7 @@ const Projects = () => {
             exitBeforeEnter={true}
             onExitComplete={() => null}
         >
-            {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+            {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} title='Title' date='Date' description='Description' img={Logo}/>}
         </AnimatePresence>
     </motion.div>
   )

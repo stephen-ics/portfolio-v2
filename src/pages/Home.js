@@ -4,14 +4,37 @@ import Logo from '../pictures/Logo.png'
 import { motion } from 'framer-motion';
 
 export default function Home() {
+
+  const dropInLeft ={
+    hidden: {
+        x: '100vh',
+        opacity: 0,
+    },
+    visible: { 
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.1,
+            type: 'spring',
+            delay: 0.5,
+            damping: 25,
+            stiffness: 200,
+        }
+    },
+    exit: {
+        y: '100vh',
+        opacity: 0,
+    },
+  };
+
   return (
     <motion.div 
       className='text-blue-900 flex items-center justify-center w-full h-full mt-48'
       initial={{opacity:0}}
-      animate={{opacity:1, transition: {duration:1}}}
-      exit={{opacity:0, transition: {duration:0}}}
+      animate={{opacity:1, transition: {duration:0.5}}}
+      exit={{opacity:0, transition: {duration:0.25}}}
     >
-      <div className='flex flex-col'>
+      <motion.div className='flex flex-col'>
         <h2 className='text-4xl'>Hello!</h2>
         <h1 className='text-6xl font-bold'>
           I'm Stephen Ni
@@ -33,7 +56,7 @@ export default function Home() {
               </motion.button>
             </Link>
           </div>
-        </div>
+        </motion.div>
       <motion.div
         whileHover={{scale:1.1}}
         whileTap={{scale:0.9}}>
