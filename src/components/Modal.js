@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import Backdrop from './Backdrop'
 import './component-styles/Modal.css'
-import Logo1 from '../pictures/Logo.png'
+import Logo from '../pictures/Logo.png'
 
 const dropIn ={
     hidden: {
@@ -36,7 +36,7 @@ const ModalButton = ({ onClick, label }) => (
     </motion.button>
 );
 
-const Modal = ({ handleClose, title, date, description, image, github, devpost }) => {
+const Modal = ({ handleClose, title, subtitle, description, image, github, devpost }) => {
     return (
         <Backdrop onClick={handleClose}>
             <motion.div 
@@ -49,18 +49,18 @@ const Modal = ({ handleClose, title, date, description, image, github, devpost }
             >
                 <ModalButton onClick={handleClose} label='Close'></ModalButton>
                 <div className='flex w-full justify-between mt-5'>
-                    <img src={Logo1} className='bg-orange-500 w-40'/>
+                    <img src={image} className='bg-orange-500 w-40'/>
                     <div>
                         <h1>{title}</h1>
-                        <h3>{date}</h3>
+                        <h3>{subtitle}</h3>
                         <p>{description}</p>
                     </div>
                     <div className='flex flex-col'>
                         <a href={devpost}>
-                            <img src={Logo1} className='bg-orange-900 w-20'/>
+                            <img src={image} className=''/>
                         </a>
                         <a href={github}>
-                            <img src={Logo1} className='bg-green-500 w-20'/>
+                            <img src={image} className=''/>
                         </a>
                     </div>
                 </div>
