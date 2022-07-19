@@ -4,6 +4,7 @@ import React from 'react';
 import Modal from '../components/Modal';
 import '../components/component-styles/Modal.css';
 import ProjectSection from '../components/ProjectSection';
+import Logo from '../pictures/Logo.png'
 
 
 
@@ -35,7 +36,7 @@ const DisplayModal = ({title, subtitle, description, image, devpost, github, sec
             exitBeforeEnter={true}
             onExitComplete={() => null}
         >
-            {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} title={title} subtitle={subtitle} description={description} img={image} devpost={devpost} github={github}/>}
+            {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} title={title} subtitle={subtitle} description={description} img={Logo} devpost={devpost} github={github}/>}
         </AnimatePresence>
     </motion.div>
   )
