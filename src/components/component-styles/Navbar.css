@@ -1,8 +1,8 @@
 .navbar{
     height: var(--nav-size);
-    background-color: var(--bg);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 0 1rem;
-    border-bottom: var(--border);
+    border: var(--border);
     top: 0;
     width: 100%;
     display: flex;
@@ -41,7 +41,7 @@ a {
 
 .nav-list a:hover{
     transition: var(--speed);
-    background: rgb(53, 53, 54);
+    background: rgb(53, 53, 54, 0.2);
     filter: brightness(1.3)
 }
 

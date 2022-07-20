@@ -1,6 +1,7 @@
 import React from 'react'
 import './page-styles/About.css'
 import { motion } from 'framer-motion'
+import Hobby from '../components/Hobby'
 
 
 const About = () => {
@@ -11,20 +12,21 @@ const About = () => {
       exit={{opacity:0, transition: {duration:0.25}}}
     >
       <div className='flex flex-col'>
-        <h1>About Me!</h1>
-        <h2>Skills</h2>
-        <djv className='flex'>
-          <img />
-          <div>
-            <h1>School</h1>
-            <h3>Expected graduation</h3>
+        <h1>Hello! I'm Stephen</h1>
+        <h2>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</h2>
+        <h3>I have experience with front end web development including blah blah blah</h3>
+  
+          <div className='flex'>
+            <Hobby />
+            <Hobby />
+            <Hobby />
+            <Hobby />
           </div>
-        </djv>
-        <h1>Experience</h1>
-        <h2>Clubs</h2>
-        <h1>Volunteering</h1>
-        <h1>Awards</h1>
+
+ 
       </div>
+
+
     </motion.div>
     
   )

@@ -19,7 +19,6 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, image
           <a><img src={image} className='w-8 rounded-full my-1'/></a>
           <a><img src={image} className='w-8 rounded-full my-1'/></a>
       </div>
-     
     </motion.button>
   )
 }

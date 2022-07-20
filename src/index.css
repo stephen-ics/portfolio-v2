@@ -19,11 +19,10 @@ code {
 }
 
 :root {
-  --bg: #242526;
-  --bg-accent: #484a4d;
+  --bg: #474951;
+  --bg-accent: #383c42;
   --text-color: #dadce1;
   --nav-size: 70px;
-  --border: 1px solid #474a4d;
   --border-radius: 8px;
   --speed: 500ms;
   --dark: #101315;

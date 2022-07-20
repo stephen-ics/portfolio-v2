@@ -2,41 +2,44 @@ import { motion } from 'framer-motion'
 import Backdrop from './Backdrop'
 import './component-styles/Modal.css'
 import Logo from '../pictures/Logo.png'
+import Github from '../pictures/Github.jpg'
+import Devpost from '../pictures/Devpost.png'
+
+const dropIn ={
+    hidden: {
+        y: '-100vh',
+        opacity: 0,
+    },
+    visible: { 
+        y:'0',
+        opacity: 1,
+        transition: {
+            duration: 0.1,
+            type: 'spring',
+            damping: 25,
+            stiffness: 500,
+        }
+    },
+    exit: {
+        y: '100vh',
+        opacity: 0,
+    },
+};
+
+const ModalButton = ({ onClick, label }) => (
+    <motion.button
+        className='modal-button'
+        type='button'
+        whileHover={{scale:1.1}}
+        whileTap={{scale:0.9}}
+        onClick={onClick}
+    >
+        {label}
+    </motion.button>
+);
 
 
 const Modal = ({ handleClose, title, subtitle, description, image, github, devpost }) => {
-    const dropIn ={
-        hidden: {
-            y: '-100vh',
-            opacity: 0,
-        },
-        visible: { 
-            y:'0',
-            opacity: 1,
-            transition: {
-                duration: 0.1,
-                type: 'spring',
-                damping: 25,
-                stiffness: 500,
-            }
-        },
-        exit: {
-            y: '100vh',
-            opacity: 0,
-        },
-    };
-    
-    const ModalButton = ({ onClick, label }) => (
-        <motion.button
-            className='modal-button'
-            type='button'
-            whileHover={{scale:1.1}}
-            whileTap={{scale:0.9}}
-            onClick={onClick}
-        >
-            {label}
-        </motion.button>
-    );
 
     return (
         <Backdrop onClick={handleClose}>
@@ -51,7 +54,7 @@ const Modal = ({ handleClose, title, subtitle, description, image, github, devpo
                 <ModalButton onClick={handleClose} label='Close'></ModalButton>
   
                 <div className='flex w-full justify-between mt-5'>
-                    <img src={image} className=''/>
+                    <img src={image} className='w-40 h-40'/>
                     <div>
                         <h1>{title}</h1>
                         <h3>{subtitle}</h3>
@@ -59,10 +62,10 @@ const Modal = ({ handleClose, title, subtitle, description, image, github, devpo
                     </div>
                     <div className='flex flex-col'>
                         <a href={devpost}>
-                            <img src={image} className=''/>
+                            <img src={Devpost} className='w-20 h-20'/>
                         </a>
                         <a href={github}>
-                            <img src={image} className=''/>
+                            <img src={Github} className='w-20 h-20'/>
                         </a>
                     </div>
                 </div>

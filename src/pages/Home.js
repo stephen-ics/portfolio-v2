@@ -29,14 +29,14 @@ export default function Home() {
 
   return (
     <motion.div 
-      className='text-blue-900 flex items-center justify-center w-full h-full mt-48'
+      className='text-blue-900 flex items-center justify-center w-full h-full mt-10'
       initial={{opacity:0}}
       animate={{opacity:1, transition: {duration:0.5}}}
       exit={{opacity:0, transition: {duration:0.25}}}
     >
       <motion.div className='flex flex-col'>
         <h2 className='text-4xl'>Hello!</h2>
-        <h1 className='text-6xl font-bold'>
+        <h1 className='text-8xl font-bold'>
           I'm Stephen Ni
         </h1>
         <h2 className='text-xl mb-8'>Aspiring Full-Stack Developer</h2>

@@ -36,7 +36,7 @@ const DisplayModal = ({title, subtitle, description, image, devpost, github, sec
             exitBeforeEnter={true}
             onExitComplete={() => null}
         >
-            {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} title={title} subtitle={subtitle} description={description} img={Logo} devpost={devpost} github={github}/>}
+            {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} title={title} subtitle={subtitle} description={description} image={image} devpost={devpost} github={github}/>}
         </AnimatePresence>
     </motion.div>
   )

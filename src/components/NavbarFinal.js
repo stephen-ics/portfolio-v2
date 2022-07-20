@@ -35,11 +35,13 @@ const NavbarFinal = () => {
     initial='hidden'
     animate='visible'
     exit='exit'>
-      <Navbar>
-          <NavItems icon={<FaCog></FaCog>}>
-              <DropdownMenu></DropdownMenu>
-          </NavItems>
-      </Navbar>
+
+    <Navbar>
+        <NavItems icon={<FaCog></FaCog>}>
+            <DropdownMenu></DropdownMenu>
+        </NavItems>
+    </Navbar>
+
     </motion.div>
   )
 }
