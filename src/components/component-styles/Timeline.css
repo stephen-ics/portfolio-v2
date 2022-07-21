@@ -1,7 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
 }
@@ -33,6 +30,7 @@ body {
   position: relative;
   margin: 10px 0;
   width: 50%;
+  box-sizing: border-box;
 }
 .timeline-item:nth-child(odd) {
   align-self: flex-end;
@@ -119,6 +117,7 @@ body {
   width: 20px;
   height: 20px;
   z-index: 100;
+  box-sizing: border-box;
 }
 .timeline-item:nth-child(odd) .timeline-item-content .circle {
   right: auto;
