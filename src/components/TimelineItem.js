@@ -5,11 +5,11 @@ import './component-styles/Timeline.css'
 const TimelineItem = ({ data }) => (
     <div className="timeline-item">
         <div className="timeline-item-content">
-            <span className='tag' style={{background: '#fcba03'}}>
+            <span className='tag' style={{background: data.category.color}}>
                 {data.category.tag}
             </span>
+            <p>{data.position}</p>
             <time>{data.date}</time>
-            <p>{data.text}</p>
             {data.link && (
                 <a
                     href={data.link.url}
