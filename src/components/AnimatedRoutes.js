@@ -20,7 +20,7 @@ const AnimatedRoutes = () => {
             <Route path='/' exact element={<Home/>}></Route>
             <Route path='/about' exact element={<About/>}></Route>
             <Route path='/projects' exact element={<Projects></Projects>}></Route>
-            <Route path='/experience' exact element={<Experiences></Experiences>}></Route>
+            <Route path='/experiences' exact element={<Experiences></Experiences>}></Route>
         </Routes>
     </AnimatePresence>
   )

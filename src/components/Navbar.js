@@ -13,7 +13,7 @@ function Navbar(props) {
             <Link to='/about'>About</Link>
           </li>
           <li className='nav-list'>
-            <Link to='/experience'>Experience</Link>
+            <Link to='/experiences'>Experience</Link>
           </li>
           <li className='nav-list'>
             <Link to='/projects'>Projects</Link>
