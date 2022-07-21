@@ -10,7 +10,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--background-gradient);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment:fixed;
+  min-width:fit-content;
+
+
 }
 
 code {
@@ -19,15 +22,16 @@ code {
 }
 
 :root {
-  --bg: #3e4048;
-  --bg-accent: #383c42;
-  --text-color: #dadce1;
+  --bg: hsl(206, 21%, 94%);
+  --bg-2: hsl(228, 22%, 77%);
+  --bg-accent: #a7bad4;
+  --text-color: #49536f;
   --nav-size: 70px;
   --border-radius: 8px;
   --speed: 500ms;
   --dark: #101315;
   --light: #eeeeee;
-  --background-gradient: linear-gradient(10deg, #dbeaf3, #a2aef1);
+  --background-gradient: linear-gradient(10deg, #c4e2f7, #e8edf3);
   --gradient: linear-gradient(10deg, #7ebce3, #6773b3);
   --gradient2: linear-gradient(15deg, #04ea00, #00d17d);
   --gradient3: linear-gradient(15deg, #b648ff, #ef5dff);

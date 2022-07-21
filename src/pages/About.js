@@ -6,7 +6,7 @@ import Hobby from '../components/Hobby'
 
 const About = () => {
   return (
-    <motion.div className='flex items-center w-full h-full mt-10 ml-20'
+    <motion.div className='flex flex-col justify-center items-center w-full h-full mt-10'
       initial={{opacity:0}}
       animate={{opacity:1, transition: {duration:0.5}}}
       exit={{opacity:0, transition: {duration:0.25}}}

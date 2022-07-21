@@ -4,13 +4,11 @@
     padding: 0 1rem;
     border: var(--border);
     top: 0;
-    width: 10000px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right:auto;
+    margin: 30px;
+    border-radius: 0.8rem;
 }
   
 .navbar-nav {
@@ -38,6 +36,7 @@ a {
 
 .nav-list a {
     padding: calc(var(--nav-size)*0.25);
+    border-radius: 0.5rem;
 }
 
 
@@ -85,7 +84,7 @@ a {
     top: 58px;
     width: 300px;
     transform: translate(-45%);
-    background-color: var(--bg);
+    background-color: var(--bg-2);
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 1rem;
@@ -111,7 +110,7 @@ a {
 }
   
 .menu-item:hover{
-    background-color: #525357;
+    background-color: #a2a6b8;
 }
   
 .icon-right {

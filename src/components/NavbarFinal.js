@@ -34,7 +34,8 @@ const NavbarFinal = () => {
     variants={dropIn}
     initial='hidden'
     animate='visible'
-    exit='exit'>
+    exit='exit'
+  >
 
     <Navbar>
         <NavItems icon={<FaCog></FaCog>}>
