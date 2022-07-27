@@ -9,15 +9,24 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, image
         whileTap={whileTap}
         className={className}
         onClick={onClick}
-    >
+    > 
     
-      <div className='flex items-center'>
-        <img src={image} className='w-20 h-20 rounded-full'></img>
-        <h1 className='ml-10'>{title}</h1>
+      <div className='flex flex-col items-center w-80'>
+        <img src={image} className='w-full object-cover h-60 rounded-t-2xl'></img>
+        <h1 className='mt-4 text-2xl'>{title}</h1>
+        <h2 className='text-lg'>Subtitle</h2>
       </div>
-      <div className='flex flex-col'>
-          <a><img src={image} className='w-8 rounded-full my-1'/></a>
-          <a><img src={image} className='w-8 rounded-full my-1'/></a>
+      <div className='flex justify-center'>
+          <a>
+            <div className='w-12 bg-black rounded-l m-5'>
+              <img src={image} className='w-8 rounded-full'/>
+            </div>
+          </a>
+          <a>
+            <div className='w-12 bg-black rounded-l m-5'>
+              <img src={image} className='w-8 rounded-full'/>
+            </div>
+          </a>
       </div>
     </motion.button>
   )

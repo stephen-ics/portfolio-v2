@@ -62,10 +62,10 @@ const Modal = ({ handleClose, title, subtitle, description, image, github, devpo
                     </div>
                     <div className='flex flex-col'>
                         <a href={devpost}>
-                            <img src={Devpost} className='w-20 h-20'/>
+                            <img src={Devpost} className='w-20 h-20 object-cover'/>
                         </a>
                         <a href={github}>
-                            <img src={Github} className='w-20 h-20'/>
+                            <img src={Github} className='w-20 h-20 object-cover'/>
                         </a>
                     </div>
                 </div>

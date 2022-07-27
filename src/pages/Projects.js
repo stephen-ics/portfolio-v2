@@ -18,8 +18,10 @@ const Projects = () => {
       <div className='flex'>
           <DisplayModal title='Project 1' subtitle='date' description='this is the description!' image={Logo}></DisplayModal>
           <DisplayModal title='Project 2' subtitle='date' description='this is the description!' image={Logo}></DisplayModal>
+          <DisplayModal title='Project 3' subtitle='date' description='this is the description!' image={Logo}></DisplayModal>
       </div>
       <div className='flex'>
+          <DisplayModal title='Project 3' subtitle='date' description='this is the description!' image={Logo}></DisplayModal>
           <DisplayModal title='Project 3' subtitle='date' description='this is the description!' image={Logo}></DisplayModal>
           <DisplayModal title='Project 4' subtitle='date' description='this is the description!' image={Logo}></DisplayModal>
       </div>

@@ -8,7 +8,10 @@
     align-items: center;
     justify-content: space-between;
     margin: 30px;
+    margin-left: 12rem;
+    margin-right: 12rem;
     border-radius: 0.8rem;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 0.15);
 }
   
 .navbar-nav {

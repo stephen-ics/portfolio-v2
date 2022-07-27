@@ -31,7 +31,7 @@ code {
   --speed: 500ms;
   --dark: #101315;
   --light: #eeeeee;
-  --background-gradient: linear-gradient(10deg, #c4e2f7, #e8edf3);
+  --background-gradient: linear-gradient(10deg, #e4e9ee, #d4dae2);
   --gradient: linear-gradient(10deg, #7ebce3, #6773b3);
   --gradient2: linear-gradient(15deg, #04ea00, #00d17d);
   --gradient3: linear-gradient(15deg, #b648ff, #ef5dff);
