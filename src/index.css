@@ -12,8 +12,6 @@ body {
   background-repeat: no-repeat;
   background-attachment:fixed;
   min-width:fit-content;
-
-
 }
 
 code {
@@ -32,7 +30,7 @@ code {
   --dark: #101315;
   --light: #eeeeee;
   --background-gradient: linear-gradient(10deg, #e4e9ee, #d4dae2);
-  --gradient: linear-gradient(10deg, #7ebce3, #6773b3);
+  --gradient: linear-gradient(10deg, #bbcfde, #91b8db);
   --gradient2: linear-gradient(15deg, #04ea00, #00d17d);
   --gradient3: linear-gradient(15deg, #b648ff, #ef5dff);
 }

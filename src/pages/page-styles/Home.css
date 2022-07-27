@@ -1,6 +1,6 @@
 .button {
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 1rem;
     width: 150px;
     text-align: center;
     margin-right: 4px;
@@ -23,3 +23,13 @@
     filter: brightness(0.9)
 }
 
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

@@ -29,13 +29,13 @@ export default function Home() {
 
   return (
     <motion.div 
-      className='text-blue-900 flex flex-col items-center justify-center w-full h-full mt-32'
+      className='text-slate-700 flex flex-col items-center justify-center mt-32'
       initial={{opacity:0}}
       animate={{opacity:1, transition: {duration:0.5}}}
       exit={{opacity:0, transition: {duration:0.25}}}
     >
       <motion.div className='flex'>
-        <motion.div className='flex flex-col'>
+        <motion.div className='flex flex-col ml-28'>
           <h2 className='text-4xl'>Hello!</h2>
           <h1 className='text-8xl font-bold'>
             I'm Stephen Ni
@@ -57,16 +57,14 @@ export default function Home() {
                 </motion.button>
               </Link>
             </div>
+            <h1 className='text-l mt-12 w-full'>React.js   Next.js   Tensorflow   Python   Java   C#   Firebase   Blockchain  AI Databases Full-Stack</h1>
           </motion.div>
         <motion.div
           whileHover={{scale:1.1}}
           whileTap={{scale:0.9}}>
       
-            <img src={Logo} className='ml-40 rounded-2xl w-96 object-cover'/>
+            <img src={Logo} className='ml-40 rounded-2xl w-96 object-cover mr-28'/>
         </motion.div>
-      </motion.div>
-      <motion.div className='mt-20'>
-        <h1 className='text-5xl'>React.js   Next.js   Tensorflow   Python   Java   C#   Firebase   Blockchain  AI Databases Full-Stack</h1>
       </motion.div>
     </motion.div>
   )
