@@ -11,7 +11,7 @@ const About = () => {
       animate={{opacity:1, transition: {duration:0.5}}}
       exit={{opacity:0, transition: {duration:0.25}}}
     >
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center text-slate-700'>
         <h1>Hello! I'm Stephen</h1>
         <h2>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</h2>
         <h3 className='mb-40'>I have experience with front end web development including blah blah blah</h3>

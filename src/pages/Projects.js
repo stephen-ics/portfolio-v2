@@ -13,7 +13,7 @@ const Projects = () => {
 
     
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center text-slate-700'>
       <h1 className='text-5xl mt-10'>Projects</h1>
       <div className='flex flex-wrap'>
           <DisplayModal title='Project 1' subtitle='date' description='this is the description!' image={Logo}></DisplayModal>
