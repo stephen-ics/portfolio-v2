@@ -2,8 +2,8 @@ import { motion } from 'framer-motion'
 import Backdrop from './Backdrop'
 import './component-styles/Modal.css'
 import Logo from '../pictures/Logo.png'
-import Github from '../pictures/Github.jpg'
-import Devpost from '../pictures/Devpost.png'
+import { FaGithub } from 'react-icons/fa'
+import { SiDevpost } from 'react-icons/si'
 
 const dropIn ={
     hidden: {
@@ -53,7 +53,7 @@ const Modal = ({ handleClose, title, subtitle, description, image, github, devpo
             >
                 <ModalButton onClick={handleClose} label='Close'></ModalButton>
   
-                <div className='flex w-full justify-between mt-5'>
+                <div className='flex w-full justify-between mt-5 items-center'>
                     <img src={image} className='w-40 h-40'/>
                     <div>
                         <h1>{title}</h1>
@@ -61,11 +61,11 @@ const Modal = ({ handleClose, title, subtitle, description, image, github, devpo
                         <p>{description}</p>
                     </div>
                     <div className='flex flex-col'>
-                        <a href={devpost}>
-                            <img src={Devpost} className='w-20 h-20 object-cover'/>
+                        <a href={devpost} target='_blank'>
+                            <SiDevpost size={60}/>
                         </a>
-                        <a href={github}>
-                            <img src={Github} className='w-20 h-20 object-cover'/>
+                        <a href={github} target='_blank'>
+                            <FaGithub size={60}/>
                         </a>
                     </div>
                 </div>

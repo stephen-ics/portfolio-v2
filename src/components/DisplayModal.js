@@ -4,9 +4,6 @@ import React from 'react';
 import Modal from '../components/Modal';
 import '../components/component-styles/Modal.css';
 import ProjectSection from '../components/ProjectSection';
-import Logo from '../pictures/Logo.png'
-
-
 
 
 const DisplayModal = ({title, subtitle, description, image, devpost, github, sectionTitle}) => {
@@ -26,6 +23,7 @@ const DisplayModal = ({title, subtitle, description, image, devpost, github, sec
             className='project-section'
             onClick={() => (modalOpen ? close() : open())}
             title={title}
+            subtitle={subtitle}
             image={image}
         >
             Launch Model
