@@ -19,10 +19,12 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, image
         <h2 className='text-lg'>Subtitle</h2>
       </div>
       <div className='flex justify-evenly'>
-          <div>
-            <a href='https://google.com' target='_blank'><SiDevpost size={40}/></a>
+          <div className='flex justify-between items-center bg-blue-600 px-2 py-1 rounded-xl'>
+            <p className='text-sm mr-4'>Devpost</p>
+            <a href='https://google.com' target='_blank'><SiDevpost size={30} color='rgb(12,56,145)'/></a>
           </div>
-          <div>
+          <div className='flex justify-between items-center bg-slate-800 px-2 py-1 rounded-xl'>
+            <p className='text-sm mr-4'>Github</p>
             <a href='https://google.com' target='_blank'><FaGithub size={40}/></a>
           </div>
       </div>
