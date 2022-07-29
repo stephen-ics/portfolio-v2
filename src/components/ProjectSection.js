@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { FaGithub } from 'react-icons/fa'
+import { SiDevpost } from 'react-icons/si'
 
 const ProjectSection = ({ whileHover, whileTap, className, onClick, title, image }) => {
   return (
@@ -16,17 +18,13 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, image
         <h1 className='mt-4 text-2xl'>{title}</h1>
         <h2 className='text-lg'>Subtitle</h2>
       </div>
-      <div className='flex justify-center'>
-          <a>
-            <div className='w-12 bg-black rounded-l m-5'>
-              <img src={image} className='w-8 rounded-full'/>
-            </div>
-          </a>
-          <a>
-            <div className='w-12 bg-black rounded-l m-5'>
-              <img src={image} className='w-8 rounded-full'/>
-            </div>
-          </a>
+      <div className='flex justify-evenly'>
+          <div>
+            <a href='https://google.com' target='_blank'><SiDevpost size={40}/></a>
+          </div>
+          <div>
+            <a href='https://google.com' target='_blank'><FaGithub size={40}/></a>
+          </div>
       </div>
     </motion.button>
   )

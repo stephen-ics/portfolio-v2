@@ -25,8 +25,8 @@ const Projects = () => {
           <DisplayModal title='Project 2' subtitle='date' description='this is the description!' image={Concerto}></DisplayModal>
           <DisplayModal title='Project 3' subtitle='date' description='this is the description!' image={DeSsert}></DisplayModal>
           <DisplayModal title='Project 3' subtitle='date' description='this is the description!' image={CloseConnect}></DisplayModal>
-          <DisplayModal title='Project 3' subtitle='date' description='this is the description!' image={Concerto}></DisplayModal>
-          <DisplayModal title='Project 4' subtitle='date' description='this is the description!' image={CodeBro}></DisplayModal>
+          <DisplayModal title='Project 3' subtitle='date' description='this is the description!' image={TokensForGood}></DisplayModal>
+          <DisplayModal title='Project 4' subtitle='date' description='this is the description!' image={BitBots}></DisplayModal>
       </div>
     </div>
       
