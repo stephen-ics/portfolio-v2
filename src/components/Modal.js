@@ -51,22 +51,25 @@ const Modal = ({ handleClose, title, subtitle, description, image, github, devpo
                 animate='visible'
                 exit='exit'
             >
-                <ModalButton onClick={handleClose} label='Close'></ModalButton>
-  
-                <div className='flex w-full justify-between mt-5 items-center'>
-                    <img src={image} className='w-40 h-40'/>
-                    <div>
-                        <h1>{title}</h1>
-                        <h3>{subtitle}</h3>
-                        <p>{description}</p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <a href={devpost} target='_blank'>
-                            <SiDevpost size={60}/>
-                        </a>
-                        <a href={github} target='_blank'>
-                            <FaGithub size={60}/>
-                        </a>
+                <img src={image} className='object-cover rounded-l-xl w-80'/>
+                <div className='w-full flex flex-col items-center ml-5'>
+                    <ModalButton onClick={handleClose} label='Close'></ModalButton>
+                    <div className='flex w-full h-full justify-between mt-10 items-start'>
+                        <div>
+                            <h1 className='text-5xl'>{title}</h1>
+                            <h3 className='text-xl'>{subtitle}</h3>
+                            <p className='text-base mt-2'>{description}</p>
+                        </div>
+                        <div className='flex flex-col h-full justify-between pl-16'>
+                            <a href={devpost} target='_blank' className='flex flex-col items-center'>
+                                <h1 className='text-2xl'>Devpost</h1>
+                                <SiDevpost size={60}/>
+                            </a>
+                            <a href={github} target='_blank' className='mb-20 flex flex-col items-center'>
+                                <h1 className='text-2xl'>Github</h1>
+                                <FaGithub size={60}/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </motion.div>

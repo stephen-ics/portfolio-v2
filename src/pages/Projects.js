@@ -21,7 +21,7 @@ const Projects = () => {
     <div className='flex flex-col items-center text-slate-700'>
       <h1 className='text-5xl mt-10'>Projects</h1>
       <div className='flex flex-wrap'>
-          <DisplayModal title='CodeBro' subtitle='July 2022' description='this is the description!' image={CodeBro} github='https:google.com' devpost='https://google.com'></DisplayModal>
+          <DisplayModal title='CodeBro' subtitle='July 2022' description='this is the description! this is the description! this is the description! this is the description! this is the description! this is the description!' image={CodeBro} github='https:google.com' devpost='https://google.com'></DisplayModal>
           <DisplayModal title='Concerto' subtitle='July 2022' description='this is the description!' image={Concerto}></DisplayModal>
           <DisplayModal title='DeSsert' subtitle='June 2022' description='this is the description!' image={DeSsert}></DisplayModal>
           <DisplayModal title='CloseConnect' subtitle='June 2022' description='this is the description!' image={CloseConnect}></DisplayModal>
