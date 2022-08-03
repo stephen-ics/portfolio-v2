@@ -14,10 +14,6 @@ const Experiences = () => {
           <h1 className='year'>2022</h1>
           <Timeline/>
         </div>
-        <div>
-          <h1 className='year'>2021</h1>
-          <Timeline/>
-        </div>
       </div>
     </div>
   )

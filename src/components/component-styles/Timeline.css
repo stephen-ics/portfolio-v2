@@ -83,6 +83,7 @@ body {
   padding: 5px;
   position: absolute;
   text-transform: uppercase;
+  border-radius: 0.5rem;
 }
 .timeline-item:nth-child(odd) .timeline-item-content .tag {
   left: auto;
@@ -107,19 +108,4 @@ body {
   content: ' ►';
   font-size: 12px;
 }
-.timeline-item-content .circle {
-  background-color: #fff;
-  border: 3px solid #a0bde8;
-  border-radius: 50%;
-  position: absolute;
-  top: calc(50% - 10px);
-  right: -40px;
-  width: 20px;
-  height: 20px;
-  z-index: 100;
-  box-sizing: border-box;
-}
-.timeline-item:nth-child(odd) .timeline-item-content .circle {
-  right: auto;
-  left: -40px;
-}
+
