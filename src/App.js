@@ -7,15 +7,16 @@ import { CSSTransition } from 'react-transition-group';
 
 import NavbarFinal from './components/NavbarFinal'
 import AnimatedRoutes from './components/AnimatedRoutes'
-
+import Footer from './components/Footer'
 
 
 function App() {
   return (
-    <div className='App'>
+    <div className='h-full'>
       <BrowserRouter>
         <NavbarFinal/>
         <AnimatedRoutes/>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

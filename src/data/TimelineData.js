@@ -41,21 +41,6 @@ const TimelineData = [
         }
     },
     {
-        position: 'Co-Founder',
-        employer: 'East Asian Student Association (EASA)',
-        date: 'June 2022 - Present',
-        category: {
-            tag: 'blog',
-            color: '#e17b77',
-            tag2: 'blog2',
-            color2: '#e17b77',
-        },
-        link: {
-            url: 'https://github.com/florinpop17/app-ideas',
-            text: 'Open more'
-        }
-    },
-    {
         position: 'Secretary',
         employer: 'Student Activity Council',
         date: 'May 2022 - Present',
@@ -101,6 +86,19 @@ const TimelineData = [
         category: {
             tag: 'blog',
             color: '#e17b77'
+        },
+        link: {
+            url: 'https://github.com/florinpop17/app-ideas',
+            text: 'Open more'
+        }
+    },
+    {
+        position: 'Co-Founder',
+        employer: 'East Asian Student Association (EASA)',
+        date: 'May 2022 - Present',
+        category: {
+            tag: 'blog',
+            color: '#e17b77',
         },
         link: {
             url: 'https://github.com/florinpop17/app-ideas',
