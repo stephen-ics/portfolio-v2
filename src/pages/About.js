@@ -1,6 +1,10 @@
 import React from 'react'
 import './page-styles/About.css'
 import { motion } from 'framer-motion'
+import Art from '../pictures/hobbies/Art.jpeg'
+import Math from '../pictures/hobbies/Math.jpeg'
+import Piano from '../pictures/hobbies/Piano.webp'
+import Running from '../pictures/hobbies/Running.webp'
 import Hobby from '../components/Hobby'
 
 
@@ -17,12 +21,12 @@ const About = () => {
         <h2 className='mb-20 font-normal'>I have experience with front end web development including blah blah blah</h2>
         
         <div className='flex flex-col ml-24 w-full'>
-          <h2 className='text-4xl'>Hobbies</h2>
+          <h2 className='text-4xl text-center'>Hobbies</h2>
           <div className='flex w-full flex-wrap'>
-            <Hobby title='Math' description='I like math haha'/>
-            <Hobby title='Piano' description='I like piano'/>
-            <Hobby title='Art' description='I like art'/>
-            <Hobby title='Running' description='I like running'/>
+            <Hobby title='Math' description='I like math haha I like math haha I like math haha I like math haha I like math haha I like math haha' image={Math}/>
+            <Hobby title='Piano' description='I like piano' image={Piano}/>
+            <Hobby title='Art' description='I like art' image={Art}/>
+            <Hobby title='Running' description='I like running' image={Running}/>
           </div>
         </div>
 

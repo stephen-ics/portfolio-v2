@@ -64,7 +64,7 @@ export default function Home() {
             <img src={Logo} className='ml-40 rounded-2xl w-1/2 object-cover mr-28'/>
         </motion.div>
       </motion.div>
-      <h1 className='text-5xl mt-20 mb-24 w-full flex'>React.js   Next.js   Tensorflow   Python   Java   C#   Firebase   Blockchain  AI Databases Full-Stack</h1>
+      <h1 className='text-5xl mt-20 mb-8 w-full flex'>React.js   Next.js   Tensorflow   Python   Java   C#   Firebase   Blockchain  AI Databases Full-Stack</h1>
       
     </motion.div>
   )
