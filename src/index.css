@@ -3,6 +3,14 @@
 @tailwind utilities;
 @import-normalize;
 
+* {
+  
+}
+
+.show {
+  display: block;
+}
+
 body {
   margin: 0;
   font-family: roboto;
@@ -20,7 +28,7 @@ code {
 }
 
 :root {
-  --bg: hsl(206, 21%, 94%);
+  --bg: hsl(0, 0%, 100%);
   --bg-2: hsl(228, 22%, 77%);
   --bg-accent: #a7bad4;
   --text-color: #49536f;
@@ -29,8 +37,8 @@ code {
   --speed: 500ms;
   --dark: #101315;
   --light: #eeeeee;
-  --background-gradient: linear-gradient(10deg, #e4e9ee, #d4dae2);
-  --gradient: linear-gradient(10deg, #bbcfde, #91b8db);
+  --background-gradient: linear-gradient(10deg, #e4e9ee, #eff1f4);
+  --gradient: linear-gradient(10deg, #e9dada, #d9dfe6);
   --gradient2: linear-gradient(15deg, #04ea00, #00d17d);
   --gradient3: linear-gradient(15deg, #b648ff, #ef5dff);
 }

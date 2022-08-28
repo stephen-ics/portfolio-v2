@@ -1,26 +1,27 @@
 .button {
-    padding: 15px;
+    padding: 1rem;
     border-radius: 1rem;
-    width: 150px;
+    width: 10rem;
     text-align: center;
     margin-right: 4px;
     background: var(--gradient);
-    border-color: var(--gradient);
+    border-color: rgb(226, 222, 222);
+    border-width: 1px;
     font-size: 25px;
     display: flex;
     justify-content: center;
     justify-items: center;
-    color: white;
+    color: var(--text-color);
     transition: filter 300ms;
     margin-right: 20px;
 }
 
 .button:hover {
-    filter: brightness(1.1)
+    filter: brightness(1.05)
 }
 
 .button:focus {
-    filter: brightness(0.9)
+    filter: brightness(0.95)
 }
 
 @keyframes fade-up {
