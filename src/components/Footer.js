@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='w-full h-4 items-center flex shadow-2xl bg-white/[0.8] p-4 text-slate-800 text-2xl justify-center mt-10'>Made with React, Tailwind and O By Stephen Ni</div>
+    <div className='items-center flex shadow-2xl bg-white/[0.8] text-slate-800 text-lg justify-center mt-15 bottom-0 fixed w-full'>Made with React, Tailwind and O By Stephen Ni</div>
   )
 }
 

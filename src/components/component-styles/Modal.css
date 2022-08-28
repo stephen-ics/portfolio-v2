@@ -1,6 +1,6 @@
 .modal {
   width: clamp(50%, 800px, 90%);
-  height: 400px;
+  height: 700px;
   margin: auto;
   padding: 0;
   padding-right: 2rem;

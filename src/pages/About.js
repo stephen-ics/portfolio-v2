@@ -10,7 +10,7 @@ import Hobby from '../components/Hobby'
 
 const About = () => {
   return (
-    <motion.div className='flex flex-col justify-center items-center w-full h-full mt-10'
+    <motion.div className='flex flex-col justify-center items-center mt-10'
       initial={{opacity:0}}
       animate={{opacity:1, transition: {duration:0.5}}}
       exit={{opacity:0, transition: {duration:0.25}}}
@@ -20,9 +20,9 @@ const About = () => {
         <h2 className='font-normal'>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</h2>
         <h2 className='mb-20 font-normal'>I have experience with front end web development including blah blah blah</h2>
         
-        <div className='flex flex-col ml-24 w-full'>
+        <div className='flex flex-col'>
           <h2 className='text-4xl text-center'>Hobbies</h2>
-          <div className='flex w-full flex-wrap'>
+          <div className='flex flex-wrap items-center justify-center'>
             <Hobby title='Math' description='I like math haha I like math haha I like math haha I like math haha I like math haha I like math haha' image={Math}/>
             <Hobby title='Piano' description='I like piano' image={Piano}/>
             <Hobby title='Art' description='I like art' image={Art}/>

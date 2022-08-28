@@ -39,7 +39,7 @@ const ModalButton = ({ onClick, label }) => (
 );
 
 
-const Modal = ({ handleClose, title, subtitle, description, image, github, devpost }) => {
+const Modal = ({ handleClose, title, subtitle, description, techStack, image, github, devpost }) => {
 
     return (
         <Backdrop onClick={handleClose}>
@@ -51,14 +51,15 @@ const Modal = ({ handleClose, title, subtitle, description, image, github, devpo
                 animate='visible'
                 exit='exit'
             >
-                <img src={image} className='object-cover rounded-l-xl w-80'/>
+                <img src={image} className='object-cover rounded-l-xl w-1/2'/>
                 <div className='w-full flex flex-col items-center ml-5'>
                     <ModalButton onClick={handleClose} label='Close'></ModalButton>
                     <div className='flex w-full h-full justify-between mt-10 items-start'>
                         <div>
                             <h1 className='text-5xl'>{title}</h1>
                             <h3 className='text-xl'>{subtitle}</h3>
-                            <p className='text-base mt-2'>{description}</p>
+                            <p className='text-xl mt-2'>{description}</p>
+                            <p className='text-xl mt-10'>{techStack}</p>
                         </div>
                         <div className='flex flex-col h-full justify-between pl-16'>
                             <a href={devpost} target='_blank' className='flex flex-col items-center'>
