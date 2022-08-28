@@ -13,19 +13,19 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
         onClick={onClick}
     > 
     
-      <div className='flex flex-col items-center w-96'>
-        <img src={image} className='w-full object-cover h-80 rounded-t-2xl'></img>
-        <h1 className='mt-4 text-2xl'>{title}</h1>
-        <h2 className='text-lg'>{subtitle}</h2>
+      <div className='flex flex-col items-center w-full h-full'>
+        <img src={image} className='w-full h-full object-cover rounded-t-2xl'></img>
+        <h1 className='mt-4 text-4xl'>{title}</h1>
+        <h2 className='text-2xl'>{subtitle}</h2>
       </div>
       <div className='flex justify-evenly mb-3 mt-3'>
           <div className='flex justify-between items-center bg-blue-600 px-2 py-1 rounded-xl'>
-            <p className='text-sm mr-4'>Devpost</p>
+            <p className='text-lg mr-4'>Devpost</p>
             <a href='https://google.com' target='_blank'><SiDevpost size={30} color='rgb(12,56,145)'/></a>
           </div>
           
           <div className='flex justify-between items-center bg-slate-800 px-2 py-1 rounded-xl'>
-            <p className='text-sm mr-4'>Github</p>
+            <p className='text-lg mr-4'>Github</p>
             <a href='https://google.com' target='_blank'><FaGithub size={40}/></a>
           </div> 
       </div>

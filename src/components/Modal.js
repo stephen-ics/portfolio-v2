@@ -51,7 +51,7 @@ const Modal = ({ handleClose, title, subtitle, description, techStack, image, gi
                 animate='visible'
                 exit='exit'
             >
-                <img src={image} className='object-cover rounded-l-xl w-1/2'/>
+                <img src={image} className='object-cover rounded-l-xl w-full'/>
                 <div className='w-full flex flex-col items-center ml-5'>
                     <ModalButton onClick={handleClose} label='Close'></ModalButton>
                     <div className='flex w-full h-full justify-between mt-10 items-start'>
@@ -61,12 +61,12 @@ const Modal = ({ handleClose, title, subtitle, description, techStack, image, gi
                             <p className='text-xl mt-2'>{description}</p>
                             <p className='text-xl mt-10'>{techStack}</p>
                         </div>
-                        <div className='flex flex-col h-full justify-between pl-16'>
-                            <a href={devpost} target='_blank' className='flex flex-col items-center'>
+                        <div className='flex flex-col mt-10 justify-evenly pl-16'>
+                            <a href={devpost} target='_blank' className='flex flex-col items-center my-10'>
                                 <h1 className='text-2xl'>Devpost</h1>
                                 <SiDevpost size={60}/>
                             </a>
-                            <a href={github} target='_blank' className='mb-20 flex flex-col items-center'>
+                            <a href={github} target='_blank' className='mb-20 flex flex-col items-center my-10'>
                                 <h1 className='text-2xl'>Github</h1>
                                 <FaGithub size={60}/>
                             </a>
