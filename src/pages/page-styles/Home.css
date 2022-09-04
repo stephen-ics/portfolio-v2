@@ -1,8 +1,11 @@
 .button {
     padding: 1rem;
     border-radius: 1rem;
-    width: 10rem;
+    width: 20rem;
+    height: 6rem;
     text-align: center;
+    display: flex;
+    align-items: center;
     margin-right: 4px;
     background: var(--gradient);
     border-color: rgb(226, 222, 222);
@@ -14,6 +17,8 @@
     color: var(--text-color);
     transition: filter 300ms;
     margin-right: 20px;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .button:hover {

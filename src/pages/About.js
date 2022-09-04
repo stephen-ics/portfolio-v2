@@ -19,8 +19,14 @@ const About = () => {
         <h1>Hello! I'm Stephen</h1>
         <h2 className='font-normal'>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</h2>
         <h2 className='mb-20 font-normal'>I have experience with front end web development including blah blah blah</h2>
+
+        <div className='my-10'>
+          <div>
+            sdasd
+          </div>
+        </div>
         
-        <div className='flex flex-col'>
+        <div>
           <h2 className='text-4xl text-center'>Hobbies</h2>
           <div className='flex flex-wrap items-center justify-center'>
             <Hobby title='Math' description='I like math haha I like math haha I like math haha I like math haha I like math haha I like math haha' image={Math}/>

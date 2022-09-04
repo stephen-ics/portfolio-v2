@@ -16,24 +16,62 @@ export default function Home() {
   })
 
 
-  const dropInLeft ={
+  const buttonLeft ={
     hidden: {
-        x: '100vh',
+        x: '-10vh',
         opacity: 0,
     },
     visible: { 
         x: 0,
         opacity: 1,
         transition: {
-            duration: 0.1,
-            type: 'spring',
-            delay: 0.5,
-            damping: 25,
-            stiffness: 200,
+            duration: 2,
+            ease: [0.6, 0.01, -0.05, 0.95],
         }
     },
     exit: {
-        y: '100vh',
+        y: '10vh',
+        opacity: 0,
+    },
+  };
+
+  const buttonRight ={
+    hidden: {
+        x: '10vh',
+        opacity: 0,
+    },
+    visible: { 
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 2,
+            ease: [0.6, 0.01, -0.05, 0.95],
+        }
+    },
+    exit: {
+        y: '-10vh',
+        opacity: 0,
+    },
+  };
+
+  const imageRight ={
+    hidden: {
+        x: '20vh',
+        opacity: 0,
+    },
+    visible: { 
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 3,
+            ease: [0.6, 0.01, -0.05, 0.95],
+            type: 'spring',
+            damping: 8,
+            stiffness: 50,
+        }
+    },
+    exit: {
+        y: '-20vh',
         opacity: 0,
     },
   };
@@ -47,21 +85,30 @@ export default function Home() {
     >
       <motion.div className='flex justify-center'>
         <motion.div className='flex flex-col justify-around'>
-          <h2 className='text-4xl'>Hello!</h2>
-          <h1 className='text-8xl font-bold'>I'm Stephen Ni</h1>
+          <h2 className='text-6xl'>Hello!</h2>
+          <h1 className='text-9xl font-bold'>I'm Stephen Ni</h1>
           <h2 className='text-3xl mb-8'>Aspiring Full-Stack Developer</h2>
           <div className='flex'>
             <Link to='/experiences'>
               <motion.button className="button"
                 whileHover={{scale:1.1}}
-                whileTap={{scale:0.9}}>
+                whileTap={{scale:0.9}}
+                variants={buttonLeft}
+                initial='hidden'
+                animate='visible'
+                exit='exit'>
                   Experiences
               </motion.button>
             </Link>
             <Link to='projects'>
-                <motion.button className="button"
+                <motion.button 
+                  className="button"
                   whileHover={{scale:1.1}}
-                  whileTap={{scale:0.9}}>
+                  whileTap={{scale:0.9}}
+                  variants={buttonRight}
+                  initial='hidden'
+                  animate='visible'
+                  exit='exit'>
                     Projects
                 </motion.button>
             </Link>
@@ -69,7 +116,11 @@ export default function Home() {
         </motion.div>
         <motion.div
           whileHover={{scale:1.1}}
-          whileTap={{scale:0.9}}>     
+          whileTap={{scale:0.9}}
+          variants={imageRight}
+          initial='hidden'
+          animate='visible'
+          exit='exit'>     
             <img src={Logo} className='w-96 ml-40 rounded-full object-cover border-green-500 border-solid border-3'/>
         </motion.div>
       </motion.div>
