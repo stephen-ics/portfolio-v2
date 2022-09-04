@@ -53,7 +53,7 @@ const About = () => {
             <Hobby title='Math' description='I like math haha I like math haha I like math haha I like math haha I like math haha I like math haha' image={Math}/>
             <Hobby title='Piano' description='I like piano' image={Piano}/>
             <Hobby title='Art' description='I like art' image={Art}/>
-            <Hobby title='Running' description='I like running' image={Running}/>
+            <Hobby title='Violin' description='I like VIolining' image={Running}/>
           </div>
         </div>
 

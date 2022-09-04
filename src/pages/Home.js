@@ -18,7 +18,7 @@ export default function Home() {
 
   const container = {
     hidden: {
-      y: '10vh',
+  
       opacity: 0,
     },
     visible: {

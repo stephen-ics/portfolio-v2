@@ -17,13 +17,12 @@ import { motion } from 'framer-motion'
 const Projects = () => {
   const container = {
     hidden: {
-      y: '10vh',
       opacity: 0,
     },
     visible: {
-      y: 0,
       opacity: 1,
       transition: {
+        duration: 1,
         staggerChildren: 0.35,
       },
     },
@@ -38,11 +37,12 @@ const Projects = () => {
 
     
   return (
-    <motion.div className='text-slate-700'
-      variants={container}
-      initial='hidden'
-      animate='visible'
-      exit='exit'
+    <motion.div className='text-slate-700 mb-10'
+    variants={container}
+    initial='hidden'
+    animate='visible'
+    exit='exit'
+ 
     >
       <h1 className='text-5xl text-center mt-10'>Projects</h1>
       <div className='flex flex-wrap mx-20'>
