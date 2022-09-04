@@ -16,7 +16,27 @@ export default function Home() {
   })
 
 
-  const buttonLeft ={
+  const container = {
+    hidden: {
+        x: '-10vh',
+        opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.35,
+      },
+    },
+    exit: {
+        y: '-10vh',
+        opacity: 0,
+        transition: {
+          duration: 0.33,
+        }
+    },
+  };
+
+  const buttonLeft = {
     hidden: {
         x: '-10vh',
         opacity: 0,
@@ -30,12 +50,11 @@ export default function Home() {
         }
     },
     exit: {
-        y: '10vh',
         opacity: 0,
     },
   };
 
-  const buttonRight ={
+  const buttonRight = {
     hidden: {
         x: '10vh',
         opacity: 0,
@@ -49,12 +68,11 @@ export default function Home() {
         }
     },
     exit: {
-        y: '-10vh',
         opacity: 0,
     },
   };
 
-  const imageRight ={
+  const imageRight = {
     hidden: {
         x: '20vh',
         opacity: 0,
@@ -63,15 +81,12 @@ export default function Home() {
         x: 0,
         opacity: 1,
         transition: {
-            duration: 3,
+            duration: 1,
             ease: [0.6, 0.01, -0.05, 0.95],
-            type: 'spring',
-            damping: 8,
-            stiffness: 50,
+ 
         }
     },
     exit: {
-        y: '-20vh',
         opacity: 0,
     },
   };
@@ -79,9 +94,10 @@ export default function Home() {
   return (
     <motion.div 
       className='h-full text-slate-700 flex flex-col mt-24 w-full'
-      initial={{opacity:0}}
-      animate={{opacity:1, transition: {duration:0.5}}}
-      exit={{opacity:0, transition: {duration:0.25}}}
+      variants={container}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
     >
       <motion.div className='flex justify-center'>
         <motion.div className='flex flex-col justify-around'>
