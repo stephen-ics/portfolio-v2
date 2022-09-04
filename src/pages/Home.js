@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
 import { faCarSide } from '@fortawesome/free-solid-svg-icons';
 import { useInView } from 'react-intersection-observer'
+import Typewriter from 'typewriter-effect'
 
 
 export default function Home() {
@@ -37,17 +38,56 @@ export default function Home() {
     },
   };
 
+  const banner = {
+    animate: {
+      transition: {
+        delayChildren: 0.4,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const letterAnimation = {
+    initial: {
+      y: 400
+    },
+    animate: {
+      y: 0,
+      transition: {
+        ease:[0.6, 0.01, -0.05, 0.95],
+        duration: 1,
+      },
+    },
+  };
+
   const textUp = {
     hidden: {
-        y: '5vh',
         x: '-5vh',
         opacity: 0,
     },
     visible: { 
-        y: 0,
         x: 0,
         opacity: 1,
         transition: {
+            duration: 2,
+            ease: [0.6, 0.01, -0.05, 0.95],
+        }
+    },
+    exit: {
+        opacity: 0,
+    },
+  };
+
+  const textUp2 = {
+    hidden: {
+        x: '-5vh',
+        opacity: 0,
+    },
+    visible: { 
+        x: 0,
+        opacity: 1,
+        transition: {
+            delay: 0.75,
             duration: 2,
             ease: [0.6, 0.01, -0.05, 0.95],
         }
@@ -66,6 +106,7 @@ export default function Home() {
         x: 0,
         opacity: 1,
         transition: {
+            delay: 1.5,
             duration: 2,
             ease: [0.6, 0.01, -0.05, 0.95],
         }
@@ -84,7 +125,7 @@ export default function Home() {
         x: 0,
         opacity: 1,
         transition: {
-            staggerChildren: 0.35,
+            delay: 1.5,
             duration: 2,
             ease: [0.6, 0.01, -0.05, 0.95],
         }
@@ -103,8 +144,12 @@ export default function Home() {
         x: 0,
         opacity: 1,
         transition: {
+            delay: 2.5,
             duration: 1,
             ease: [0.6, 0.01, -0.05, 0.95],
+            type: "spring",
+            stiffness: 200,
+
         }
     },
     exit: {
@@ -122,16 +167,52 @@ export default function Home() {
     >
       <motion.div className='flex justify-center'>
         <motion.div className='flex flex-col justify-around'>
-          <motion.div
-            variants={textUp}
-            initial='hidden'
-            animate='visible'
-            exit='exit'
-          >
-            <h2 className='text-6xl'>Hello!</h2>
-            <h1 className='text-9xl font-bold'>I'm Stephen Ni</h1>
-  
-            <h2 className='text-3xl mb-8 mt-8'>Aspiring Full-Stack Developer</h2>
+          <motion.span
+              variants={banner}
+              initial='initial'
+              animate='animate'
+              >
+              {['a', 'b', 'c', 'd'].map((letter) => (
+                <motion.span
+                variants={letterAnimation}
+                >{letter}
+              </motion.span>
+              ))}
+            </motion.span>
+          <motion.div>
+            <motion.div className='text-6xl font-bold'
+              variants={textUp}
+              initial='hidden'
+              animate='visible'
+              exit='exit'
+            >
+              Hello
+            </motion.div>
+            <motion.div className='text-9xl font-bold'
+              variants={textUp2}
+              initial='hidden'
+              animate='visible'
+              exit='exit'
+            >
+              I'm Stephen Ni
+            </motion.div>
+            <motion.div className='text-3xl mb-8 mt-8'>
+              <Typewriter
+                options={{
+                  strings:[],
+                  autoStart: true,
+                  loop: true,
+                  delay: 100,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .pauseFor(2500)
+                    .typeString("Aspiring Full-Stack Developer")
+                    .deleteAll()
+                    .typeString("Creator, Innovator")
+                }}
+              />
+            </motion.div>
           </motion.div>
           <div className='flex'>
             <Link to='/experiences'>
