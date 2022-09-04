@@ -9,11 +9,32 @@ import Hobby from '../components/Hobby'
 
 
 const About = () => {
+  const container = {
+    hidden: {
+        y: '10vh',
+        opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.35,
+      },
+    },
+    exit: {
+        y: '-20vh',
+        opacity: 0,
+        transition: {
+          duration: 0.25,
+        }
+    },
+  };
   return (
     <motion.div className='flex flex-col justify-center items-center mt-10'
-      initial={{opacity:0}}
-      animate={{opacity:1, transition: {duration:0.5}}}
-      exit={{opacity:0, transition: {duration:0.25}}}
+      variants={container}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
     >
       <div className='flex flex-col items-center text-slate-700 w-full'>
         <h1>Hello! I'm Stephen</h1>

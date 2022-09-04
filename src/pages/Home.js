@@ -28,11 +28,31 @@ export default function Home() {
       },
     },
     exit: {
-        y: '-10vh',
+        y: '-20vh',
         opacity: 0,
         transition: {
-          duration: 0.33,
+          duration: 0.25,
         }
+    },
+  };
+
+  const textUp = {
+    hidden: {
+        y: '5vh',
+        x: '-5vh',
+        opacity: 0,
+    },
+    visible: { 
+        y: 0,
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 2,
+            ease: [0.6, 0.01, -0.05, 0.95],
+        }
+    },
+    exit: {
+        opacity: 0,
     },
   };
 
@@ -63,6 +83,7 @@ export default function Home() {
         x: 0,
         opacity: 1,
         transition: {
+            staggerChildren: 0.35,
             duration: 2,
             ease: [0.6, 0.01, -0.05, 0.95],
         }
@@ -83,7 +104,6 @@ export default function Home() {
         transition: {
             duration: 1,
             ease: [0.6, 0.01, -0.05, 0.95],
- 
         }
     },
     exit: {
@@ -101,9 +121,17 @@ export default function Home() {
     >
       <motion.div className='flex justify-center'>
         <motion.div className='flex flex-col justify-around'>
-          <h2 className='text-6xl'>Hello!</h2>
-          <h1 className='text-9xl font-bold'>I'm Stephen Ni</h1>
-          <h2 className='text-3xl mb-8'>Aspiring Full-Stack Developer</h2>
+          <motion.div
+            variants={textUp}
+            initial='hidden'
+            animate='visible'
+            exit='exit'
+          >
+            <h2 className='text-6xl'>Hello!</h2>
+            <h1 className='text-9xl font-bold'>I'm Stephen Ni</h1>
+  
+            <h2 className='text-3xl mb-8 mt-8'>Aspiring Full-Stack Developer</h2>
+          </motion.div>
           <div className='flex'>
             <Link to='/experiences'>
               <motion.button className="button"

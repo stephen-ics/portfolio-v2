@@ -11,13 +11,38 @@ import PlantUp from '../pictures/projects/PlantUp.png'
 import StockStalker from '../pictures/projects/StockStalker.png'
 
 import DisplayModal from '../components/DisplayModal'
+import { motion } from 'framer-motion'
 
 
 const Projects = () => {
+  const container = {
+    hidden: {
+        x: '-10vh',
+        opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.35,
+      },
+    },
+    exit: {
+        y: '-20vh',
+        opacity: 0,
+        transition: {
+          duration: 0.25,
+        }
+    },
+  };
 
     
   return (
-    <div className='text-slate-700'>
+    <motion.div className='text-slate-700'
+      variants={container}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+    >
       <h1 className='text-5xl text-center mt-10'>Projects</h1>
       <div className='flex flex-wrap mx-20'>
           <DisplayModal title='Stock Stalker' subtitle='August 2022' description='Unlike the traditional profit-orientated approach in financial investing, responsible investing is a relatively new concept that expressly recognizes the importance of environmental, social, and governance aspects to the investor and the long-term health and stability of the market' techStack='The prototype was designed with Figma while the front end was built on React ·We used Tailwind CSS, framer-motion and various libraries to decorate our web page. The backend data was stored on JSON-Server, cors and axios ·Notifications are sent out using Twilio. Functionalities were built with tradingviewwidget' image={StockStalker} github='https://github.com/stephen-ics/Hack-The-6ix' devpost='https://devpost.com/software/stock-stalker-4jrosz'></DisplayModal>
@@ -29,7 +54,7 @@ const Projects = () => {
           <DisplayModal title='Tokens For Good' subtitle='June 2022' description='Our project gives people who donate to charity an NFT. This gives people the novelty of possessing limited-time collectables and a sense of pride knowing they supported a good cause, increasing the incentive to donate.' techStack='We designed the UI with Figma and implemented the front end using React.js and Chakra UI. The blockchain was implemented with the DesO utility Library and the login was implemented through DeSo Login' image={TokensForGood}></DisplayModal>
           <DisplayModal title='BitBots' subtitle='January 2022' description='Bitbots is a program that uses computer vision and artificial intelligence to convert ASL signs into English text or audio, and vice versa. It takes input from a user who finger-spells letters, and the phrase is then interpreted into text or audio.' techStack='We built Speak Out! using Google Teachable Machine and the interactive dashboard using HTML,CSS,Javascript and Netlify. As we used Teachable it allowed us to concentrate a lot more on the data to train to give out more accurate results!' image={BitBots}></DisplayModal>
       </div>
-    </div>
+    </motion.div>
       
   )
 }

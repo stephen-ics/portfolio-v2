@@ -1,12 +1,39 @@
 import React from 'react'
 import Timeline from '../components/Timeline'
+import { motion } from 'framer-motion'
 
 
 import './page-styles/Experiences.css'
 
 const Experiences = () => {
+  const container = {
+    hidden: {
+        x: '-10vh',
+        opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.35,
+      },
+    },
+    exit: {
+        y: '-20vh',
+        opacity: 0,
+        transition: {
+          duration: 0.25,
+        }
+    },
+  };
+
   return (
-    <div className='mt-10 flex flex-col text-center justify-center text-slate-700'>
+    <motion.div 
+      className='mt-10 flex flex-col text-center justify-center text-slate-700'
+      variants={container}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+    >
       <h1 className='text-4xl'>My Timeline</h1>
       <div className='mt-5'>
         <div>
@@ -14,7 +41,7 @@ const Experiences = () => {
           <Timeline/>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
