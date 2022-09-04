@@ -17,10 +17,11 @@ import { motion } from 'framer-motion'
 const Projects = () => {
   const container = {
     hidden: {
-        x: '-10vh',
-        opacity: 0,
+      y: '10vh',
+      opacity: 0,
     },
     visible: {
+      y: 0,
       opacity: 1,
       transition: {
         staggerChildren: 0.35,
