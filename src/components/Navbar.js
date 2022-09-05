@@ -18,6 +18,9 @@ function Navbar(props) {
           <li className='nav-list'>
             <Link to='/projects'>Projects</Link>
           </li>
+          <li className='nav-list'>
+            <Link to='/whiteboard'>Whiteboard</Link>
+          </li>
         </ul>
         <ul className='navbar-nav'>
             <Link to='#'>{props.children}</Link>

@@ -235,10 +235,6 @@ export default function Home() {
             <img src={Logo} className='w-96 ml-40 rounded-full object-cover border-green-500 border-solid border-3'/>
         </motion.div>
       </motion.div>
-
-      <Cardflip />
-      
-
     </motion.div>
   )
 }

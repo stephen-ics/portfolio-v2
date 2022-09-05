@@ -1,16 +1,16 @@
 import React from 'react'
 import './component-styles/Cardflip.css'
+import { useState } from 'react'
 
 const Cardflip = () => {
+    const flipCard = () => {
+        const card = document.querySelector('.card__inner')
+        card.classList.toggle('is-flipped')
+    }
 
-    const card = document.querySelector(".card__inner");
-
-    card.addEventListener("click", function (e) {
-    card.classList.toggle('is-flipped');
-    });
   return (
     <div class="card">
-		<div class="card__inner">
+		<div class="card__inner" onClick={flipCard}>
 			<div class="card__face card__face--front">
 				<h2>Card Front</h2>
 			</div>

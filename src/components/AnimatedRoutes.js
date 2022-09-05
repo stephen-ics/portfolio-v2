@@ -7,6 +7,7 @@ import Projects from '../pages/Projects'
 import Experiences from '../pages/Experiences'
 import ErrorPage from '../pages/ErrorPage'
 import ExperiencePage from '../pages/ExperiencePage'
+import Whiteboard from '../pages/Whiteboard'
 
 import { AnimatePresence } from 'framer-motion'
 
@@ -22,6 +23,7 @@ const AnimatedRoutes = () => {
             <Route path='/projects' exact element={<Projects></Projects>}></Route>
             <Route path='/experiences' exact element={<Experiences></Experiences>}></Route>
             <Route path='/experiences/:id' exact element={<ExperiencePage></ExperiencePage>}></Route>
+            <Route path='/whiteboard' exact element={<Whiteboard></Whiteboard>}></Route>
         </Routes>
     </AnimatePresence>
   )
