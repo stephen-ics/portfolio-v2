@@ -6,6 +6,7 @@ import { useState, useRef, useEffect } from 'react';
 import { faCarSide } from '@fortawesome/free-solid-svg-icons';
 import { useInView } from 'react-intersection-observer'
 import Typewriter from 'typewriter-effect'
+import Cardflip from '../components/Cardflip'
 
 
 export default function Home() {
@@ -54,7 +55,7 @@ export default function Home() {
     animate: {
       y: 0,
       transition: {
-        ease:[0.6, 0.01, -0.05, 0.95],
+        ease: [0.6, 0.01, -0.05, 0.95],
         duration: 1,
       },
     },
@@ -157,6 +158,14 @@ export default function Home() {
     },
   };
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    loading
+    ? document.querySelector('body').classList.add('loading')
+    : document.querySelector('body').classList.remove('loading');
+  }, [loading])
+
   return (
     <motion.div 
       className='h-full text-slate-700 flex flex-col mt-24 w-full'
@@ -167,32 +176,14 @@ export default function Home() {
     >
       <motion.div className='flex justify-center'>
         <motion.div className='flex flex-col justify-around'>
-          <motion.span
-              variants={banner}
-              initial='initial'
-              animate='animate'
-              >
-              {['a', 'b', 'c', 'd'].map((letter) => (
-                <motion.span
-                variants={letterAnimation}
-                >{letter}
-              </motion.span>
-              ))}
-            </motion.span>
           <motion.div>
             <motion.div className='text-6xl font-bold'
               variants={textUp}
-              initial='hidden'
-              animate='visible'
-              exit='exit'
             >
               Hello
             </motion.div>
             <motion.div className='text-9xl font-bold'
               variants={textUp2}
-              initial='hidden'
-              animate='visible'
-              exit='exit'
             >
               I'm Stephen Ni
             </motion.div>
@@ -220,9 +211,7 @@ export default function Home() {
                 whileHover={{scale:1.1}}
                 whileTap={{scale:0.9}}
                 variants={buttonLeft}
-                initial='hidden'
-                animate='visible'
-                exit='exit'>
+                >
                   Experiences
               </motion.button>
             </Link>
@@ -232,9 +221,7 @@ export default function Home() {
                   whileHover={{scale:1.1}}
                   whileTap={{scale:0.9}}
                   variants={buttonRight}
-                  initial='hidden'
-                  animate='visible'
-                  exit='exit'>
+                  >
                     Projects
                 </motion.button>
             </Link>
@@ -244,12 +231,12 @@ export default function Home() {
           whileHover={{scale:1.1}}
           whileTap={{scale:0.9}}
           variants={imageRight}
-          initial='hidden'
-          animate='visible'
-          exit='exit'>     
+          >     
             <img src={Logo} className='w-96 ml-40 rounded-full object-cover border-green-500 border-solid border-3'/>
         </motion.div>
       </motion.div>
+
+      <Cardflip />
       
 
     </motion.div>
