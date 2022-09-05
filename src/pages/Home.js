@@ -161,7 +161,7 @@ export default function Home() {
             <motion.div className='text-6xl font-bold'
               variants={textUp}
             >
-              Hello
+              👋 Hey 
             </motion.div>
             <motion.div className='text-9xl font-bold'
               variants={textUp}

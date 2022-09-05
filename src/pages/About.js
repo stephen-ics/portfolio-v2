@@ -20,7 +20,7 @@ const About = () => {
       y: 0,
       opacity: 1,
       transition: {
-        staggerChildren: 0.5,
+        staggerChildren: 0.35,
       },
     },
     exit: {
@@ -144,15 +144,15 @@ const About = () => {
   };
 
   return (
-    <motion.div className='flex flex-col justify-center items-center mt-10'
+    <motion.div className='flex flex-col mt-10'
       variants={container}
       initial='hidden'
       animate='visible'
       exit='exit'
     >
-      <div className='flex flex-col text-slate-900 w-full'>
-        <div className='flex items-center mt-16'>
-          <motion.img variants={imageLeft} src={Logo} className='w-60 rounded-xl object-cover ml-60'/>
+      <div className='flex flex-col text-slate-900 w-full items-start ml-60'>
+        <div className='flex mt-16 items-center'>
+          <motion.img variants={imageLeft} src={Logo} className='w-60 rounded-xl object-cover'/>
           <div className='ml-16'>
             <motion.h1 variants={textUp} className=''>Hello! I'm Stephen</motion.h1>
             <motion.h2 variants={textUp2} className='font-normal'>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</motion.h2>
@@ -160,9 +160,9 @@ const About = () => {
           </div>
         </div>
         
-        <div className='ml-60 mt-6'>
-          <motion.h2 variants={textUp3} className='text-4xl ml-8 mt-12'>Hobbies</motion.h2>
-          <motion.div className='flex flex-wrap items-center mb-20'>
+        <div className='mt-6'>
+          <motion.h2 variants={textUp3} className='text-4xl mt-12'>Hobbies</motion.h2>
+          <motion.div className='flex flex-wrap mb-20'>
             <motion.div variants={imageUp}>
               <Cardflip title='Math' subtitle='I do Math' description="Math has always been an inescapable part of my childhood, but overtime I've grown to love it!" image={Math}/>
             </motion.div>
@@ -178,8 +178,8 @@ const About = () => {
           </motion.div>
         </div>
         <div>
-          <h2 className='text-4xl'>Hobbies</h2>
-          <div className='flex flex-wrap items-center justify-between mb-20'>
+          <h2 className='text-4xl'>Principals</h2>
+          <div className='flex flex-wrap mb-20'>
             <Cardflip title='Math' description='I like math haha I like math haha I like math haha I like math haha I like math haha I like math haha' image={Math}/>
             <Cardflip title='Piano' description='I like piano' image={Piano}/>
           </div>
