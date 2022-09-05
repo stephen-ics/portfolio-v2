@@ -1,6 +1,6 @@
 :root {
-    --primary: #FFCE00;
-    --secondary: #FE4880;
+    --primary: #e49191;
+    --secondary: #90b6e1;
     --dark: #212121;
     --light: #F3F3F3;
   }
@@ -17,13 +17,13 @@
   }
   
   .card {
-    margin: 100px auto 0;
-    width: 400px;
-    height: 600px;
+    margin: 30px 30px 0;
+    width: 20rem;
+    height: 28rem;
     perspective: 1000px;
   }
   
-  .card__inner {
+  .cardInner {
     width: 100%;
     height: 100%;
     transition: transform 1s;
@@ -32,12 +32,12 @@
     position: relative;
   }
   
-  .card__inner.is-flipped {
+  .cardInner.isFlipped {
     transform: rotateY(180deg);
   }
   
   
-  .card__face {
+  .cardFace {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -48,34 +48,34 @@
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
   }
   
-  .card__face--front {
+  .cardFaceFront {
     background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  .card__face--front h2 {
+  .cardFaceFront h2 {
     color: #FFF;
     font-size: 32px;
   }
   
-  .card__face--back {
+  .cardFaceBack {
     background-color: var(--light);
     transform: rotateY(180deg);
   }
   
-  .card__content {
+  .cardContent {
     width: 100%;
     height: 100%;
   }
   
-  .card__header {
+  .cardHeader {
     position: relative;
     padding: 30px 30px 40px;
   }
   
-  .card__header:after {
+  .cardHeader:after {
     content: '';
     display: block;
     position: absolute;
@@ -90,35 +90,35 @@
   
   .pp {
     display: block;
-    width: 128px;
-    height: 128px;
-    margin: 0 auto 30px;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 10px;
     border-radius: 50%;
     background-color: #FFF;
     border: 5px solid #FFF;
     object-fit: cover;
   }
   
-  .card__header h2 {
+  .cardHeader h2 {
     color: #FFF;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
   }
   
-  .card__body {
+  .cardBody {
     padding: 30px;
   }
   
-  .card__body h3 {
+  .cardBody h3 {
     color: var(--dark);
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 15px;
   }
   
-  .card__body p {
+  .cardBody p {
     color: var(--dark);
     font-size: 18px;
     line-height: 1.4;

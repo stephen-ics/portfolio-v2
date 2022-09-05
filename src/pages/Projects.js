@@ -37,7 +37,7 @@ const Projects = () => {
 
     
   return (
-    <motion.div className='text-slate-700 mb-10'
+    <motion.div className='text-slate-900 mb-10'
     variants={container}
     initial='hidden'
     animate='visible'

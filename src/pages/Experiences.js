@@ -29,7 +29,7 @@ const Experiences = () => {
 
   return (
     <motion.div 
-      className='mt-10 flex flex-col text-center justify-center text-slate-700'
+      className='mt-10 flex flex-col text-center justify-center text-slate-900'
       variants={container}
       initial='hidden'
       animate='visible'

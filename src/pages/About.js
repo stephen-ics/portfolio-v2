@@ -6,6 +6,7 @@ import Math from '../pictures/hobbies/Math.jpeg'
 import Piano from '../pictures/hobbies/Piano.webp'
 import Running from '../pictures/hobbies/Running.webp'
 import Hobby from '../components/Hobby'
+import Cardflip from '../components/Cardflip'
 
 
 const About = () => {
@@ -36,7 +37,7 @@ const About = () => {
       animate='visible'
       exit='exit'
     >
-      <div className='flex flex-col items-center text-slate-700 w-full'>
+      <div className='flex flex-col items-center text-slate-900 w-full'>
         <h1>Hello! I'm Stephen</h1>
         <h2 className='font-normal'>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</h2>
         <h2 className='mb-20 font-normal'>I have experience with front end web development including blah blah blah</h2>
@@ -48,12 +49,19 @@ const About = () => {
         </div>
         
         <div>
-          <h2 className='text-4xl text-center'>Hobbies</h2>
-          <div className='flex flex-wrap items-center justify-center'>
-            <Hobby title='Math' description='I like math haha I like math haha I like math haha I like math haha I like math haha I like math haha' image={Math}/>
-            <Hobby title='Piano' description='I like piano' image={Piano}/>
-            <Hobby title='Art' description='I like art' image={Art}/>
-            <Hobby title='Violin' description='I like VIolining' image={Running}/>
+          <h2 className='text-4xl'>Hobbies</h2>
+          <div className='flex flex-wrap items-center justify-between mb-20'>
+            <Cardflip title='Math' description='I like math haha I like math haha I like math haha I like math haha I like math haha I like math haha' image={Math}/>
+            <Cardflip title='Piano' description='I like piano' image={Piano}/>
+            <Cardflip title='Art' description='I like art' image={Art}/>
+            <Cardflip title='Violin' description='I like VIolining' image={Running}/>
+          </div>
+        </div>
+        <div>
+          <h2 className='text-4xl'>Hobbies</h2>
+          <div className='flex flex-wrap items-center justify-between mb-20'>
+            <Cardflip title='Math' description='I like math haha I like math haha I like math haha I like math haha I like math haha I like math haha' image={Math}/>
+            <Cardflip title='Piano' description='I like piano' image={Piano}/>
           </div>
         </div>
 

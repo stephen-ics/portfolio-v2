@@ -1,33 +1,37 @@
 import React from 'react'
 import './component-styles/Cardflip.css'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
-const Cardflip = () => {
+const Cardflip = ({ title, description, image }) => {
+    const [flipped, setFlipped] = useState(false)
     const flipCard = () => {
-        const card = document.querySelector('.card__inner')
-        card.classList.toggle('is-flipped')
+        setFlipped(!flipped)
     }
 
   return (
-    <div class="card">
-		<div class="card__inner" onClick={flipCard}>
-			<div class="card__face card__face--front">
-				<h2>Card Front</h2>
+    <motion.div class="card"
+    whileHover={{scale:1.05}}
+    whileTape={{scale:.95}}>
+		<div className={flipped ? "cardInner isFlipped" : "cardInner"} onClick={flipCard}>
+			<div class="cardFace cardFaceFront">
+				<h2>{title}</h2>
+                
 			</div>
-			<div class="card__face card__face--back">
-				<div class="card__content">
-					<div class="card__header">
-						<img src="pp.jpg" alt="" class="pp" />
-						<h2>Tyler Potts</h2>
+			<div class="cardFace cardFaceBack">
+				<div class="cardContent">
+					<div class="cardHeader">
+						<img src={image} alt="" class="pp" />
+						<h2>{title}</h2>
 					</div>
-					<div class="card__body">
+					<div class="cardBody">
 						<h3>JavaScript Wizard</h3>
-						<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+						<p>{description}</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</motion.div>
   )
 }
 
