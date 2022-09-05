@@ -1,8 +1,8 @@
 :root {
-    --primary: #e49191;
-    --secondary: #90b6e1;
+    --primary: #7edb81;
+    --secondary: #6e98c8;
     --dark: #212121;
-    --light: #F3F3F3;
+    --light: #ffffff;
   }
   
   * {
@@ -95,7 +95,7 @@
     margin: 0 auto 10px;
     border-radius: 50%;
     background-color: #FFF;
-    border: 5px solid #FFF;
+    border: 5px solid rgb(31, 152, 82);
     object-fit: cover;
   }
   

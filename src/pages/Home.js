@@ -27,7 +27,7 @@ export default function Home() {
       y: 0,
       opacity: 1,
       transition: {
-        staggerChildren: 0.35,
+        staggerChildren: 0.75,
       },
     },
     exit: {
@@ -70,25 +70,6 @@ export default function Home() {
         x: 0,
         opacity: 1,
         transition: {
-            duration: 2,
-            ease: [0.6, 0.01, -0.05, 0.95],
-        }
-    },
-    exit: {
-        opacity: 0,
-    },
-  };
-
-  const textUp2 = {
-    hidden: {
-        x: '-5vh',
-        opacity: 0,
-    },
-    visible: { 
-        x: 0,
-        opacity: 1,
-        transition: {
-            delay: 0.75,
             duration: 2,
             ease: [0.6, 0.01, -0.05, 0.95],
         }
@@ -183,11 +164,12 @@ export default function Home() {
               Hello
             </motion.div>
             <motion.div className='text-9xl font-bold'
-              variants={textUp2}
+              variants={textUp}
             >
               I'm Stephen Ni
             </motion.div>
-            <motion.div className='text-3xl mb-8 mt-8'>
+            <motion.div className='text-3xl mb-8 mt-8'
+              variants={textUp}>
               <Typewriter
                 options={{
                   strings:[],
