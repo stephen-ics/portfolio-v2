@@ -51,10 +51,10 @@ const About = () => {
         <div>
           <h2 className='text-4xl'>Hobbies</h2>
           <div className='flex flex-wrap items-center justify-between mb-20'>
-            <Cardflip title='Math' description='I like math haha I like math haha I like math haha I like math haha I like math haha I like math haha' image={Math}/>
-            <Cardflip title='Piano' description='I like piano' image={Piano}/>
-            <Cardflip title='Art' description='I like art' image={Art}/>
-            <Cardflip title='Violin' description='I like VIolining' image={Running}/>
+            <Cardflip title='Math' subtitle='I do Math' description="Math has always been an inescapable part of my childhood, but overtime I've grown to love it!" image={Math}/>
+            <Cardflip title='Piano' subtitle='I play the piano' description="I've been playing the piano for 3 years, I am currently level 10! I love to play music, especially anime openings" image={Piano}/>
+            <Cardflip title='Art' subtitle='I enjoy drawing' description="I've been drawing ever since I was in elementary school, I havn't grown out of stick figures yet but my love for art still burns!" image={Art}/>
+            <Cardflip title='Running' subtitle='I love Run' description="Though I am not the most athletic, I've always been good at running! Whether it's cross country or track and field, it feels great after a good run" image={Running}/>
           </div>
         </div>
         <div>

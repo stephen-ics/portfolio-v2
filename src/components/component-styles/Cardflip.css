@@ -19,7 +19,7 @@
   .card {
     margin: 30px 30px 0;
     width: 20rem;
-    height: 28rem;
+    height: 30rem;
     perspective: 1000px;
   }
   
@@ -72,7 +72,7 @@
   
   .cardHeader {
     position: relative;
-    padding: 30px 30px 40px;
+    padding: 30px 30px 20px;
   }
   
   .cardHeader:after {
@@ -115,11 +115,10 @@
     color: var(--dark);
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 15px;
   }
   
   .cardBody p {
     color: var(--dark);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
   }

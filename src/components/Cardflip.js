@@ -3,7 +3,7 @@ import './component-styles/Cardflip.css'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
-const Cardflip = ({ title, description, image }) => {
+const Cardflip = ({ title, subtitle, description, image }) => {
     const [flipped, setFlipped] = useState(false)
     const flipCard = () => {
         setFlipped(!flipped)
@@ -25,7 +25,7 @@ const Cardflip = ({ title, description, image }) => {
 						<h2>{title}</h2>
 					</div>
 					<div class="cardBody">
-						<h3>JavaScript Wizard</h3>
+						<h3>{subtitle}</h3>
 						<p>{description}</p>
 					</div>
 				</div>
