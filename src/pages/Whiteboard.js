@@ -2,6 +2,8 @@ import React from 'react'
 import Cardflip from '../components/Cardflip'
 import { motion } from 'framer-motion'
 import ProgressCircle from '../components/ProgressCircle'
+import Progress from '../components/Progress'
+import { Line, Circle } from 'rc-progress';
 
 const Whiteboard = () => {
     const container = {
@@ -73,18 +75,9 @@ const Whiteboard = () => {
     exit='exit'
     className='flex h-full justify-center items-center absolute w-full'>
         <div className='flex'>
-            <div>
-                <ProgressCircle percentage={90} />
-                <ProgressCircle percentage={60} />
-                <ProgressCircle percentage={40} />
-                <ProgressCircle percentage={20} />
-            </div>
-            <div>
-                <ProgressCircle percentage={90} />
-                <ProgressCircle percentage={60} />     
-                <ProgressCircle percentage={90} />
-                <ProgressCircle percentage={60} />
-            </div>
+      dsadasd
+      <Progress />
+
         </div>
 
     

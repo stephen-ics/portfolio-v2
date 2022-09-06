@@ -11,6 +11,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^6.4.3",
+    "rc-progress": "^3.4.0",
     "react": "^18.2.0",
     "react-animated-progress-bar": "^1.1.1",
     "react-card-flip": "^1.1.5",
