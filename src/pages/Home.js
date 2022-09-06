@@ -158,16 +158,16 @@ export default function Home() {
       <motion.div className='flex justify-center'>
         <motion.div className='flex flex-col justify-around'>
           <motion.div>
-            <motion.div className='text-6xl font-bold'
+            <motion.h1 className='text-6xl font-bold'
               variants={textUp}
             >
               👋 Hey 
-            </motion.div>
-            <motion.div className='text-9xl font-bold'
+            </motion.h1>
+            <motion.h1 className='text-9xl font-bold'
               variants={textUp}
             >
               I'm Stephen Ni
-            </motion.div>
+            </motion.h1>
             <motion.div className='text-3xl mb-8 mt-8'
               variants={textUp}>
               <Typewriter

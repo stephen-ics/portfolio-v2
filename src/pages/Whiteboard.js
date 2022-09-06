@@ -1,6 +1,7 @@
 import React from 'react'
 import Cardflip from '../components/Cardflip'
 import { motion } from 'framer-motion'
+import ProgressCircle from '../components/ProgressCircle'
 
 const Whiteboard = () => {
     const container = {
@@ -63,20 +64,31 @@ const Whiteboard = () => {
             opacity: 0,
         },
       };
+      
   return (
     <motion.div 
     variants={container}
     initial='hidden'
     animate='visible'
     exit='exit'
-    className='flex items-center justify-center h-full absolute w-full'>
-        <h1>Whiteboard</h1>
-        <motion.div variants={textUp}>
-            <Cardflip title='running' description='i like running'/>
-        </motion.div>
-        <motion.div variants={textUp}>
-            <Cardflip title='running' description='i like running'/>
-        </motion.div>
+    className='flex h-full justify-center items-center absolute w-full'>
+        <div className='flex'>
+            <div>
+                <ProgressCircle percentage={90} />
+                <ProgressCircle percentage={60} />
+                <ProgressCircle percentage={40} />
+                <ProgressCircle percentage={20} />
+            </div>
+            <div>
+                <ProgressCircle percentage={90} />
+                <ProgressCircle percentage={60} />     
+                <ProgressCircle percentage={90} />
+                <ProgressCircle percentage={60} />
+            </div>
+        </div>
+
+    
+        
     
     </motion.div>
   )

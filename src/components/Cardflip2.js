@@ -10,21 +10,20 @@ const Cardflip = ({ title, subtitle, description, image }) => {
     }
 
   return (
-    <motion.div class="card"
+    <motion.div class="card2"
     whileHover={{scale:1.05}}
     whileTape={{scale:.95}}>
-		<div className={flipped ? "cardInner isFlipped" : "cardInner"} onClick={flipCard}>
-			<div class="cardFace cardFaceFront">
+		<div className={flipped ? "cardInner2 isFlipped2" : "cardInner2"} onClick={flipCard}>
+			<div class="cardFace2 cardFaceFront2">
 				<h2>{title}</h2>
                 
 			</div>
-			<div class="cardFace cardFaceBack">
-				<div class="cardContent">
-					<div class="cardHeader">
-						<img src={image} alt="" class="pp" />
+			<div class="cardFace2 cardFaceBack2">
+				<div class="cardContent2">
+					<div class="cardHeader2">
 						<h2>{title}</h2>
 					</div>
-					<div class="cardBody">
+					<div class="cardBody2">
 						<h3>{subtitle}</h3>
 						<p>{description}</p>
 					</div>
