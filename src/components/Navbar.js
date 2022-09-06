@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Logo from '../pictures/Logo.png'
 import './component-styles/Navbar.css'
 
 function Navbar(props) {
     return (
       <nav className='navbar'>
-        <ul className='text-white flex justify-around text-3xl'>
+        <ul><Link to='/' className='flex items-center'><img src={Logo} className='w-12 rounded-full'/></Link></ul>
+        <ul className='text-white flex w-full justify-center text-3xl'>
           <li className='nav-list'>
             <Link to='/'>Home</Link>
           </li>
