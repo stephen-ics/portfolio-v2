@@ -11,6 +11,7 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
         whileTap={whileTap}
         className={className}
         onClick={onClick}
+     
     > 
     
       <div className='flex flex-col items-center w-full h-full'>
@@ -19,15 +20,18 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
         <h2 className='text-2xl'>{subtitle}</h2>
       </div>
       <div className='flex justify-evenly mb-3 mt-3'>
-          <div className='flex justify-between items-center bg-blue-600 px-2 py-1 rounded-xl'>
-            <p className='text-lg mr-4'>Devpost</p>
-            <a href='https://google.com' target='_blank'><SiDevpost size={30} color='rgb(12,56,145)'/></a>
-          </div>
-          
+      <a href='https://google.com' target='_blank'>
+        <div className='flex justify-between items-center bg-blue-600 px-2 py-1 rounded-xl'>
+          <p className='text-lg mr-4 text-white'>Devpost</p>
+          <SiDevpost size={40} color='rgb(12,56,145)' />
+        </div>
+      </a>
+       <a href='https://google.com' target='_blank'>
           <div className='flex justify-between items-center bg-slate-800 px-2 py-1 rounded-xl'>
-            <p className='text-lg mr-4'>Github</p>
+            <p className='text-lg mr-4 text-white'>Github</p>
             <a href='https://google.com' target='_blank'><FaGithub size={40}/></a>
           </div> 
+      </a>
       </div>
     </motion.button>
   )
