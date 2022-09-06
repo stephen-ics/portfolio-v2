@@ -7,7 +7,7 @@ function Navbar(props) {
     return (
       <nav className='navbar'>
         <ul><Link to='/' className='flex items-center'><img src={Logo} className='w-12 rounded-full'/></Link></ul>
-        <ul className='text-white flex w-full justify-center text-3xl'>
+        <ul className='text-white flex w-full justify-center text-xl'>
           <li className='nav-list'>
             <Link to='/'>Home</Link>
           </li>
