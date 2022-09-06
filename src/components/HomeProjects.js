@@ -20,8 +20,10 @@ const HomeProjects = () => {
     onHoverStart={handleHover}
     onHoverEnd={handleHover}>
         <motion.div className={hover ? "project hovering p-10 bg-white/[0.5]": "project nothovering p-10 bg-white/[0.5]"}>
-            <h1 className='titleee'>Hey</h1>
-            <h2 className='subtitle'>Hello</h2>
+            <div className='flex flex-col'>
+                <h1 className='titleee'>Hey</h1>
+                <h2 className='subtitle'>Hello</h2>
+            </div>
     
            
         </motion.div>
