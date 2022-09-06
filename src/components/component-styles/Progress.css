@@ -1,6 +1,8 @@
 :root {
-    --primary2: #7edb81;
-    --secondary2: #6e98c8;
+    --primary3: rgb(4, 164, 227);
+    --secondary3: #dc7bdc;
+    --primary4: rgb(34, 195, 231);
+    --secondary4: #dc7bdc;
     --dark2: #212121;
     --light2: #ffffff;
   }
@@ -9,7 +11,6 @@
     position: relative;
     max-width: 500px;
     width: 100%;
-    background: #fff;
     margin: 0 15px;
     padding: 10px 20px;
     border-radius: 7px;
@@ -17,7 +18,7 @@
 
 .title-text {
     text-align: center;
-    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background-image: linear-gradient(to bottom right, var(--primary3), var(--secondary3));
     color: #fff;
     font-weight: 400;
     border-radius: 50px;
@@ -52,34 +53,47 @@
     position: relative;
     display: block;
     height: 100%;
-    width: 95%;
     border-radius: 6px;
-    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
-    animation: progress 0.4s ease-in-out forwards;
+    background-image: linear-gradient(to bottom right, var(--primary3), var(--secondary3));
+    animation: progress 2s ease-in-out forwards;
     opacity: 0;
+    animation-delay: 2.4s;
 }
 
-.skill-per.css {
+.skill-per.percent95{
+    width: 95%;
+    animation-delay: 2.6s;
+}
+
+.skill-per.percent90{
+    width: 90%;
+    animation-delay: 2.8s;
+}
+
+.skill-per.percent85{
+    width: 85%;
+    animation-delay: 3.0s;
+}
+
+.skill-per.percent80 {
     width: 80%;
-    animation-delay: 0.1s;
+    animation-delay: 3.2s;
 }
 
-.skill-per.javascript{
-    width: 60%;
-    animation-delay: 0.2s;
-}
-.skill-per.nodejs{
-    width: 40%;
-    animation-delay: 0.3s;
-}
-.skill-per.reactjs{
-    width: 70%;
-    animation-delay: 0.3s;
-}
-.skill-per.expressjs{
+.skill-per.percent75{
     width: 75%;
-    animation-delay: 0.3s;
+    animation-delay: 3.4s;
 }
+
+.skill-per.percent60 {
+    width: 60%;
+    animation-delay: 3.6s;
+}
+.skill-per.percent40 {
+    width: 40%;
+    animation-delay: 3.8s;
+}
+
 
 
 @keyframes progress {
@@ -102,7 +116,7 @@
     color: #fff;
     padding: 2px 6px;
     border-radius: 3px;
-    background: crimson;
+    background-image: linear-gradient(to bottom right, var(--primary4), var(--secondary4));
     z-index: 1;
 }
 
@@ -114,6 +128,6 @@
     height: 10px;
     width: 10px;
     z-index: -1;
-    background-color: crimson;
+    background-image: linear-gradient(to bottom right, var(--primary4), var(--secondary4));
     transform: translateX(-50%) rotate(45deg);
 }

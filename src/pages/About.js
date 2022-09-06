@@ -10,6 +10,7 @@ import Cardflip from '../components/Cardflip'
 import Cardflip2 from '../components/Cardflip2'
 import Logo from '../pictures/Logo.png'
 import ProgressCircle from '../components/ProgressCircle'
+import Progress from '../components/Progress'
 
 
 const About = () => {
@@ -176,28 +177,18 @@ const About = () => {
           <div className='flex mt-16 items-start'>
             <motion.img variants={imageLeft} src={Logo} className='w-96 rounded-xl object-cover'/>
             <div className='ml-24'>
-              <div className=''>
-                <motion.h1 variants={textUp} className=''>Hello! I'm Stephen</motion.h1>
-                <motion.h2 variants={textUp2} className='font-normal'>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</motion.h2>
-                <motion.h2 variants={textUp2} className='mb-20 font-normal'>I have experience with front end web development including blah blah blah</motion.h2>
+              <div className='flex flex-col'>
+                <div>
+                  <motion.h1 variants={textUp} className=''>Hello! I'm Stephen</motion.h1>
+                  <motion.h2 variants={textUp2} className='font-normal'>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</motion.h2>
+                  <motion.h2 variants={textUp2} className='font-normal mb-10'>I have experience with front end web development including blah blah blah</motion.h2>
+                </div>
+                <motion.div variants={imageUp}>
+                  <Progress />
+                </motion.div>
               </div>
-              <div className='flex'>
-                <motion.div
-                variants={progressUp}>
-                    <ProgressCircle percentage={90} />
-                    <ProgressCircle percentage={60} />
-                    <ProgressCircle percentage={40} />
-                    <ProgressCircle percentage={20} />
-                </motion.div>
-                <motion.div
-                variants={progressUp}>
-                    <ProgressCircle percentage={90} />
-                    <ProgressCircle percentage={60} />     
-                    <ProgressCircle percentage={90} />
-                    <ProgressCircle percentage={60} />
-                </motion.div>
             </div>
-        </div>
+            
           </div>
           
           <div className='mt-6'>
