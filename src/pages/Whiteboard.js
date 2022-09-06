@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import ProgressCircle from '../components/ProgressCircle'
 import Progress from '../components/Progress'
 import { Line, Circle } from 'rc-progress';
+import HomeProjects from '../components/HomeProjects'
 
 const Whiteboard = () => {
     const container = {
@@ -68,21 +69,21 @@ const Whiteboard = () => {
       };
       
   return (
-    <motion.div 
+    <motion.div className='text-slate-900 mb-10 w-full flex flex-col'
     variants={container}
     initial='hidden'
     animate='visible'
     exit='exit'
-    className='flex h-full justify-center items-center absolute w-full'>
-        <div className='flex'>
-      dsadasd
-      <Progress />
-
+ 
+    >
+      <h1 className='text-5xl text-center mt-10 mb-10'>Projects</h1>
+      <div className='w-full flex justify-center'>
+        <div className='flex flex-col items-start'>
+        <HomeProjects />
+        <HomeProjects />
+        <HomeProjects />
         </div>
-
-    
-        
-    
+      </div>
     </motion.div>
   )
 }

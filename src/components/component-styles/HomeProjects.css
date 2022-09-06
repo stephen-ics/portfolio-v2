@@ -1,0 +1,38 @@
+.project-container {
+    width: 100rem;
+    height: 36rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.project {
+    transition: transform 1s ease-in-out;
+}
+
+.titleee {
+    transition: transform 1s ease-in-out;
+}
+
+.project-container:hover .project .titleee {
+    transform: translateY(-10%);
+}
+
+.hovering {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.5);
+    -moz-transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+.nothovering .subtitle{
+    font-size: 1px;
+}

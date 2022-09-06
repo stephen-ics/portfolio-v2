@@ -16,7 +16,6 @@ const Cardflip = ({ title, subtitle, description, image }) => {
 		<div className={flipped ? "cardInner isFlipped" : "cardInner"} onClick={flipCard}>
 			<div class="cardFace cardFaceFront">
 				<h2>{title}</h2>
-                
 			</div>
 			<div class="cardFace cardFaceBack">
 				<div class="cardContent">
