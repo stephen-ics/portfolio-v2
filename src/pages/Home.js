@@ -7,6 +7,7 @@ import { faCarSide } from '@fortawesome/free-solid-svg-icons';
 import { useInView } from 'react-intersection-observer'
 import Typewriter from 'typewriter-effect'
 import Cardflip from '../components/Cardflip'
+import HomeProjects from '../components/HomeProjects'
 
 
 export default function Home() {
@@ -68,6 +69,24 @@ export default function Home() {
     },
     visible: { 
         x: 0,
+        opacity: 1,
+        transition: {
+            duration: 2,
+            ease: [0.6, 0.01, -0.05, 0.95],
+        }
+    },
+    exit: {
+        opacity: 0,
+    },
+  };
+
+  const imageUp = {
+    hidden: {
+        y: 0,
+        opacity: 0,
+    },
+    visible: { 
+        y: '-5vh',
         opacity: 1,
         transition: {
             duration: 2,
@@ -215,6 +234,23 @@ export default function Home() {
           variants={imageRight}
           >     
             <img src={Logo} className='w-96 ml-40 rounded-full object-cover border-green-500 border-solid border-3'/>
+        </motion.div>
+      </motion.div>
+      <motion.div className='flex flex-col items-center mt-40'>
+        <motion.div variants={imageUp}>
+          <HomeProjects title='title' date='date' subtitle='subtitle' image={Logo} link='link'/>
+        </motion.div>
+        <motion.div variants={imageUp}>
+          <HomeProjects itle='title' date='date' subtitle='subtitle' image={Logo} link='link'/>
+        </motion.div>
+        <motion.div variants={imageUp}>
+          <HomeProjects title='title' date='date' subtitle='subtitle' image={Logo} link='link'/>
+        </motion.div>
+        <motion.div variants={imageUp}>
+          <HomeProjects title='title' date='date' subtitle='subtitle' image={Logo} link='link'/>
+        </motion.div>
+        <motion.div variants={imageUp}>
+          <HomeProjects title='title' date='date' subtitle='subtitle' image={Logo} link='link'/>
         </motion.div>
       </motion.div>
     </motion.div>

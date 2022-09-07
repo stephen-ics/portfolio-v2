@@ -1,11 +1,11 @@
 .project-container {
-    width: 100rem;
-    height: 36rem;
+    width: 80rem;
+    height: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0.6rem;
-    margin-bottom: 0.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .title {
