@@ -4,7 +4,7 @@ import Logo from '../pictures/Logo.png'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 
-const HomeProjects = () => {
+const HomeProjects = ( {title, date, subtitle, image, link} ) => {
     const [hover, setHover] = useState(false);
 
     const handleHover = () => {
@@ -14,21 +14,22 @@ const HomeProjects = () => {
     }
 
   return (
-    <motion.div className='project-container bg-blue-100 bg-cover bg-center bg-no-repeat text-9xl font-bold text-slate-900' style={{backgroundImage: `url(${Logo})`}}
-    whileHover={{scale:1.025}}
-    whileTap={{scale:0.975}}
-    onHoverStart={handleHover}
-    onHoverEnd={handleHover}>
-        <motion.div className={hover ? "project hovering p-10 bg-white/[0.5]": "project nothovering p-10 bg-white/[0.5]"}>
-            <div className='flex flex-col'>
-                <h1 className='titleee'>Hey</h1>
-                <h2 className='subtitle'>Hello</h2>
-            </div>
-    
-           
+    <a href={link} target='_blank'>
+        <motion.div className='project-container bg-blue-100 bg-cover bg-center bg-no-repeat font-bold text-slate-900' style={{backgroundImage: `url(${image})`}}
+        whileHover={{scale:1.025}}
+        whileTap={{scale:0.975}}
+        onHoverStart={handleHover}
+        onHoverEnd={handleHover}>
+            
+                <motion.div className={hover ? "project hovering p-10 text-center": "project nothovering h-1/2 w-1/5 flex items-center justify-center text-center"}>
+                    <div className='flex flex-col'>
+                        <h1 className='title text-8xl'>{title}</h1>
+                        <h1 className='date text-4xl'>{date}</h1>
+                        <h2 className='subtitle text-3xl'>{subtitle}</h2>
+                    </div>     
+                </motion.div>
         </motion.div>
-
-    </motion.div>
+    </a>
   )
 }
 

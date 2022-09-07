@@ -5,6 +5,7 @@ import ProgressCircle from '../components/ProgressCircle'
 import Progress from '../components/Progress'
 import { Line, Circle } from 'rc-progress';
 import HomeProjects from '../components/HomeProjects'
+import Logo from '../pictures/Logo.png'
 
 const Whiteboard = () => {
     const container = {
@@ -79,7 +80,7 @@ const Whiteboard = () => {
       <h1 className='text-5xl text-center mt-10 mb-10'>Projects</h1>
       <div className='w-full flex justify-center'>
         <div className='flex flex-col items-start'>
-        <HomeProjects />
+        <HomeProjects title='title' date='date' subtitle='subtitle' image={Logo} link='http:google.com'/>
         <HomeProjects />
         <HomeProjects />
         </div>
