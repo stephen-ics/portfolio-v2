@@ -1,6 +1,6 @@
 .project-container {
     width: 80rem;
-    height: 30rem;
+    height: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +10,11 @@
 
 .title {
     transition: transform 1s ease-in-out;
+}
+
+.nothovering {
+    width: 90%;
+    height: 90%;
 }
 
 .hovering {

@@ -9,6 +9,15 @@ import Typewriter from 'typewriter-effect'
 import Cardflip from '../components/Cardflip'
 import HomeProjects from '../components/HomeProjects'
 
+import BitBots from '../pictures/projects/BitBots.png'
+import TokensForGood from '../pictures/projects/TokensForGood.png'
+import CloseConnect from '../pictures/projects/CloseConnect.png'
+import DeSsert from '../pictures/projects/Dessert.png'
+import Concerto from '../pictures/projects/Concerto.png'
+import CodeBro from '../pictures/projects/CodeBro.png'
+import PlantUp from '../pictures/projects/PlantUp.png'
+import StockStalker from '../pictures/projects/StockStalker.png'
+
 
 export default function Home() {
 
@@ -238,19 +247,22 @@ export default function Home() {
       </motion.div>
       <motion.div className='flex flex-col items-center mt-40'>
         <motion.div variants={imageUp}>
-          <HomeProjects title='title' date='date' subtitle='subtitle' image={Logo} link='link'/>
+          <HomeProjects title='StockStalker: Hack the 6ix Winner' date='August 2022' subtitle='To search, manage, and see the overall ESG performance' image={StockStalker} link='https://devpost.com/software/stock-stalker-4jrosz'/>
         </motion.div>
         <motion.div variants={imageUp}>
-          <HomeProjects itle='title' date='date' subtitle='subtitle' image={Logo} link='link'/>
+          <HomeProjects title='PlantUp: Backyard Hacks III Winner' date='July 2022' subtitle='To make gardening an exciting experience' image={PlantUp} link='https://devpost.com/software/plantup'/>
         </motion.div>
         <motion.div variants={imageUp}>
-          <HomeProjects title='title' date='date' subtitle='subtitle' image={Logo} link='link'/>
+          <HomeProjects title='CodeBro: Hacky Birthay MLH! 2022 Winner' date='July 2022' subtitle='To practice both their web design and competitive problem-solving skills offline' image={CodeBro} link='https://devpost.com/software/codebro'/>
         </motion.div>
         <motion.div variants={imageUp}>
-          <HomeProjects title='title' date='date' subtitle='subtitle' image={Logo} link='link'/>
+          <HomeProjects title='DeSsert: FreyHacks Winner' date='June 2022' subtitle="Find the perfect recipe while owning the rights to your content on the world's first decentralized recipe sharing site" image={DeSsert} link='link'/>
         </motion.div>
         <motion.div variants={imageUp}>
-          <HomeProjects title='title' date='date' subtitle='subtitle' image={Logo} link='link'/>
+          <HomeProjects title='Close Connect: WaffleHacks 2022 Winner' date='June 2022' subtitle='To meet others who live in different regions and celebrate your differences' image={CloseConnect} link='link'/>
+        </motion.div>
+        <motion.div variants={imageUp}>
+          <HomeProjects title='Tokens For Good: JAMHacks 6 Winner' date='May 2022' subtitle='To provide an incentive to donate through collectible NFTs' image={TokensForGood} link='https://devpost.com/software/decharity-gvhxw2'/>
         </motion.div>
       </motion.div>
     </motion.div>
