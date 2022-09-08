@@ -30,13 +30,15 @@ body {
   position: relative;
   margin: 10px 0;
   width: 50%;
-  box-sizing: border-box;
+  background: blue;
 }
+
 .timeline-item:nth-child(odd) {
   align-self: flex-end;
   justify-content: flex-start;
   padding-left: 30px;
   padding-right: 0;
+  background: red;
 }
 
 .timeline-item-content {
@@ -46,11 +48,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: space-between;
   padding: 15px;
   position: relative;
   width: 600px;
   max-width: 75%;
   text-align: right;
+  
 }
 .timeline-item-content::after {
   content: ' ';
@@ -73,20 +77,4 @@ body {
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.timeline-item-content .tag {
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  top: 5px;
-  left: 5px;
-  letter-spacing: 1px;
-  padding: 5px;
-  position: absolute;
-  text-transform: uppercase;
-  border-radius: 0.5rem;
-}
-.timeline-item:nth-child(odd) .timeline-item-content .tag {
-  left: auto;
-  right: 5px;
-}
 

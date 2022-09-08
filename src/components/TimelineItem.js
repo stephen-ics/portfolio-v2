@@ -10,9 +10,6 @@ const TimelineItem = ({ data, id }) => (
     whileTap={{scale: 0.95}}>
         <div className="timeline-item-content">
             <div>
-                <div className="tag" style={{ background: data.category.color }}>
-                    {data.category.tag}
-                </div>
                 <div className='flex items-center mt-4'>
                     <img src={CodeBro}  className='h-40 mt-4 rounded-xl'/>
                     <div className='ml-10'>
@@ -21,17 +18,6 @@ const TimelineItem = ({ data, id }) => (
                         <h3 className='text-base font-normal'> {data.date}</h3>
                     </div>
                 </div>
-            </div>
-            <div className='mt-4'>
-                {data.link && (
-                    <a
-                        href={data.link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {data.link.text}
-                    </a>
-                )}
             </div>
         </div>
     </motion.div>
