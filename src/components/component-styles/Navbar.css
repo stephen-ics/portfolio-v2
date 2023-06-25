@@ -13,7 +13,7 @@
     border-radius: 0.8rem;
     box-shadow: 0 10px 20px 0 rgb(0 0 0 / 0.15);
     width: 80%;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
 }
 
 .navbar.fill {

@@ -6,6 +6,8 @@ import Progress from '../components/Progress'
 import { Line, Circle } from 'rc-progress';
 import HomeProjects from '../components/HomeProjects'
 import Logo from '../pictures/Logo.png'
+import './page-styles/Whiteboard.css'
+import { GoThreeBars } from 'react-icons/go'
 
 const Whiteboard = () => {
     const container = {
@@ -37,11 +39,13 @@ const Whiteboard = () => {
     exit='exit'
  
     >
-      <div className='relative top-0 z-0'>
-        <div className='w-64 h-64 bg-black absolute top-0 z-20'>
+      <div className=''>
+        <GoThreeBars /> 
+        <div className='box bg-black'>
+          
 
         </div>
-        <div className='w-64 h-64 bg-blue-500 absolute top-0 z-30'>
+        <div className=''>
 
         </div>
       </div>

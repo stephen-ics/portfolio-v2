@@ -4,6 +4,7 @@ import Logo from '../pictures/Logo.png'
 import './component-styles/Navbar.css'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react';
+import { GoThreeBars } from "react-icons/go"
 
 function Navbar() {
   const dropIn ={
@@ -26,6 +27,7 @@ function Navbar() {
     },
   };
   const [fillNavbar, setFillNavbar] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +43,34 @@ function Navbar() {
     window.addEventListener('scroll', handleScroll);
   
   }, [fillNavbar])
+
+  const links = [
+    {
+        name: "Home",
+        link: "/",
+        id: "home",
+        priority: false
+    },
+    {
+        name: "About",
+        link: "/about",
+        id: "calendar",
+        priority: false
+    },
+    {
+        name: "Experiences",
+        link: "/experiences",
+        id: "track",
+        priority: false
+    },
+    {
+        name: "Projects",
+        link: "/projects",
+        id: "leaderboard",
+        priority: false
+    }
+]
+
     return (
       <div className='flex justify-center mb-40'>
         <motion.nav
