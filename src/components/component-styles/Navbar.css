@@ -3,10 +3,11 @@
     background-color: var(--bg);
     padding: 0 1rem;
     border: var(--border);
-    top: 0;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 500;
     margin-top: 30px;
     margin-left: 12rem;
     margin-right: 12rem;

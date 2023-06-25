@@ -28,61 +28,21 @@ const Whiteboard = () => {
             }
         },
       };
-    
-      const banner = {
-        animate: {
-          transition: {
-            delayChildren: 0.4,
-            staggerChildren: 0.1,
-          },
-        },
-      };
-    
-      const letterAnimation = {
-        initial: {
-          y: 400
-        },
-        animate: {
-          y: 0,
-          transition: {
-            ease: [0.6, 0.01, -0.05, 0.95],
-            duration: 1,
-          },
-        },
-      };
-    
-      const textUp = {
-        hidden: {
-            x: '-5vh',
-            opacity: 0,
-        },
-        visible: { 
-            x: 0,
-            opacity: 1,
-            transition: {
-                duration: 2,
-                ease: [0.6, 0.01, -0.05, 0.95],
-            }
-        },
-        exit: {
-            opacity: 0,
-        },
-      };
-      
+
   return (
-    <motion.div className='text-slate-900 mb-10 w-full flex flex-col'
+    <motion.div className='text-slate-900 mb-10 w-full flex flex-col relative z-0'
     variants={container}
     initial='hidden'
     animate='visible'
     exit='exit'
  
     >
-      <h1 className='text-5xl text-center mt-10 mb-10'>Projects</h1>
-      <div className='w-full flex justify-center'>
-        <div className='flex flex-col items-start'>
-        <HomeProjects title='title' date='date' subtitle='subtitle' image={Logo} link='http:google.com'/>
-        <HomeProjects />
-        <HomeProjects />
+      <div className='relative top-0 z-0'>
+        <div className='w-64 h-64 bg-black absolute top-0 z-20'>
+
+        </div>
+        <div className='w-64 h-64 bg-blue-500 absolute top-0 z-30'>
+
         </div>
       </div>
     </motion.div>

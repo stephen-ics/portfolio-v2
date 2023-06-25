@@ -29,18 +29,13 @@ const dropIn ={
 const NavbarFinal = () => {
   return (
     <motion.div
-    onClick={(e) => e.stopPropagation()}
     variants={dropIn}
     initial='hidden'
     animate='visible'
     exit='exit'
   >
 
-    <Navbar>
-        <NavItems icon={<FaCog></FaCog>}>
-            <DropdownMenu></DropdownMenu>
-        </NavItems>
-    </Navbar>
+    <Navbar></Navbar>
 
     </motion.div>
   )

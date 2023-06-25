@@ -9,9 +9,7 @@ const Timeline = ({ id }) =>
     TimelineData.length > 0 && (
         <div className="timeline-container">
             {TimelineData.map((data, idx) => (
-  
                     <TimelineItem data={data} id={id} />
-
             ))}
         </div>
     );
