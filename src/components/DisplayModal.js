@@ -12,7 +12,7 @@ const DisplayModal = ({title, subtitle, description, image, devpost, github, sec
     const open = () => setModalOpen(true);
     
   return (
-    <motion.div className='flex justify-center items-center mt-5'> 
+    <motion.div className='flex justify-center items-center'> 
         <ProjectSection
             whileHover={{ scale:1.05 }}
             whileTap={{ scale:0.95 }}

@@ -29,13 +29,13 @@ const Experiences = () => {
 
   return (
     <motion.div 
-      className='mt-10 flex flex-col text-center justify-center text-slate-900'
+      className='flex flex-col text-center justify-center text-slate-900'
       variants={container}
       initial='hidden'
       animate='visible'
       exit='exit'
     >
-      <h1 className='text-4xl'>My Timeline</h1>
+      <h1 className='text-5xl'>My Timeline</h1>
       <div className='mt-5'>
         <div>
           <h1 className='year'>2022</h1>

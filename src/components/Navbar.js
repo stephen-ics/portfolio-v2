@@ -25,11 +25,11 @@ function Navbar() {
         opacity: 0,
     },
   };
-  const [fillNavbar, setFillNavbar] = useState(true);
+  const [fillNavbar, setFillNavbar] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const threshold = 200;
+      const threshold = 100;
       if (window.scrollY > threshold) {
         setFillNavbar(true)
       }
@@ -42,33 +42,33 @@ function Navbar() {
   
   }, [fillNavbar])
     return (
-      <div className='flex justify-center'>
-      <motion.nav
-        variants={dropIn}
-        initial='hidden'
-        animate='visible'
-        exit='exit'
-        className={`navbar ${fillNavbar ? 'fill' : ''}`}
-      >
-          <ul><Link to='/' className='flex items-center'><img src={Logo} className='w-12 rounded-full'/></Link></ul>
-          <ul className='text-white flex w-full justify-center text-xl'>
-            <li className='nav-list'>
-              <Link to='/'>Home</Link>
-            </li>
-            <li className='nav-list'>
-              <Link to='/about'>About</Link>
-            </li>
-            <li className='nav-list'>
-              <Link to='/experiences'>Experience</Link>
-            </li>
-            <li className='nav-list'>
-              <Link to='/projects'>Projects</Link>
-            </li>
-            <li className='nav-list'>
-              <Link to='/whiteboard'>Whiteboard</Link>
-            </li>
-          </ul>
-      </motion.nav>
+      <div className='flex justify-center mb-40'>
+        <motion.nav
+          variants={dropIn}
+          initial='hidden'
+          animate='visible'
+          exit='exit'
+          className={`navbar ${fillNavbar ? 'fill' : ''}`}
+        >
+            <ul><Link to='/' className='flex items-center'><img src={Logo} className='w-12 rounded-full'/></Link></ul>
+            <ul className='text-white flex w-full justify-center text-xl'>
+              <li className='nav-list'>
+                <Link to='/'>Home</Link>
+              </li>
+              <li className='nav-list'>
+                <Link to='/about'>About</Link>
+              </li>
+              <li className='nav-list'>
+                <Link to='/experiences'>Experience</Link>
+              </li>
+              <li className='nav-list'>
+                <Link to='/projects'>Projects</Link>
+              </li>
+              <li className='nav-list'>
+                <Link to='/whiteboard'>Whiteboard</Link>
+              </li>
+            </ul>
+        </motion.nav>
       </div>
     );
   }

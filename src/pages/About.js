@@ -167,14 +167,14 @@ const About = () => {
 
   return (
     <div className='flex justify-center'>
-      <motion.div className='flex flex-col mt-10'
+      <motion.div className='flex flex-col'
         variants={container}
         initial='hidden'
         animate='visible'
         exit='exit'
       >
         <div className='flex flex-col text-slate-900 w-full'>
-          <div className='flex mt-16 items-start'>
+          <div className='flex items-start'>
             <motion.img variants={imageLeft} src={Logo} className='w-96 rounded-xl object-cover'/>
             <div className='ml-24'>
               <div className='flex flex-col'>

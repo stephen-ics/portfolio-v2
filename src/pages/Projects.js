@@ -37,14 +37,14 @@ const Projects = () => {
 
     
   return (
-    <motion.div className='text-slate-900 mb-10 w-full flex flex-col'
+    <motion.div className='text-slate-900 w-full flex flex-col'
     variants={container}
     initial='hidden'
     animate='visible'
     exit='exit'
  
     >
-      <h1 className='text-5xl text-center mt-10'>Projects</h1>
+      <h1 className='text-5xl text-center'>My Projects</h1>
       <div className='w-full flex justify-center'>
         <div className='flex flex-col items-start'>
             <div className='flex'>

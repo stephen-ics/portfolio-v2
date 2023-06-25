@@ -177,7 +177,7 @@ export default function Home() {
 
   return (
     <motion.div 
-      className='h-full text-slate-900 flex flex-col mt-24 w-full'
+      className='h-full text-slate-900 flex flex-col w-full'
       variants={container}
       initial='hidden'
       animate='visible'
