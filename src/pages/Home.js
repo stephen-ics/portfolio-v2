@@ -216,21 +216,25 @@ export default function Home() {
             </motion.div>
           </motion.div>
           <div className='flex xl:flex-nowrap xl:justify-start lg:justify-start md:justify-start sm:justify-start flex-wrap justify-center w-full'>
-            <Link class='button mb-4 mx-2' to='projects'>
-              <div class="button__line"></div>
-              <div class="button__line"></div>
-              <span class="button__text">Experience</span>
-              <div class="button__drow1"></div>
-              <div class="button__drow2"></div>
-          
-            </Link>
-            <Link class='button mb-4 mx-2' to='projects'>
-              <div class="button__line"></div>
-              <div class="button__line"></div>
-              <span class="button__text">Projects</span>
-              <div class="button__drow1"></div>
-              <div class="button__drow2"></div>
-            </Link>
+            <motion.div className='flex' variants={buttonLeft}>
+              <Link class='button mb-4 mx-2' to='projects'>
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">Experience</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+            
+              </Link>
+            </motion.div>
+            <motion.div className='flex' variants={buttonRight}>
+              <Link class='button mb-4 mx-2' to='projects'>
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">Projects</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+              </Link>
+            </motion.div>
           </div>
         </motion.div>
         <motion.div
