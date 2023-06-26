@@ -1,27 +1,10 @@
-.button1 {
-
-    text-align: center;
-    display: flex;
-    align-items: center;
-    margin-right: 4px;
-    background: var(--gradient);
-    border-color: rgb(226, 222, 222);
-    border-width: 1px;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    color: var(--text-color);
-    transition: filter 300ms;
-    margin-right: 40px;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
 .button{
+    transition: filter 300ms;
+    background: var(--gradient);
+    border-radius: 50px;
     position : relative ;
     z-index : 0 ;
-    width : calc(10rem + 6vw) ;
+    width : calc(16rem + 3vw) ;
     max-height: 4rem;
     height : calc(2rem + 4vw) ;
     text-decoration : none ;
@@ -145,16 +128,16 @@
     transform-origin : 16px 16px ;
 }
 .button__drow1{
-    top : -1rem;
-    left : 2rem ;
-    width : calc(0.4rem + 0vw);
+    top : -16px ;
+    left : 40px ;
+    width : 32px ;
     height : 0;
     transform : rotate( 30deg ) ;
 }
 .button__drow2{
-    top : 3rem ;
-    left : 20rem ;
-    width : calc(0.4rem + 0vw) ;
+    top : 44px ;
+    left : 77px ;
+    width : 32px ;
     height : 0 ;
     transform : rotate(-127deg ) ;
 }

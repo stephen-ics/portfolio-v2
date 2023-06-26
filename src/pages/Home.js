@@ -216,8 +216,7 @@ export default function Home() {
             </motion.div>
           </motion.div>
           <div className='flex xl:flex-nowrap xl:justify-start lg:justify-start md:justify-start sm:justify-start flex-wrap justify-center w-full'>
-            <Link class='button' to='projects'>
-      
+            <Link class='button mb-4 mx-2' to='projects'>
               <div class="button__line"></div>
               <div class="button__line"></div>
               <span class="button__text">Experience</span>
@@ -225,7 +224,7 @@ export default function Home() {
               <div class="button__drow2"></div>
           
             </Link>
-            <Link class='button' to='projects'>
+            <Link class='button mb-4 mx-2' to='projects'>
               <div class="button__line"></div>
               <div class="button__line"></div>
               <span class="button__text">Projects</span>
@@ -242,7 +241,7 @@ export default function Home() {
             <img src={Logo} className='logo 2xl:mx-32 xl:mx-32 rounded-full object-cover border-green-500 border-solid border-3'/>
         </motion.div>
       </motion.div>
-      <motion.div className='flex flex-col items-center xl:mt-32 mt-16'>
+      <motion.div className='flex flex-col items-center xl:mt-32 mt-8'>
         <motion.div variants={imageUp}>
           <HomeProjects title='StockStalker: Hack the 6ix Winner' date='August 2022' subtitle='To search, manage, and see the overall ESG performance' image={StockStalker} link='https://devpost.com/software/stock-stalker-4jrosz'/>
         </motion.div>
