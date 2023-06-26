@@ -177,26 +177,26 @@ export default function Home() {
 
   return (
     <motion.div 
-      className='h-full text-slate-900 flex flex-col w-full'
+      className='h-full text-slate-900 flex flex-col w-full justify-center'
       variants={container}
       initial='hidden'
       animate='visible'
       exit='exit'
     >
-      <motion.div className='flex justify-center'>
-        <motion.div className='flex flex-col justify-around'>
-          <motion.div>
-            <motion.h1 className='text-6xl font-bold'
+      <motion.div className='flex justify-center flex-wrap 2xl:flex-row xl:flex-row flex-col items-center'>
+        <motion.div className='flex flex-col justify-around items-center'>
+          <motion.div className='2xl:text-left xl:text-left lg:text-left md:text-left sm:text-left text-center'>
+            <motion.h1 className='xl:text-6xl text-5xl font-bold'
               variants={textUp}
             >
               👋 Hey 
             </motion.h1>
-            <motion.h1 className='text-9xl font-bold'
+            <motion.h1 className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'
               variants={textUp}
             >
               I'm Stephen Ni
             </motion.h1>
-            <motion.div className='text-3xl mb-8 mt-8'
+            <motion.div className='xl:text-4xl text-3xl mb-8 mt-8'
               variants={textUp}>
               <Typewriter
                 options={{
@@ -215,25 +215,22 @@ export default function Home() {
               />
             </motion.div>
           </motion.div>
-          <div className='flex'>
-            <Link to='/experiences'>
-              <motion.button className="button"
-                whileHover={{scale:1.1}}
-                whileTap={{scale:0.9}}
-                variants={buttonLeft}
-                >
-                  Experiences
-              </motion.button>
+          <div className='flex xl:flex-nowrap xl:justify-start lg:justify-start md:justify-start sm:justify-start flex-wrap justify-center w-full'>
+            <Link class='button' to='projects'>
+      
+              <div class="button__line"></div>
+              <div class="button__line"></div>
+              <span class="button__text">Experience</span>
+              <div class="button__drow1"></div>
+              <div class="button__drow2"></div>
+          
             </Link>
-            <Link to='projects'>
-                <motion.button 
-                  className="button"
-                  whileHover={{scale:1.1}}
-                  whileTap={{scale:0.9}}
-                  variants={buttonRight}
-                  >
-                    Projects
-                </motion.button>
+            <Link class='button' to='projects'>
+              <div class="button__line"></div>
+              <div class="button__line"></div>
+              <span class="button__text">Projects</span>
+              <div class="button__drow1"></div>
+              <div class="button__drow2"></div>
             </Link>
           </div>
         </motion.div>
@@ -242,10 +239,10 @@ export default function Home() {
           whileTap={{scale:0.9}}
           variants={imageRight}
           >     
-            <img src={Logo} className='w-96 ml-40 rounded-full object-cover border-green-500 border-solid border-3'/>
+            <img src={Logo} className='logo 2xl:mx-32 xl:mx-32 rounded-full object-cover border-green-500 border-solid border-3'/>
         </motion.div>
       </motion.div>
-      <motion.div className='flex flex-col items-center mt-40'>
+      <motion.div className='flex flex-col items-center xl:mt-32 mt-16'>
         <motion.div variants={imageUp}>
           <HomeProjects title='StockStalker: Hack the 6ix Winner' date='August 2022' subtitle='To search, manage, and see the overall ESG performance' image={StockStalker} link='https://devpost.com/software/stock-stalker-4jrosz'/>
         </motion.div>

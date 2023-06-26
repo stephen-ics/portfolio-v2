@@ -13,8 +13,7 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
         onClick={onClick}
      
     > 
-    
-      <div className='flex flex-col items-center w-full h-full'>
+      <div className='flex flex-col items-center w-full h-full text-slate-800'>
         <img src={image} className='w-full h-full object-cover rounded-t-2xl'></img>
         <h1 className='mt-4 text-4xl'>{title}</h1>
         <h2 className='text-2xl'>{subtitle}</h2>

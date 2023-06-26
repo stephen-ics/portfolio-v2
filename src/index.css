@@ -29,7 +29,7 @@ code {
 
 :root {
   --bg: hsl(0, 0%, 100%);
-  --bg-2: hsl(228, 22%, 77%);
+  --bg-2: hsl(0, 0%, 100%);
   --bg-accent: #eff1f3;
   --text-color: #2c313d;
   --nav-size: 70px;
@@ -37,10 +37,12 @@ code {
   --speed: 500ms;
   --dark: #101315;
   --light: #eeeeee;
-  --background-gradient: linear-gradient(10deg, #ffffff, #eff1f4);
-  --gradient: linear-gradient(100deg, #f8caca, #b8d4f5);
+  --background-gradient: linear-gradient(10deg, #ffffff, #ffffff);
+  --gradient: linear-gradient(#ffffff, #e0e0e0);
   --gradient2: linear-gradient(15deg, #04ea00, #00d17d);
   --gradient3: linear-gradient(15deg, #b648ff, #ef5dff);
+  --line_color : #555555 ;
+  --back_color : #aaf3ca  ;
 }
 
 

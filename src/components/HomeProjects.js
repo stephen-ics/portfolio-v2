@@ -23,9 +23,9 @@ const HomeProjects = ( {title, date, subtitle, image, link} ) => {
             
                 <motion.div className={hover ? "project hovering p-10 text-center": "project nothovering h-1/2 w-1/5 flex items-center justify-center text-center"}>
                     <div className='flex flex-col'>
-                        <h1 className='title text-8xl'>{title}</h1>
-                        <h1 className='date text-4xl'>{date}</h1>
-                        <h2 className='subtitle text-3xl'>{subtitle}</h2>
+                        <h1 className='title'>{title}</h1>
+                        <h1 className='date'>{date}</h1>
+                        <h2 className='subtitle'>{subtitle}</h2>
                     </div>     
                 </motion.div>
         </motion.div>
