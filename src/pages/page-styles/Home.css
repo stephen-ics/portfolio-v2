@@ -8,16 +8,10 @@
     max-height: 4rem;
     height : calc(2rem + 4vw) ;
     text-decoration : none ;
-    font-size : 14px ; 
+    font-size: calc(1rem + 0.8vw);
     font-weight : bold ;
-    color : var(--line_color) ;
     letter-spacing : 2px ;
     transition : all .3s ease ;
-}
-
-.button-text {
-    font-weight: 100;
-    font-size: calc(1.5rem + 0.75vw);
 }
 
 .logo {
