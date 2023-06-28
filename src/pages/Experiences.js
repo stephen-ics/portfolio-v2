@@ -1,11 +1,9 @@
 import React from 'react'
-import Timeline from '../components/Timeline'
 import { motion } from 'framer-motion'
-
-
+import Timeline from '../components/Timeline'
 import './page-styles/Experiences.css'
 
-const Experiences = () => {
+const Experience = () => {
   const container = {
     hidden: {
       y: '10vh',
@@ -16,10 +14,11 @@ const Experiences = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.35,
+        duration: 0.5,
       },
     },
     exit: {
-        y: '-20vh',
+        y: '-10vh',
         opacity: 0,
         transition: {
           duration: 0.25,
@@ -29,21 +28,15 @@ const Experiences = () => {
 
   return (
     <motion.div 
-      className='flex flex-col text-center justify-center text-slate-900'
-      variants={container}
-      initial='hidden'
-      animate='visible'
-      exit='exit'
-    >
-      <h1 className='text-5xl'>My Timeline</h1>
-      <div className='mt-5'>
-        <div>
-          <h1 className='year'>2022</h1>
-          <Timeline/>
-        </div>
-      </div>
-    </motion.div>
+    className='mt-10 flex flex-col text-center justify-center text-slate-900'
+    variants={container}
+    initial='hidden'
+    animate='visible'
+    exit='exit'
+  >
+    <Timeline/>
+  </motion.div>
   )
 }
 
-export default Experiences
+export default Experience

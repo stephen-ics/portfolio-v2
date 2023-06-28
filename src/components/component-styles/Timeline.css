@@ -1,80 +1,73 @@
-* {
-  margin: 0;
-  padding: 0;
+
+
+.timeline-title {
+  font-size: calc(1rem + 0.6vw);
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+.timeline-subtitle {
+  font-size: calc(0.6rem + 0.4vw);
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+
 }
 
-.timeline-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: 0;
-}
-.timeline-container::after {
-  background-color: #4749a5;
-  content: '';
-  position: absolute;
-  left: calc(50% - 2px);
-  width: 4px;
-  height: 100%;
-}
-
-.timeline-item {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 30px;
-  position: relative;
-  margin: 10px 0;
-  width: 50%;
-  background: blue;
-}
-
-.timeline-item:nth-child(odd) {
-  align-self: flex-end;
-  justify-content: flex-start;
-  padding-left: 30px;
-  padding-right: 0;
-  background: red;
-}
-
-.timeline-item-content {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
-  border-radius: 1rem;
-  background-color: rgb(248, 248, 248);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 15px;
-  position: relative;
-  width: 600px;
-  max-width: 75%;
-  text-align: right;
-  
-}
-.timeline-item-content::after {
-  content: ' ';
-  background-color: rgb(249, 249, 249);
-  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  right: -7.5px;
-  top: calc(50% - 7.5px);
-  transform: rotate(45deg);
-  width: 15px;
-  height: 15px;
-}
-.timeline-item:nth-child(odd) .timeline-item-content {
-  text-align: left;
-  align-items: flex-start;
-}
-.timeline-item:nth-child(odd) .timeline-item-content::after {
-  right: auto;
-  left: -7.5px;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+.timeline-image {
+  width: 90%;
+  height: 12.5vh;
+  object-fit: cover;
 }
 
 
+h3 {
+  padding-top: 0.25em;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.timeline-date {
+  color: rgb(0, 0, 0);
+}
+
+#timeline-description {
+  margin: 1.5em 0 2em 0;
+}
+
+.timeline-button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background-color: #06d6a0;
+}
+
+.workButton:hover {
+  background-color: #0ac593;
+}
+
+.schoolButton {
+  background-color: #f9c74f;
+}
+
+.schoolButton:hover {
+  background-color: #f3bc3c;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}
