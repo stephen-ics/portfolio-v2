@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Logo from '../pictures/Logo.png'
 import './component-styles/Navbar.css'
 import { motion } from 'framer-motion'
@@ -28,6 +28,7 @@ function Navbar() {
   };
   const [fillNavbar, setFillNavbar] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,37 +69,54 @@ function Navbar() {
         link: "/projects",
         id: "leaderboard",
         priority: false
+    },
+    {
+      name: "Whiteboard",
+      link: "/whiteboard",
+      id: "leaderbord",
+      priority: false
     }
 ]
 
     return (
       <div className='flex justify-center mb-40'>
-        <motion.nav
+        <motion.header
           variants={dropIn}
           initial='hidden'
           animate='visible'
           exit='exit'
-          className={`navbar ${fillNavbar ? 'fill' : ''}`}
+          className={`navbar justify-center z-[99999999] min-h-[7vh] py-2 lg:py-4 shadow-xl fixed w-full top-0 ${fillNavbar ? 'fill' : ''}`}
         >
-            <ul><Link to='/' className='flex items-center'><img src={Logo} className='w-12 rounded-full'/></Link></ul>
-            <ul className='text-white flex w-full justify-center text-xl'>
-              <li className='nav-list'>
-                <Link to='/'>Home</Link>
-              </li>
-              <li className='nav-list'>
-                <Link to='/about'>About</Link>
-              </li>
-              <li className='nav-list'>
-                <Link to='/experiences'>Experience</Link>
-              </li>
-              <li className='nav-list'>
-                <Link to='/projects'>Projects</Link>
-              </li>
-              <li className='nav-list'>
-                <Link to='/whiteboard'>Whiteboard</Link>
-              </li>
-            </ul>
-        </motion.nav>
+          <div className="px-4 mx-auto lg:flex lg:items-center m-30">
+            <div className="flex justify-between items-center">
+              <Link to='/'>
+                <img src={Logo} className='w-12 rounded-full'/>
+              </Link>
+    
+              <button
+                className="border border-solid border-gray-200 px-3 py-1 rounded text-gray-200 bg-black opacity-50 hover:opacity-75 lg:hidden cursor-pointer"
+                aria-label="Menu"
+                data-test-id="navbar-menu"
+                onClick={
+                  () => {
+                      setShowDropdown(!showDropdown);
+                  }}
+              >
+                <GoThreeBars size={20}/>
+              </button>
+            </div>
+         
+            <div className={`${showDropdown ? "flex" : "hidden"} flex-col lg:flex  lg:flex-row lg:ml-auto mt-3 lg:mt-0`} data-test-id="navbar">
+              <div>
+                {links.map(({ name, link, priority, id }) => 
+                  <Link key={name}  to={link} className='text-xl hover:bg-gray-200/25 hover:bg-opacity-10 hover:bg-black p-2 lg:px-4 lg:mx-2 rounded duration-300 transition-colors'>
+                      {name}
+                  </Link>
+                )}
+              </div>
+            </div>
+          </div>
+        </motion.header>
       </div>
     );
   }

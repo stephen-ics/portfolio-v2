@@ -1,12 +1,7 @@
 .navbar{
-    height: var(--nav-size);
     background-color: var(--bg);
-    padding: 0 1rem;
     border: var(--border);
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     z-index: 500;
     margin-top: 2rem;
     top: 0;
