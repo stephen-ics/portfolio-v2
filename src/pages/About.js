@@ -211,11 +211,11 @@ const About = () => {
           </motion.div>
         </div>
         <div className='mt-10 flex flex-col items-center lg:items-start'>
-          <h2 className='text-4xl'>Values</h2>
-          <div className='flex lg:justify-start justify-center flex-wrap'>
+          <motion.h2 variants={textUp} className='text-4xl'>Values</motion.h2>
+          <motion.div variants={imageUp} className='flex lg:justify-start justify-center flex-wrap'>
             <Cardflip2 title='Tenacious' subtitle='Risks are meant to be taken' description='If there is a risk, I will take it. I put my all into every project I start. Whenever I start a project, I always make sure to try a new technology or learn a new skill, so that I am always constantly learning and improving' image={Math}/>
             <Cardflip2 title='Open-minded' subtitle='Mistakes are a blessing' description='There is no success without failure, that is why I appreciate any sort of critism, and I always make sure apply the feedback I receive to make my next project my best project.' image={Piano}/>
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.div>
