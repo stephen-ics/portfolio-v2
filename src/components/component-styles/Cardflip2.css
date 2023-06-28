@@ -17,10 +17,13 @@
   }
   
   .card2 {
-    margin: 30px 30px 0;
-    width: 50rem;
-    height: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: calc(15rem + 10vw);
+    height: calc(10rem + 8vw);
     perspective: 1000px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   
   .cardInner2 {
@@ -46,6 +49,7 @@
     overflow: hidden;
     border-radius: 16px;
     box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
   }
   
   .cardFaceFront2 {
