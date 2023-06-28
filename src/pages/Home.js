@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './page-styles/Home.css'
 import Logo from '../pictures/Logo.png'
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
 import { faCarSide } from '@fortawesome/free-solid-svg-icons';
 import { useInView } from 'react-intersection-observer'
@@ -30,7 +30,6 @@ export default function Home() {
 
   const container = {
     hidden: {
-  
       opacity: 0,
     },
     visible: {
@@ -49,24 +48,37 @@ export default function Home() {
     },
   };
 
-  const banner = {
-    animate: {
+  const containerText = {
+    hidden: {
+  
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
       transition: {
-        delayChildren: 0.4,
-        staggerChildren: 0.1,
+        staggerChildren: 0.25,
       },
+    },
+    exit: {
+        y: '-20vh',
+        opacity: 0,
+        transition: {
+          duration: 0.25,
+        }
     },
   };
 
-  const letterAnimation = {
+  const handAnimation = {
     initial: {
-      y: 400
+      rotate: 0,
     },
     animate: {
-      y: 0,
+      rotate: [-15, 15, -15, 15, 0],
       transition: {
-        ease: [0.6, 0.01, -0.05, 0.95],
-        duration: 1,
+        duration: 2,
+        ease: 'easeInOut',
+        repeat: Infinity,
       },
     },
   };
@@ -167,6 +179,18 @@ export default function Home() {
     },
   };
 
+  const waveAnimation = {
+    rotate: [0, -20, 20, -20, 0],
+    transition: { duration: 2, repeat: Infinity },
+  };
+
+  const textUpControls = useAnimation();
+
+  useEffect(() => {
+    textUpControls.start('visible');
+  }, [textUpControls]);
+
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -186,15 +210,32 @@ export default function Home() {
       <motion.div className='flex justify-center flex-wrap 2xl:flex-row xl:flex-row flex-col items-center'>
         <motion.div className='flex flex-col justify-around items-center'>
           <motion.div className='2xl:text-left xl:text-left lg:text-left md:text-left sm:text-left text-center'>
-            <motion.h1 className='xl:text-6xl text-5xl font-bold'
-              variants={textUp}
-            >
-              👋 Hey 
-            </motion.h1>
-            <motion.h1 className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'
-              variants={textUp}
-            >
-              I'm Stephen Ni
+          <motion.h1 variants={textUp} className='xl:text-6xl text-5xl font-bold'>
+          <motion.span
+            className='wave-hand'
+            role="img"
+            aria-label="wave-hand"
+            animate={waveAnimation}
+          >
+            👋
+          </motion.span>{' '}
+          Hey
+        </motion.h1>
+            <motion.h1 variants={containerText} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.span variants={imageUp}>I</motion.span>
+              <motion.span variants={imageUp}>'</motion.span>
+              <motion.span variants={imageUp}>m</motion.span>
+              <motion.span variants={imageUp}> </motion.span>
+              <motion.span variants={imageUp} className='text-green-400'>S</motion.span>
+              <motion.span variants={imageUp}>t</motion.span>
+              <motion.span variants={textUp}>e</motion.span>
+              <motion.span variants={textUp}>p</motion.span>
+              <motion.span variants={textUp}>h</motion.span>
+              <motion.span variants={textUp}>e</motion.span>
+              <motion.span variants={textUp}>n</motion.span>
+              <motion.span> </motion.span>
+              <motion.span variants={textUp} className='text-green-400'>N</motion.span>
+              <motion.span variants={textUp}>i</motion.span>
             </motion.h1>
             <motion.div className='xl:text-4xl text-3xl mb-8 mt-8'
               variants={textUp}>

@@ -180,10 +180,10 @@ const About = () => {
           <div className='flex flex-col lg:mt-0 mt-10 lg:ml-10'>
             <div className='flex flex-col items-center lg:items-start'>
               <motion.h1 variants={textUp} className='text-center lg:text-right'>Hello! I'm Stephen</motion.h1>
-              <motion.h2 variants={textUp2} className='font-normal text-center lg:text-right'>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</motion.h2>
+              <motion.h2 variants={textUp2} className='font-normal text-center lg:text-right mt-2'>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</motion.h2>
               <motion.h2 variants={textUp2} className='font-normal text-center lg:text-right'>I have experience with front end web development including blah blah blah</motion.h2>
             </div>
-            <motion.div variants={imageUp} className='mt-10'>
+            <motion.div variants={imageUp} className='mt-4'>
               <Progress />
             </motion.div>
           </div>

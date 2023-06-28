@@ -30,26 +30,15 @@ const Whiteboard = () => {
             }
         },
       };
+      const waveAnimation = {
+        rotate: [0, -20, 20, -20, 0],
+        transition: { duration: 2, repeat: Infinity },
+      };
 
   return (
-    <motion.div className='text-slate-900 mb-10 w-full flex flex-col relative z-0'
-    variants={container}
-    initial='hidden'
-    animate='visible'
-    exit='exit'
- 
-    >
-      <div className=''>
-        <GoThreeBars /> 
-        <div className='box bg-black'>
-          
-
-        </div>
-        <div className=''>
-
-        </div>
-      </div>
-    </motion.div>
+    <motion.span className='wave-hand' animate={waveAnimation} role="img" aria-label="wave-hand">
+    👋
+  </motion.span>
   )
 }
 

@@ -14,6 +14,23 @@
     transition : all .3s ease ;
 }
 
+.wave-hand {
+    display: inline-block;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: wave;
+  }
+  
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-20deg); }
+    50% { transform: rotate(20deg); }
+    75% { transform: rotate(-20deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+
 .logo {
     width: 25vw;
     height: 25vw;

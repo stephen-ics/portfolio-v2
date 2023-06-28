@@ -1,6 +1,8 @@
 :root {
-    --primary2: #e8c459;
-    --secondary2: #c86ebd;
+    --primary2: #ffd75d;
+    --primary22: #e8c459;
+    --secondary2: hsl(307, 89%, 69%);
+    --secondary22: #c86ebd;
     --dark2: #212121;
     --light2: #ffffff;
   }
@@ -122,6 +124,6 @@
   
   .cardBody2 p {
     color: var(--dark);
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.4;
   }
