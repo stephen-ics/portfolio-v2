@@ -173,7 +173,7 @@ const About = () => {
       exit='exit'
     >
       <div className='flex flex-col text-slate-900'>
-        <div className='flex items-start flex-wrap lg:justify-between justify-center'>
+        <div className='flex items-start flex-wrap lg:justify-evenly justify-center'>
 
           <motion.img variants={imageLeft} src={Logo} className='w-96 rounded-xl object-cover'/>
         
@@ -191,28 +191,24 @@ const About = () => {
 
         <div className='mt-10 flex flex-col items-center lg:items-start'>
           <motion.h2 variants={textUp3} className='text-4xl'>Hobbies</motion.h2>
-          <motion.div className='flex flex-wrap'>
-            <div className='flex flex-wrap lg:justify-start justify-center'>
+          <motion.div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1'>
             <motion.div variants={imageUp}>
               <Cardflip title='Math' subtitle='I do math' description="Math has always been an inescapable part of my childhood, but overtime I've grown to love it!" image={Math}/>
             </motion.div>
             <motion.div variants={imageDown}>
               <Cardflip title='Piano' subtitle='I play the piano' description="I've been playing the piano for 3 years, I am currently level 10! I love to play music, especially anime openings" image={Piano}/>
             </motion.div>
-            </div>
-            <div className='flex flex-wrap lg:justify-start justify-center'>
             <motion.div variants={imageUp}>
               <Cardflip title='Art' subtitle='I draw' description="I've been drawing ever since I was in elementary school, I havn't grown out of stick figures yet but my love for art still burns!" image={Art}/>
             </motion.div>
             <motion.div variants={imageDown}>
               <Cardflip title='Running' subtitle='I run' description="Though I am not the most athletic, I've always been good at running! Whether it's cross country or track and field, it feels great after a good run" image={Running}/>
             </motion.div>
-            </div>
           </motion.div>
         </div>
         <div className='mt-10 flex flex-col items-center lg:items-start'>
           <motion.h2 variants={textUp} className='text-4xl'>Values</motion.h2>
-          <motion.div variants={imageUp} className='flex lg:justify-start justify-center flex-wrap'>
+          <motion.div variants={imageUp} className='grid lg:grid-cols-2 grid-cols-1'>
             <Cardflip2 title='Tenacious' subtitle='Risks are meant to be taken' description='If there is a risk, I will take it. I put my all into every project I start. Whenever I start a project, I always make sure to try a new technology or learn a new skill, so that I am always constantly learning and improving' image={Math}/>
             <Cardflip2 title='Open-minded' subtitle='Mistakes are a blessing' description='There is no success without failure, that is why I appreciate any sort of critism, and I always make sure apply the feedback I receive to make my next project my best project.' image={Piano}/>
           </motion.div>

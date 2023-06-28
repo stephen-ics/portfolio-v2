@@ -69,12 +69,6 @@ function Navbar() {
         link: "/projects",
         id: "leaderboard",
         priority: false
-    },
-    {
-      name: "Whiteboard",
-      link: "/whiteboard",
-      id: "leaderbord",
-      priority: false
     }
 ]
 

@@ -22,14 +22,14 @@
     width: calc(15rem + 6vw);
     height: calc(20rem + 6vw);
     perspective: 1000px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   @media (min-width: 1024px) {
     .card {
       margin-left: 0;
-      margin-right: 2rem;
+      margin-right: 4rem;
     }
 
   }
