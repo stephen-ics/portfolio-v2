@@ -3,7 +3,8 @@ import './page-styles/Home.css'
 import Logo from '../pictures/Logo.png'
 import { motion, useAnimation } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
-import { faCarSide } from '@fortawesome/free-solid-svg-icons';
+import { FaGithub, FaInstagramSquare, FaLinkedin } from 'react-icons/fa'
+import { SiDevpost, SiGmail } from 'react-icons/si'
 import { useInView } from 'react-intersection-observer'
 import Typewriter from 'typewriter-effect'
 import Cardflip from '../components/Cardflip'
@@ -36,7 +37,47 @@ export default function Home() {
       y: 0,
       opacity: 1,
       transition: {
-        staggerChildren: 0.75,
+        staggerChildren: 0.5,
+      },
+    },
+    exit: {
+        y: '-20vh',
+        opacity: 0,
+        transition: {
+          duration: 0.25,
+        }
+    },
+  };
+
+  const titleContainer = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 1,
+      },
+    },
+    exit: {
+        y: '-20vh',
+        opacity: 0,
+        transition: {
+          duration: 0.25,
+        }
+    },
+  };
+
+  const iconContainer = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
       },
     },
     exit: {
@@ -101,16 +142,35 @@ export default function Home() {
     },
   };
 
-  const imageUp = {
+  const textUp2 = {
     hidden: {
-        y: 0,
+        x: '-5vh',
         opacity: 0,
     },
     visible: { 
-        y: '-5vh',
+        x: 0,
         opacity: 1,
         transition: {
+            delay: 3,
             duration: 2,
+            ease: [0.6, 0.01, -0.05, 0.95],
+        }
+    },
+    exit: {
+        opacity: 0,
+    },
+  };
+
+  const imageUp = {
+    hidden: {
+        y: '5vh',
+        opacity: 0,
+    },
+    visible: { 
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
             ease: [0.6, 0.01, -0.05, 0.95],
         }
     },
@@ -128,7 +188,7 @@ export default function Home() {
         x: 0,
         opacity: 1,
         transition: {
-            delay: 1.5,
+            delay: 1,
             duration: 2,
             ease: [0.6, 0.01, -0.05, 0.95],
         }
@@ -147,7 +207,7 @@ export default function Home() {
         x: 0,
         opacity: 1,
         transition: {
-            delay: 1.5,
+            delay: 1,
             duration: 2,
             ease: [0.6, 0.01, -0.05, 0.95],
         }
@@ -166,7 +226,7 @@ export default function Home() {
         x: 0,
         opacity: 1,
         transition: {
-            delay: 2.5,
+            delay: 2,
             duration: 1,
             ease: [0.6, 0.01, -0.05, 0.95],
             type: "spring",
@@ -221,43 +281,72 @@ export default function Home() {
           </motion.span>{' '}
           Hey
         </motion.h1>
-            <motion.h1 variants={containerText} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
-              <motion.span variants={imageUp}>I</motion.span>
-              <motion.span variants={imageUp}>'</motion.span>
-              <motion.span variants={imageUp}>m</motion.span>
-              <motion.span variants={imageUp}> </motion.span>
-              <motion.span variants={imageUp} className='text-green-400'>S</motion.span>
-              <motion.span variants={imageUp}>t</motion.span>
-              <motion.span variants={textUp}>e</motion.span>
-              <motion.span variants={textUp}>p</motion.span>
-              <motion.span variants={textUp}>h</motion.span>
-              <motion.span variants={textUp}>e</motion.span>
-              <motion.span variants={textUp}>n</motion.span>
-              <motion.span> </motion.span>
-              <motion.span variants={textUp} className='text-green-400'>N</motion.span>
-              <motion.span variants={textUp}>i</motion.span>
-            </motion.h1>
-            <motion.div className='xl:text-4xl text-3xl mb-8 mt-8'
+            <motion.div variants={iconContainer} className='flex'>
+              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+                I
+              </motion.h1>
+              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+                '
+              </motion.h1>
+              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words mr-6'>
+                m 
+              </motion.h1>
+              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+                S
+              </motion.h1>
+              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+                t
+              </motion.h1>
+              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+                e
+              </motion.h1>
+              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+                p
+              </motion.h1>
+              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+                h
+              </motion.h1>
+              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+                e
+              </motion.h1>
+              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+                n
+              </motion.h1>
+            
+            </motion.div>
+            <motion.div className='xl:text-4xl text-4xl mb-8 mt-8'
               variants={textUp}>
-              <Typewriter
-                options={{
-                  strings:[],
-                  autoStart: true,
-                  loop: true,
-                  delay: 100,
-                }}
-                onInit={(typewriter) => {
-                  typewriter
-                    .pauseFor(2500)
-                    .typeString("Aspiring Full-Stack Developer")
-                    .deleteAll()
-                    .typeString("Creator, Innovator")
-                }}
-              />
+              <div className='flex md:justify-start justify-center md:flex-row flex-col'>
+                <p className='mr-2 xl:text-4xl lg:text-4xl md:text-3xl text-2xl'>I'm a</p>
+                <div className='xl:text-4xl lg:text-4xl md:text-3xl text-2xl text-green-400'>
+                <Typewriter
+                  options={{
+                    strings:[],
+                    autoStart: true,
+                    loop: true,
+                    delay: 100,
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter
+                      .pauseFor(3500)
+                      .typeString("Aspiring Full-Stack Developer")
+                      .deleteAll()
+                      .typeString("Builder, Creator, Innovator")
+                      .deleteAll()
+                      .typeString("Hackathon Addict and Organizer")
+                      .deleteAll()
+                      .typeString("Systems Design Engineer @ uWaterloo")
+                      .deleteAll()
+                      .typeString("Interested in Machine Learning")
+                      .deleteAll()
+                  }}
+                />
+                </div>
+              </div>
             </motion.div>
           </motion.div>
           <div className='flex xl:flex-nowrap xl:justify-start lg:justify-start md:justify-start sm:justify-start flex-wrap justify-center w-full'>
-            <motion.div className='flex' variants={buttonLeft}>
+            <motion.div className='flex' variants={buttonLeft} whileHover={{scale:1.05}} whileTap={{scale:0.95}}>
               <Link class='button mb-4 mx-2' to='experiences'>
                 <div class="button__line"></div>
                 <div class="button__line"></div>
@@ -267,7 +356,7 @@ export default function Home() {
             
               </Link>
             </motion.div>
-            <motion.div className='flex' variants={buttonRight}>
+            <motion.div className='flex' variants={buttonRight} whileHover={{scale:1.05}} whileTap={{scale:0.95}}>
               <Link class='button mb-4 mx-2' to='projects'>
                 <div class="button__line"></div>
                 <div class="button__line"></div>
@@ -277,6 +366,24 @@ export default function Home() {
               </Link>
             </motion.div>
           </div>
+          <motion.div variants={iconContainer} className='flex xl:flex-nowrap xl:justify-start lg:justify-start md:justify-start sm:justify-start flex-wrap justify-center w-full mt-2'>
+            <motion.a variants={imageUp} href="https://github.com/stephen-ics" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mr-4'>
+              <SiGmail size={50} color=""/>
+            </motion.a>
+            <motion.a variants={imageUp} href="https://github.com/stephen-ics" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
+              <FaLinkedin size={50} color=""/>
+            </motion.a>
+            <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
+              <FaGithub size={50}/>
+            </motion.a>
+            <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
+              <SiDevpost size={50}/>
+            </motion.a>
+            <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'> 
+              <FaInstagramSquare size={50}/>
+            </motion.a>
+
+          </motion.div>
         </motion.div>
         <motion.div
           whileHover={{scale:1.1}}

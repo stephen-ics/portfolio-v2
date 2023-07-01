@@ -4,7 +4,7 @@ import Logo from '../pictures/Logo.png'
 import './component-styles/Navbar.css'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react';
-import { GoThreeBars } from "react-icons/go"
+import { FaBars } from "react-icons/fa"
 
 function Navbar() {
   const dropIn ={
@@ -96,7 +96,7 @@ function Navbar() {
                       setShowDropdown(!showDropdown);
                   }}
               >
-                <GoThreeBars size={20}/>
+                <FaBars size={20}/>
               </button>
             </div>
          
