@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Logo from '../pictures/Logo.png'
+import Icon from '../pictures/Icon.png'
 import './component-styles/Navbar.css'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react';
@@ -84,7 +85,7 @@ function Navbar() {
           <div className="px-4 mx-auto lg:flex lg:items-center m-30">
             <div className="flex justify-between items-center">
               <Link to='/'>
-                <img src={Logo} className='w-12 rounded-full'/>
+                <img src={Icon} className='w-12 rounded-full'/>
               </Link>
     
               <button

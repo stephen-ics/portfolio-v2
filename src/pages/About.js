@@ -23,7 +23,7 @@ const About = () => {
       y: 0,
       opacity: 1,
       transition: {
-        staggerChildren: 0.35,
+        staggerChildren: 0.25,
       },
     },
     exit: {
@@ -62,6 +62,26 @@ const About = () => {
         x: 0,
         opacity: 1,
         transition: {
+            delay: 0.5,
+            duration: 2,
+            ease: [0.6, 0.01, -0.05, 0.95],
+        }
+    },
+    exit: {
+        opacity: 0,
+    },
+  };
+
+
+  const textUp3 = {
+    hidden: {
+        x: '5vh',
+        opacity: 0,
+    },
+    visible: { 
+        x: 0,
+        opacity: 1,
+        transition: {
             delay: 1,
             duration: 2,
             ease: [0.6, 0.01, -0.05, 0.95],
@@ -72,9 +92,9 @@ const About = () => {
     },
   };
 
-  const textUp3 = {
+  const textUp4 = {
     hidden: {
-        x: '-5vh',
+        x: '5vh',
         opacity: 0,
     },
     visible: { 
@@ -178,10 +198,12 @@ const About = () => {
           <motion.img variants={imageLeft} src={Logo} className='w-96 rounded-xl object-cover'/>
         
           <div className='flex flex-col lg:mt-0 mt-10 lg:ml-10'>
-            <div className='flex flex-col items-center lg:items-start'>
-              <motion.h1 variants={textUp} className='text-center lg:text-right'>Hello! I'm Stephen</motion.h1>
-              <motion.h2 variants={textUp2} className='font-normal text-center lg:text-right mt-2'>I'm a high school student at John Fraser Secondary School and an aspiring full-stack developer</motion.h2>
-              <motion.h2 variants={textUp2} className='font-normal text-center lg:text-right'>I have experience with front end web development including blah blah blah</motion.h2>
+            <div className='flex flex-col items-center lg:items-start text-wrap break-words'>
+              <motion.h1 variants={textUp} className='text-center lg:text-left'>Hello! I'm Stephen 🐢</motion.h1>
+              <motion.h3 variants={textUp2} className='text-center lg:text-left mt-2 text-green-700'>I'm a full-stack developer studying Systems Design Engineering @ UWaterloo!</motion.h3>
+              <motion.h3 variants={textUp3} className='font-normal text-center lg:text-left mt-2'>I specialize in React, Node.js, Python, and I am familiar with various databases.</motion.h3>
+              <motion.h3 variants={textUp3} className='font-normal text-center lg:text-left'>My enthusiasm stems from my extensive experience in hackathons, thriving in collaborative high-pressure environments.</motion.h3>
+              <motion.h3 variants={textUp3} className='font-normal text-center lg:text-left'>I code to create innovative solutions to everyday problems.</motion.h3>
             </div>
             <motion.div variants={imageUp} className='mt-4'>
               <Progress />
@@ -190,7 +212,7 @@ const About = () => {
         </div>  
 
         <div className='mt-10 flex flex-col items-center lg:items-start'>
-          <motion.h2 variants={textUp3} className='text-4xl'>Hobbies</motion.h2>
+          <motion.h2 variants={textUp4} className='text-4xl'>Hobbies</motion.h2>
           <motion.div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1'>
             <motion.div variants={imageUp}>
               <Cardflip title='Math' subtitle='I do math' description="Math has always been an inescapable part of my childhood, but overtime I've grown to love it!" image={Math}/>
@@ -207,7 +229,7 @@ const About = () => {
           </motion.div>
         </div>
         <div className='mt-10 flex flex-col items-center lg:items-start'>
-          <motion.h2 variants={textUp} className='text-4xl'>Values</motion.h2>
+          <motion.h2 variants={textUp4} className='text-4xl'>Values</motion.h2>
           <motion.div variants={imageUp} className='grid lg:grid-cols-2 grid-cols-1'>
             <Cardflip2 title='Tenacious' subtitle='Risks are meant to be taken' description='If there is a risk, I will take it. I put my all into every project I start. Whenever I start a project, I always make sure to try a new technology or learn a new skill, so that I am always constantly learning and improving' image={Math}/>
             <Cardflip2 title='Open-minded' subtitle='Mistakes are a blessing' description='There is no success without failure, that is why I appreciate any sort of critism, and I always make sure apply the feedback I receive to make my next project my best project.' image={Piano}/>

@@ -259,3 +259,7 @@
     100% { width : 124px ; }
 }
 
+
+.title-shadow {
+    text-shadow: -4px 4px 4px rgb(57, 224, 110);
+}

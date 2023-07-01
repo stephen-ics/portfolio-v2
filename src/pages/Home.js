@@ -282,34 +282,34 @@ export default function Home() {
           Hey
         </motion.h1>
             <motion.div variants={iconContainer} className='flex'>
-              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.h1 variants={imageUp} className='title-shadow xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
                 I
               </motion.h1>
-              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.h1 variants={imageUp} className='title-shadow xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
                 '
               </motion.h1>
-              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words mr-6'>
+              <motion.h1 variants={imageUp} className='title-shadow xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words mr-6'>
                 m 
               </motion.h1>
-              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.h1 variants={imageUp} className='title-shadow xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
                 S
               </motion.h1>
-              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.h1 variants={imageUp} className='title-shadow xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
                 t
               </motion.h1>
-              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.h1 variants={imageUp} className='title-shadow xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
                 e
               </motion.h1>
-              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.h1 variants={imageUp} className='title-shadow xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
                 p
               </motion.h1>
-              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.h1 variants={imageUp} className='title-shadow xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
                 h
               </motion.h1>
-              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.h1 variants={imageUp} className='title-shadow xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
                 e
               </motion.h1>
-              <motion.h1 variants={imageUp} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.h1 variants={imageUp} className='title-shadow xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
                 n
               </motion.h1>
             
@@ -318,7 +318,7 @@ export default function Home() {
               variants={textUp}>
               <div className='flex md:justify-start justify-center md:flex-row flex-col'>
                 <p className='mr-2 xl:text-4xl lg:text-4xl md:text-3xl text-2xl'>I'm a</p>
-                <div className='xl:text-4xl lg:text-4xl md:text-3xl text-2xl text-green-400'>
+                <div className='xl:text-4xl lg:text-4xl md:text-3xl text-2xl text-green-500'>
                 <Typewriter
                   options={{
                     strings:[],
@@ -366,19 +366,19 @@ export default function Home() {
           </div>
           <motion.div variants={iconContainer} className='flex xl:flex-nowrap xl:justify-start lg:justify-start md:justify-start sm:justify-start flex-wrap justify-center w-full mt-2'>
             <motion.a variants={imageUp} href="https://github.com/stephen-ics" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mr-4'>
-              <SiGmail size={50} color=""/>
+              <SiGmail size={50} color="mediumseagreen"/>
             </motion.a>
             <motion.a variants={imageUp} href="https://github.com/stephen-ics" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
-              <FaLinkedin size={50} color=""/>
+              <FaLinkedin size={50} color="mediumseagreen"/>
             </motion.a>
             <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
-              <FaGithub size={50}/>
+              <FaGithub size={50} color="mediumseagreen"/>
             </motion.a>
             <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
-              <SiDevpost size={50}/>
+              <SiDevpost size={50} color="mediumseagreen"/>
             </motion.a>
             <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'> 
-              <FaInstagramSquare size={50}/>
+              <FaInstagramSquare size={50} color="mediumseagreen"/>
             </motion.a>
 
           </motion.div>
