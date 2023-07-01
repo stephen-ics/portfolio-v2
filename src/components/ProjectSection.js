@@ -80,6 +80,55 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
       else if (tag === 'Tensorflow') {
         updatedColors[tag] = '#ffc299'
       }
+      else if (tag === 'MongoDB') {
+        updatedColors[tag] = '#abffab'
+      }
+      else if (tag === 'Python') {
+        updatedColors[tag] = '#ffffa3'
+      }
+      else if (tag === 'Flask') {
+        updatedColors[tag] = '#ff94db'
+      }
+      else if (tag === 'Azure') {
+        updatedColors[tag] = '#b280ff'
+      }
+      else if (tag === 'NodeJS') {
+        updatedColors[tag] = '#ffc299'
+      }
+      else if (tag === 'ExpressJS') {
+        updatedColors[tag] = '#ffcf6e'
+      }
+      else if (tag === 'C#') {
+        updatedColors[tag] = '#59bd7a'
+      }
+      else if (tag === 'Unity') {
+        updatedColors[tag] = '#85ffd6'
+      }
+      else if (tag === 'SolidityJS') {
+        updatedColors[tag] = '#66c266'
+      }
+      else if (tag === 'Axelar') {
+        updatedColors[tag] = '#66e0ff'
+      }
+      else if (tag === 'CV') {
+        updatedColors[tag] = '#94dbff'
+      }
+      else if (tag === 'NLP') {
+        updatedColors[tag] = '#db94ff'
+      }
+      else if (tag === 'Neural Networks') {
+        updatedColors[tag] = '#70b894'
+      }
+      else if (tag === 'Bootstrap') {
+        updatedColors[tag] = '#baffff'
+      }
+      else if (tag === 'SCSS') {
+        updatedColors[tag] = '#8585e0'
+      }
+      else if (tag === 'Ruby') {
+        updatedColors[tag] = '#ff7373'
+      }
+
 
 
   
@@ -105,7 +154,7 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
         </div>
       </div>
       <div>
-      <div className='flex mt-4'>
+      <div className='flex flex-wrap mt-4'>
             {tags.map((tag, index) => (
               <div className='text-black px-4 py-2 rounded-md m-1' style={{ backgroundColor: tagColors[tag]}}>{tag}</div>
             ))}
