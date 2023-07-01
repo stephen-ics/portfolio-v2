@@ -199,17 +199,19 @@ const About = () => {
         
           <div className='flex flex-col lg:mt-0 mt-10 lg:ml-10'>
             <div className='flex flex-col items-center lg:items-start text-wrap break-words'>
-              <motion.h1 variants={textUp} className='text-center lg:text-left'>Hello! I'm Stephen 🐢</motion.h1>
-              <motion.h3 variants={textUp2} className='text-center lg:text-left mt-2 text-green-700'>I'm a full-stack developer studying Systems Design Engineering @ UWaterloo!</motion.h3>
-              <motion.h3 variants={textUp3} className='font-normal text-center lg:text-left mt-2'>I specialize in React, Node.js, Python, and I am familiar with various databases.</motion.h3>
-              <motion.h3 variants={textUp3} className='font-normal text-center lg:text-left'>My enthusiasm stems from my extensive experience in hackathons, thriving in collaborative high-pressure environments.</motion.h3>
-              <motion.h3 variants={textUp3} className='font-normal text-center lg:text-left'>I code to create innovative solutions to everyday problems.</motion.h3>
+              <motion.h1 variants={textUp} className='text-3xl text-center lg:text-left'>Hello! I'm Stephen 🐢</motion.h1>
+              <motion.h3 variants={textUp2} className='text-2xl text-center lg:text-left mt-2 text-green-700'>I'm a full-stack developer studying Systems Design Engineering @ UWaterloo!</motion.h3>
+              <motion.h3 variants={textUp3} className='text-xl font-normal text-center lg:text-left mt-2'>I specialize in React, Node.js, Python, and I am familiar with various databases. My enthusiasm stems</motion.h3>
+              <motion.h3 variants={textUp3} className='text-xl font-normal text-center lg:text-left'> from my extensive experience in hackathons, thriving in collaborative high-pressure environments. I code</motion.h3>
+              <motion.h3 variants={textUp3} className='text-xl font-normal text-center lg:text-left'>to create innovative solutions to everyday problems.</motion.h3>
             </div>
             <motion.div variants={imageUp} className='mt-4'>
               <Progress />
             </motion.div>
           </div>
         </div>  
+
+    
 
         <div className='mt-10 flex flex-col items-center lg:items-start'>
           <motion.h2 variants={textUp4} className='text-4xl'>Hobbies</motion.h2>
