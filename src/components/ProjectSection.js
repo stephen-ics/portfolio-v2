@@ -1,11 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaYoutube, FaLink } from 'react-icons/fa'
 import { SiDevpost } from 'react-icons/si'
 import ProjectData from "../data/ProjectData.js";
 import { useState, useEffect } from 'react'
 
-const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subtitle, image, devpost, github, tags }) => {
+const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subtitle, image, devpost, github, youtube, website, tags }) => {
   const data = ['Item 1', 'Item 2', 'Item 3'];
   const [selectedTag, setSelectedTag] = useState('');
   const [tagColors, setTagColors] = useState({});
@@ -128,6 +128,12 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
       else if (tag === 'Ruby') {
         updatedColors[tag] = '#ff7373'
       }
+      else if (tag === 'AWS') {
+        updatedColors[tag] = '#7a9cde'
+      }
+      else if (tag === 'IPFS') {
+        updatedColors[tag] = '#d6eb99'
+      }
 
 
 
@@ -135,6 +141,8 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
     });
     setTagColors(updatedColors);
   }, [tags]);
+
+  console.log('github', github)
 
 
   return (
@@ -153,14 +161,42 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
           <h2 className='text-2xl text-left w-full font-medium text-gray-600'>{subtitle}</h2>
         </div>
       </div>
-      <div>
+
       <div className='flex flex-wrap mt-4'>
-            {tags.map((tag, index) => (
-              <div className='text-black px-4 py-2 rounded-md m-1' style={{ backgroundColor: tagColors[tag]}}>{tag}</div>
-            ))}
-          </div>
+        {tags.map((tag, index) => (
+          <div className='text-black px-4 py-2 rounded-md m-1' style={{ backgroundColor: tagColors[tag]}}>{tag}</div>
+        ))}
       </div>
+
+      <div className='flex flex-wrap mt-4'>
+        {website && (
+          <a href={website} target="_blank" rel="noopener noreferrer" className='mx-1'>
+            <FaLink className="" color="#131414" size={45} />
+          </a>
+        )}
+        {github && (
+          <a href={github} target="_blank" rel="noopener noreferrer" className='mx-1'>
+            <FaGithub className="" color="#262b2b" size={45} />
+          </a>
+        )}
+        {devpost && (
+          <a href={devpost} target="_blank" rel="noopener noreferrer" className='mx-1'>
+            <SiDevpost className="" color="#003399" size={45} />
+          </a>
+        )}
+        {youtube && (
+          <a href={youtube} target="_blank" rel="noopener noreferrer" className='mx-1'>
+            <FaYoutube className="" color="#ff3333" size={45} />
+          </a>
+        )}
+ 
+      </div>
+    
     </div>
+
+      
+      
+   
     
 
       
