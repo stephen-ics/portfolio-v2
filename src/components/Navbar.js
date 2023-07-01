@@ -80,9 +80,9 @@ function Navbar() {
           initial='hidden'
           animate='visible'
           exit='exit'
-          className={`navbar justify-center z-[99999999] min-h-[7vh] py-2 lg:py-4 shadow-xl fixed w-full top-0 ${fillNavbar ? 'fill' : ''}`}
+          className={`navbar z-[99999999] py-2 lg:py-4 fixed w-full top-0 ${fillNavbar ? 'fill' : ''}`}
         >
-          <div className="px-4 mx-auto lg:flex lg:items-center m-30">
+          <div className="px-4 mx-auto flex flex-col lg:flex-row lg:items-center justify-center h-full">
             <div className="flex justify-between items-center">
               <Link to='/'>
                 <img src={Icon} className='w-12 rounded-full'/>

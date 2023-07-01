@@ -37,7 +37,6 @@ const ModalButton = ({ onClick, label }) => (
     </motion.button>
 );
 
-
 const Modal = ({ handleClose, title, subtitle, description, techStack, image, github, devpost }) => {
     return (
         <Backdrop onClick={handleClose}>
@@ -72,7 +71,6 @@ const Modal = ({ handleClose, title, subtitle, description, techStack, image, gi
                     </div>
                 </div>
             </motion.div>
-            
         </Backdrop>
     )
 }

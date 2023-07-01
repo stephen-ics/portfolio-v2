@@ -6,7 +6,7 @@ import '../components/component-styles/Modal.css';
 import ProjectSection from '../components/ProjectSection';
 
 
-const DisplayModal = ({title, subtitle, description, image, devpost, github, sectionTitle, techStack}) => {
+const DisplayModal = ({title, subtitle, description, image, devpost, github, sectionTitle, techStack, tags}) => {
     const [modalOpen, setModalOpen] = useState(false);
     const close = () => setModalOpen(false);
     const open = () => setModalOpen(true);
@@ -21,6 +21,7 @@ const DisplayModal = ({title, subtitle, description, image, devpost, github, sec
             title={title}
             subtitle={subtitle}
             image={image}
+            tags={tags}
         >
             Launch Model
         </ProjectSection>

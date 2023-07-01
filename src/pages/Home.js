@@ -10,16 +10,6 @@ import Typewriter from 'typewriter-effect'
 import Cardflip from '../components/Cardflip'
 import HomeProjects from '../components/HomeProjects'
 
-import BitBots from '../pictures/projects/BitBots.png'
-import TokensForGood from '../pictures/projects/TokensForGood.png'
-import CloseConnect from '../pictures/projects/CloseConnect.png'
-import DeSsert from '../pictures/projects/Dessert.png'
-import Concerto from '../pictures/projects/Concerto.png'
-import CodeBro from '../pictures/projects/CodeBro.png'
-import PlantUp from '../pictures/projects/PlantUp.png'
-import StockStalker from '../pictures/projects/StockStalker.png'
-
-
 export default function Home() {
 
   const {ref, inView} = useInView();
@@ -366,19 +356,19 @@ export default function Home() {
           </div>
           <motion.div variants={iconContainer} className='flex xl:flex-nowrap xl:justify-start lg:justify-start md:justify-start sm:justify-start flex-wrap justify-center w-full mt-2'>
             <motion.a variants={imageUp} href="https://github.com/stephen-ics" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mr-4'>
-              <SiGmail size={50} color="mediumseagreen"/>
+              <SiGmail size={60} color="mediumseagreen"/>
             </motion.a>
             <motion.a variants={imageUp} href="https://github.com/stephen-ics" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
-              <FaLinkedin size={50} color="mediumseagreen"/>
+              <FaLinkedin size={60} color="mediumseagreen"/>
             </motion.a>
             <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
-              <FaGithub size={50} color="mediumseagreen"/>
+              <FaGithub size={60} color="mediumseagreen"/>
             </motion.a>
             <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
-              <SiDevpost size={50} color="mediumseagreen"/>
+              <SiDevpost size={60} color="mediumseagreen"/>
             </motion.a>
             <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'> 
-              <FaInstagramSquare size={50} color="mediumseagreen"/>
+              <FaInstagramSquare size={60} color="mediumseagreen"/>
             </motion.a>
 
           </motion.div>
@@ -394,22 +384,22 @@ export default function Home() {
       </motion.div>
       <motion.div className='homeProjectsContainer flex flex-col items-center xl:mt-32 mt-8'>
         <motion.div variants={imageUp}>
-          <HomeProjects title='StockStalker: Hack the 6ix Winner' date='August 2022' subtitle='To search, manage, and see the overall ESG performance' image={StockStalker} link='https://devpost.com/software/stock-stalker-4jrosz'/>
+          <HomeProjects title='StockStalker: Hack the 6ix Winner' date='August 2022' subtitle='To search, manage, and see the overall ESG performance' image='../projects/StockStalker.png' link='https://devpost.com/software/stock-stalker-4jrosz'/>
         </motion.div>
         <motion.div variants={imageUp}>
-          <HomeProjects title='PlantUp: Backyard Hacks III Winner' date='July 2022' subtitle='To make gardening an exciting experience' image={PlantUp} link='https://devpost.com/software/plantup'/>
+          <HomeProjects title='PlantUp: Backyard Hacks III Winner' date='July 2022' subtitle='To make gardening an exciting experience' image='../projects/PlantUp.png' link='https://devpost.com/software/plantup'/>
         </motion.div>
         <motion.div variants={imageUp}>
-          <HomeProjects title='CodeBro: Hacky Birthay MLH! 2022 Winner' date='July 2022' subtitle='To practice both their web design and competitive problem-solving skills offline' image={CodeBro} link='https://devpost.com/software/codebro'/>
+          <HomeProjects title='CodeBro: Hacky Birthay MLH! 2022 Winner' date='July 2022' subtitle='To practice both their web design and competitive problem-solving skills offline' image='../projects/CodeBro.png' link='https://devpost.com/software/codebro'/>
         </motion.div>
         <motion.div variants={imageUp}>
-          <HomeProjects title='DeSsert: FreyHacks Winner' date='June 2022' subtitle="Find the perfect recipe while owning the rights to your content on the world's first decentralized recipe sharing site" image={DeSsert} link='link'/>
+          <HomeProjects title='DeSsert: FreyHacks Winner' date='June 2022' subtitle="Find the perfect recipe while owning the rights to your content on the world's first decentralized recipe sharing site" image='../projects/DeSsert.png' link='link'/>
         </motion.div>
         <motion.div variants={imageUp}>
-          <HomeProjects title='Close Connect: WaffleHacks 2022 Winner' date='June 2022' subtitle='To meet others who live in different regions and celebrate your differences' image={CloseConnect} link='link'/>
+          <HomeProjects title='Close Connect: WaffleHacks 2022 Winner' date='June 2022' subtitle='To meet others who live in different regions and celebrate your differences' image='../projects/CloseConnect.png' link='link'/>
         </motion.div>
         <motion.div variants={imageUp}>
-          <HomeProjects title='Tokens For Good: JAMHacks 6 Winner' date='May 2022' subtitle='To provide an incentive to donate through collectible NFTs' image={TokensForGood} link='https://devpost.com/software/decharity-gvhxw2'/>
+          <HomeProjects title='Tokens For Good: JAMHacks 6 Winner' date='May 2022' subtitle='To provide an incentive to donate through collectible NFTs' image='../projects/TokensForGood.png' link='https://devpost.com/software/decharity-gvhxw2'/>
         </motion.div>
       </motion.div>
     </motion.div>

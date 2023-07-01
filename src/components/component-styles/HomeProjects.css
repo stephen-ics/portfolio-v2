@@ -6,12 +6,6 @@
     align-items: center;
 }
 
-.project-container:nth-child(2) {
-    margin-left: 10rem;
-    display: none;
-
-}
-
 .title {
     transition: transform 1s ease-in-out;
     font-size: 4vw;

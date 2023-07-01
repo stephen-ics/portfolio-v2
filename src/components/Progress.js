@@ -56,8 +56,6 @@ function SkillsBar () {
             </div>
             </div>
         </div>
-       
-  
     </div>
    )
 }

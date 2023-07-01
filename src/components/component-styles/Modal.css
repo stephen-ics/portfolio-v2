@@ -6,7 +6,7 @@
   padding-right: 2rem;
   border-radius: 12px;
   display: flex;
-  background: var(--gradient);
+  background: rgb(200, 233, 217);
   box-shadow: 0 10px 20px 0 rgb(0 0 0/0.5);
 }
 
@@ -23,22 +23,21 @@
 }
 
 .project-section {
-  border-radius: 1rem;
-  color: rgb(40, 40, 43);
-  border-color: var(--gradient);
+  border-radius: 0.5rem;
   color: white;
   transition: filter 300ms;
-  width: 30rem;
-  margin-right: 4rem;
-  margin-left: 4rem;
+  width: 40rem;
+  margin-right: 1.2rem;
+  margin-left: 1.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
   justify-content: space-around;
   align-items: center;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  box-shadow: 0 10px 20px 0 rgb(0 0 0/0.2);
   padding-bottom: 1rem;
+  border: none;
+  background-color: rgb(234, 248, 242);
 }
 
 .project-section:hover {
-  filter: brightness(1.1)
+  filter: brightness(1.035)
 }

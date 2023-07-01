@@ -32,8 +32,9 @@ const Timeline = () => {
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
                 icon={isWorkIcon ? <RiCommunityFill /> : <IoIosSchool />}
               >
-              
-              <img src={`../${element.image}`} className='timeline-image'/>
+          
+              <img src={`../experiences/${element.image}`} className='timeline-image'/>
+           
               <h3 className="vertical-timeline-element-title timeline-title">
                 {element.title}
               </h3>
