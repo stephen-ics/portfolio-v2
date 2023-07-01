@@ -2,6 +2,17 @@
 import React from 'react'
 
 const ProjectData = [
+    {
+        id: 0,
+        title: "Stock Stalker2",
+        subtitle:"August 2022",
+        description: "Unlike the traditional profit-orientated approach in financial investing, responsible investing is a relatively new concept that expressly recognizes the importance of environmental, social, and governance aspects to the investor and the long-term health and stability of the market",
+        techStack: "The prototype was designed with Figma while the front end was built on React ·We used Tailwind CSS, framer-motion and various libraries to decorate our web page. The backend data was stored on JSON-Server, cors and axios ·Notifications are sent out using Twilio. Functionalities were built with tradingviewwidget",
+        image: "StockStalker.png",
+        github: "https://github.com/stephen-ics/Hack-The-6ix",
+        devpost: "https://devpost.com/software/stock-stalker-4jrosz",
+        tags: ['NextJS', 'TailwindCSS', 'DeSo', 'PWA'],
+    },
   {
     id: 1,
     title: "Stock Stalker",

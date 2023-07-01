@@ -14,71 +14,71 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
     const updatedColors = {};
     tags.forEach((tag) => {
       if (tag === 'ReactJS') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#99ccff'
       }
 
       else if (tag === 'NextJS') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#82ffad'
       }
 
       else if (tag === 'TailwindCSS') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#ffbfbf'
       }
 
       else if (tag === 'Framer-motion') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#ffdbb8'
       }
 
       else if (tag === 'JSON-Server') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#ffb2f2'
       }
 
       else if (tag === 'Firebase') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#ffd1ba'
       }
 
       else if (tag === 'HTML5') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#99ffd6'
       }
 
       else if (tag === 'CSS3') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#dbb8ff'
       }
 
       else if (tag === 'Javascript') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#ffbdde'
       }
 
       else if (tag === 'Typescript') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#ffffb2'
       }
 
       else if (tag === 'Workbox') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#a3a3ff'
       }
 
       else if (tag === 'PWA') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = '#ffd4a8'
       }
 
       else if (tag === 'Chakra-ui') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = 'HoneyDew'
       }
 
       else if (tag === 'DeSo') {
-        updatedColors[tag] = 'blue'
+        updatedColors[tag] = 'PaleTurquoise'
       }
 
       else if (tag === 'Twilio') {
-        updatedColors[tag] = 'red'
+        updatedColors[tag] = '#99e6ff'
       }
 
       else if (tag === 'OpenCV') {
-        updatedColors[tag] = 'red'
+        updatedColors[tag] = '#dbdbff'
       }
 
       else if (tag === 'Tensorflow') {
-        updatedColors[tag] = 'red'
+        updatedColors[tag] = '#ffc299'
       }
 
 
@@ -97,18 +97,20 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
      
     > 
     <div className='m-4'>
-      <div className='flex flex-col items-center w-full h-full text-slate-800'>
-        <img src={image} className='w-full h-96 object-cover rounded-t-2xl'></img>
-        <h1 className='mt-4 text-4xl text-left w-full font-semibold'>{title}</h1>
-        <h2 className='text-2xl text-left w-full font-normal'>{subtitle}</h2>
-      </div>
-    </div>
-    <div>
-      <div className='flex'>
-          {tags.map((tag, index) => (
-            <div className='text-black px-4 py-2 rounded-xl m-2' style={{ backgroundColor: tagColors[tag]}}>{tag}</div>
-          ))}
+      <div className=''>
+        <div className='flex flex-col items-center w-full h-full text-slate-800'>
+          <img src={image} className='w-full h-96 object-cover rounded-t-2xl'></img>
+          <h1 className='mt-5 text-3xl text-left w-full font-medium'>{title}</h1>
+          <h2 className='text-2xl text-left w-full font-medium text-gray-600'>{subtitle}</h2>
         </div>
+      </div>
+      <div>
+      <div className='flex mt-4'>
+            {tags.map((tag, index) => (
+              <div className='text-black px-4 py-2 rounded-md m-1' style={{ backgroundColor: tagColors[tag]}}>{tag}</div>
+            ))}
+          </div>
+      </div>
     </div>
     
 
