@@ -1,11 +1,9 @@
 .project-container {
     width: calc(6rem + 50vw);
-    height: calc(6rem + 40vw);
+    height: calc(6rem + 30vw);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
 }
 
 .project-container:nth-child(2) {

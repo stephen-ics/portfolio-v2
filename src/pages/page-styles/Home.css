@@ -14,6 +14,15 @@
     transition : all .3s ease ;
 }
 
+.homeProjectsContainer > *:nth-child(even) {
+    margin-left: 20vw;
+}
+
+.homeProjectsContainer > *:nth-child(odd) {
+    margin-right: 20vw;
+}
+
+
 .wave-hand {
     display: inline-block;
     animation-duration: 2s;

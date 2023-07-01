@@ -328,16 +328,14 @@ export default function Home() {
                   }}
                   onInit={(typewriter) => {
                     typewriter
-                      .pauseFor(3500)
-                      .typeString("Aspiring Full-Stack Developer")
+                      .pauseFor(3000)
+                      .typeString("Full-Stack Developer")
                       .deleteAll()
                       .typeString("Builder, Creator, Innovator")
                       .deleteAll()
                       .typeString("Hackathon Addict and Organizer")
                       .deleteAll()
                       .typeString("Systems Design Engineer @ uWaterloo")
-                      .deleteAll()
-                      .typeString("Interested in Machine Learning")
                       .deleteAll()
                   }}
                 />
@@ -389,11 +387,12 @@ export default function Home() {
           whileHover={{scale:1.1}}
           whileTap={{scale:0.9}}
           variants={imageRight}
+          className='lg:mt-0 mt-4'
           >     
             <img src={Logo} className='logo 2xl:mx-32 xl:mx-32 rounded-full object-cover border-green-500 border-solid border-3'/>
         </motion.div>
       </motion.div>
-      <motion.div className='flex flex-col items-center xl:mt-32 mt-8'>
+      <motion.div className='homeProjectsContainer flex flex-col items-center xl:mt-32 mt-8'>
         <motion.div variants={imageUp}>
           <HomeProjects title='StockStalker: Hack the 6ix Winner' date='August 2022' subtitle='To search, manage, and see the overall ESG performance' image={StockStalker} link='https://devpost.com/software/stock-stalker-4jrosz'/>
         </motion.div>
