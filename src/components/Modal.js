@@ -48,25 +48,15 @@ const Modal = ({ handleClose, title, subtitle, description, techStack, image, gi
                 animate='visible'
                 exit='exit'
             >
-                <img src={image} className='object-cover rounded-l-xl w-full'/>
-                <div className='w-full flex flex-col items-center ml-10'>
+                <img src={image} className='modal-image object-cover rounded-l-xl'/>
+                <div className='flex flex-col items-center ml-10'>
                     <ModalButton onClick={handleClose} label='Close'></ModalButton>
-                    <div className='flex w-full h-full justify-between mt-10 items-start ml-4'>
+                    <div className='flex justify-between mt-10 items-start ml-4'>
                         <div>
                             <h1 className='text-5xl'>{title}</h1>
                             <h3 className='text-xl'>{subtitle}</h3>
                             <p className='text-xl mt-2'>{description}</p>
                             <p className='text-xl mt-10'>{techStack}</p>
-                        </div>
-                        <div className='flex flex-col mt-10 justify-evenly pl-16 mr-10'>
-                            <a href={devpost} target='_blank' className='flex flex-col items-center my-10'>
-                                <h1 className='text-2xl'>Devpost</h1>
-                                <SiDevpost size={60}/>
-                            </a>
-                            <a href={github} target='_blank' className='mb-20 flex flex-col items-center my-10'>
-                                <h1 className='text-2xl'>Github</h1>
-                                <FaGithub size={60}/>
-                            </a>
                         </div>
                     </div>
                 </div>

@@ -128,6 +128,12 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
       else if (tag === 'Ruby') {
         updatedColors[tag] = '#ff7373'
       }
+      else if (tag === 'AWS') {
+        updatedColors[tag] = '#7a9cde'
+      }
+      else if (tag === 'IPFS') {
+        updatedColors[tag] = '#d6eb99'
+      }
 
 
 
