@@ -187,7 +187,7 @@ const About = () => {
   };
 
   return (
-    <motion.div className='flex justify-center mx-10 w-full'
+    <motion.div className='flex justify-center'
       variants={container}
       initial='hidden'
       animate='visible'
