@@ -104,7 +104,7 @@ function Navbar() {
             <div className={`${showDropdown ? "flex" : "hidden"} flex-col lg:flex  lg:flex-row lg:ml-auto mt-3 lg:mt-0`} data-test-id="navbar">
               <div>
                 {links.map(({ name, link, priority, id }) => 
-                  <Link key={name}  to={link} className='text-xl hover:bg-gray-200/25 hover:bg-opacity-10 hover:bg-black p-2 lg:px-4 lg:mx-2 rounded duration-300 transition-colors'>
+                  <Link key={name}  to={link} className='md:text-xl text-lg lg:mx-2 mx-0 hover:bg-gray-200/25 hover:bg-opacity-10 hover:bg-black p-2 lg:px-4 rounded duration-300 transition-colors'>
                       {name}
                   </Link>
                 )}
