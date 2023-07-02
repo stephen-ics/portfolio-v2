@@ -9,8 +9,6 @@ const HomeProjects = ( {title, date, subtitle, image, link} ) => {
 
     const handleHover = () => {
         setHover(!hover)
-        console.log(!hover)
-        
     }
 
   return (

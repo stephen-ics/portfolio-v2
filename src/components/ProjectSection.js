@@ -6,8 +6,6 @@ import ProjectData from "../data/ProjectData.js";
 import { useState, useEffect } from 'react'
 
 const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subtitle, image, devpost, github, youtube, website, tags }) => {
-  const data = ['Item 1', 'Item 2', 'Item 3'];
-  const [selectedTag, setSelectedTag] = useState('');
   const [tagColors, setTagColors] = useState({});
 
   useEffect(() => {
@@ -134,16 +132,9 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
       else if (tag === 'IPFS') {
         updatedColors[tag] = '#d6eb99'
       }
-
-
-
-  
     });
     setTagColors(updatedColors);
   }, [tags]);
-
-  console.log('github', github)
-
 
   return (
     <motion.button

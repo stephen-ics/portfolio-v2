@@ -46,6 +46,26 @@ const Whiteboard = () => {
     },
   };
 
+  const iconContainer = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+    exit: {
+        y: '-20vh',
+        opacity: 0,
+        transition: {
+          duration: 0.25,
+        }
+    },
+  };
+
   const textUp = {
     hidden: {
         x: '-5vh',
@@ -81,50 +101,27 @@ const Whiteboard = () => {
         opacity: 0,
     },
   };
-  
-    const container = {
-        hidden: {
-      
-          opacity: 0,
-        },
-        visible: {
-          y: 0,
-          opacity: 1,
-          transition: {
-            staggerChildren: 1.5,
-          },
-        },
-        exit: {
-            y: '-20vh',
-            opacity: 0,
-            transition: {
-              duration: 0.25,
-            }
-        },
-      };
-      const waveAnimation = {
-        rotate: [0, -20, 20, -20, 0],
-        transition: { duration: 2, repeat: Infinity },
-      };
+
 
   return (
     <div>
-            <motion.h1 variants={containerText} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
-              <motion.span variants={imageUp}>I</motion.span>
-              <motion.span variants={imageUp}>'</motion.span>
-              <motion.span variants={imageUp}>m</motion.span>
+            <motion.div variants={iconContainer} className='xl:text-9xl lg:text-8xl md:text-8xl sm:text-7xl text-6xl font-bold text-wrap break-words'>
+              <motion.span variants={imageUp} className='text-green-400'>T</motion.span>
+              <motion.span variants={imageUp}>h</motion.span>
+              <motion.span variants={imageUp}>e</motion.span>
               <motion.span variants={imageUp}> </motion.span>
-              <motion.span variants={imageUp} className='text-green-400'>S</motion.span>
-              <motion.span variants={imageUp}>t</motion.span>
-              <motion.span variants={textUp}>e</motion.span>
-              <motion.span variants={textUp}>p</motion.span>
-              <motion.span variants={textUp}>h</motion.span>
-              <motion.span variants={textUp}>e</motion.span>
-              <motion.span variants={textUp}>n</motion.span>
-              <motion.span> </motion.span>
-              <motion.span variants={textUp} className='text-green-400'>N</motion.span>
-              <motion.span variants={textUp}>i</motion.span>
-            </motion.h1>
+              <motion.span variants={imageUp} className='text-green-400'>G</motion.span>
+              <motion.span variants={imageUp}>r</motion.span>
+              <motion.span variants={imageUp}>i</motion.span>
+              <motion.span variants={imageUp}>n</motion.span>
+              <motion.span variants={imageUp}>d</motion.span>
+              <motion.span variants={imageUp}> </motion.span>
+              <motion.span variants={imageUp} className='text-green-400'>I</motion.span>
+              <motion.span variants={imageUp}>s</motion.span>
+              <motion.span variants={imageUp}> </motion.span>
+              <motion.span variants={imageUp} className='text-green-400'>O</motion.span>
+              <motion.span variants={imageUp}>n</motion.span>
+            </motion.div>
     </div>
   )
 }

@@ -45,10 +45,6 @@ const Projects = () => {
         opacity: 0,
     },
   };
-
-  console.log(ProjectData[0].tags)
-
-
     
   return (
     <motion.div className='text-slate-900 w-full flex flex-col'
