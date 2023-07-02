@@ -5,10 +5,10 @@
   padding: 0;
   padding-right: 2rem;
   border-radius: 12px;
-  display: flex;
   background: rgb(200, 233, 217);
   box-shadow: 0 10px 20px 0 rgb(0 0 0/0.5);
   overflow: auto;
+  display: flex;
 }
 
 .modal-image {
