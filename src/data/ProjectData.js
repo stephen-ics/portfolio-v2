@@ -64,7 +64,7 @@ const ProjectData = [
         github: "https://github.com/stephen-ics/portfolio",
         devpost: "",
         youtube: "",
-        website: "",
+        website: "https://portfolio-pearl-beta-96.vercel.app/",
         tags: ['ReactJS', 'TailwindCSS', 'Framer-motion'],
     },
     {
