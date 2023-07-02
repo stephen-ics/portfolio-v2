@@ -170,22 +170,22 @@ const ProjectSection = ({ whileHover, whileTap, className, onClick, title, subti
 
       <div className='flex flex-wrap mt-4'>
         {website && (
-          <a href={website} target="_blank" rel="noopener noreferrer" className='mx-1'>
+          <a href={website} target="_blank" rel="noopener noreferrer" className='mx-2'>
             <FaLink className="" color="#131414" size={45} />
           </a>
         )}
         {github && (
-          <a href={github} target="_blank" rel="noopener noreferrer" className='mx-1'>
+          <a href={github} target="_blank" rel="noopener noreferrer" className='mx-2'>
             <FaGithub className="" color="#262b2b" size={45} />
           </a>
         )}
         {devpost && (
-          <a href={devpost} target="_blank" rel="noopener noreferrer" className='mx-1'>
+          <a href={devpost} target="_blank" rel="noopener noreferrer" className='mx-2'>
             <SiDevpost className="" color="#003399" size={45} />
           </a>
         )}
         {youtube && (
-          <a href={youtube} target="_blank" rel="noopener noreferrer" className='mx-1'>
+          <a href={youtube} target="_blank" rel="noopener noreferrer" className='mx-2'>
             <FaYoutube className="" color="#ff3333" size={45} />
           </a>
         )}

@@ -63,7 +63,7 @@ const Projects = () => {
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
         {ProjectData.map((project) => {
             return (
-              <DisplayModal title={project.title} subtitle={project.subtitle} description={project.description} techStack={project.techStack} image={`../projects/${project.image}`} github={project.github} devpost={project.devpost} tags={project.tags}/>
+              <DisplayModal title={project.title} subtitle={project.subtitle} description={project.description} techStack={project.techStack} image={`../projects/${project.image}`} github={project.github} devpost={project.devpost} youtube={project.youtube} website={project.website} tags={project.tags}/>
             );
           })}
            

@@ -56,19 +56,19 @@ function Navbar() {
     {
         name: "About",
         link: "/about",
-        id: "calendar",
+        id: "about",
         priority: false
     },
     {
         name: "Experiences",
         link: "/experiences",
-        id: "track",
+        id: "experiences",
         priority: false
     },
     {
         name: "Projects",
         link: "/projects",
-        id: "leaderboard",
+        id: "projects",
         priority: false
     }
 ]

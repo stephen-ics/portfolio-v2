@@ -6,7 +6,7 @@ import '../components/component-styles/Modal.css';
 import ProjectSection from '../components/ProjectSection';
 
 
-const DisplayModal = ({title, subtitle, description, image, devpost, github, sectionTitle, techStack, tags}) => {
+const DisplayModal = ({title, subtitle, description, image, devpost, github, youtube, website, sectionTitle, techStack, tags}) => {
     const [modalOpen, setModalOpen] = useState(false);
     const close = () => setModalOpen(false);
     const open = () => setModalOpen(true);
@@ -22,6 +22,10 @@ const DisplayModal = ({title, subtitle, description, image, devpost, github, sec
             subtitle={subtitle}
             image={image}
             tags={tags}
+            github={github}
+            devpost={devpost}
+            youtube={youtube}
+            website={website}
         >
             Launch Model
         </ProjectSection>
@@ -31,7 +35,7 @@ const DisplayModal = ({title, subtitle, description, image, devpost, github, sec
             exitBeforeEnter={true}
             onExitComplete={() => null}
         >
-            {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} title={title} subtitle={subtitle} description={description} image={image} devpost={devpost} github={github} techStack={techStack}/>}
+            {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} title={title} subtitle={subtitle} description={description} image={image} devpost={devpost} github={github} youtube={youtube} website={website} techStack={techStack}/>}
         </AnimatePresence>
     </motion.div>
   )

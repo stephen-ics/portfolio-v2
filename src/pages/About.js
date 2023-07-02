@@ -196,7 +196,7 @@ const About = () => {
       <div className='flex flex-col text-slate-900'>
         <div className='flex items-start flex-wrap lg:justify-evenly justify-center'>
 
-          <motion.img variants={imageLeft} src={Self} className='w-96 h-96 rounded-full object-cover'/>
+          <motion.img variants={imageLeft} src={Self} className='w-96 h-96 rounded-full object-cover border-green-400 border-4 border-solid'/>
         
           <div className='flex flex-col lg:mt-0 mt-10 lg:ml-10'>
             <div className='flex flex-col items-center lg:items-start text-wrap break-words'>

@@ -355,19 +355,19 @@ export default function Home() {
             </motion.div>
           </div>
           <motion.div variants={iconContainer} className='flex xl:flex-nowrap xl:justify-start lg:justify-start md:justify-start sm:justify-start flex-wrap justify-center w-full mt-2'>
-            <motion.a variants={imageUp} href="https://github.com/stephen-ics" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mr-4'>
+            <motion.a variants={imageUp} href="mailto:stephenni1234@gmail.com" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mr-4'>
               <SiGmail size={60} color="mediumseagreen"/>
             </motion.a>
-            <motion.a variants={imageUp} href="https://github.com/stephen-ics" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
+            <motion.a variants={imageUp} href="https://www.linkedin.com/in/stephen-ni-7295a7238/" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
               <FaLinkedin size={60} color="mediumseagreen"/>
             </motion.a>
-            <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
+            <motion.a variants={imageUp} href="https://github.com/stephen-ics" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
               <FaGithub size={60} color="mediumseagreen"/>
             </motion.a>
             <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'>
               <SiDevpost size={60} color="mediumseagreen"/>
             </motion.a>
-            <motion.a variants={imageUp} href="https://devpost.com/StephenNi" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'> 
+            <motion.a variants={imageUp} href="https://www.instagram.com/stephen.turtles/" target="_blank" whileHover={{scale:1.1}} whileTap={{scale:0.9}} className='mx-2'> 
               <FaInstagramSquare size={60} color="mediumseagreen"/>
             </motion.a>
 
