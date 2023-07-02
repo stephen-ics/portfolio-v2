@@ -89,7 +89,7 @@ function Navbar() {
               </Link>
     
               <button
-                className="border border-solid border-gray-200 px-3 py-1 rounded text-gray-200 bg-black opacity-50 hover:opacity-75 lg:hidden cursor-pointer"
+                className="border-none px-3 py-1 rounded text-gray-200 bg-green-200 opacity-75 hover:opacity-100 lg:hidden cursor-pointer"
                 aria-label="Menu"
                 data-test-id="navbar-menu"
                 onClick={
@@ -97,7 +97,7 @@ function Navbar() {
                       setShowDropdown(!showDropdown);
                   }}
               >
-                <FaBars size={20}/>
+                <FaBars size={20} color="#8bcc9a"/>
               </button>
             </div>
          
