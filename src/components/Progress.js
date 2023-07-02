@@ -14,7 +14,7 @@ function SkillsBar () {
             </div>
             </div>
             <div className="skill-box">
-                <span className="title">Python</span>
+                <span className="title">NodeJS | ExpressJS</span>
                 <div className="skill-bar">
                 <span className="skill-per percent85">
                     <span className="tooltip">85%</span>
@@ -22,7 +22,7 @@ function SkillsBar () {
             </div>
             </div>
             <div className="skill-box">
-                <span className="title">C++</span>
+                <span className="title">C# | Unity</span>
                 <div className="skill-bar">
                 <span className="skill-per percent75">
                     <span className="tooltip">75%</span>
@@ -32,7 +32,7 @@ function SkillsBar () {
         </div>
         <div className="container"> 
             <div className="skill-box">
-                <span className="title">NodeJS</span>
+                <span className="title">Python | Flask</span>
                 <div className="skill-bar">
                 <span className="skill-per percent90">
                     <span className="tooltip">90%</span>
@@ -48,7 +48,7 @@ function SkillsBar () {
             </div>
             </div>
             <div className="skill-box">
-                <span className="title">Unity</span>
+                <span className="title">Arduino</span>
                 <div className="skill-bar">
                 <span className="skill-per percent60">
                     <span className="tooltip">60%</span>

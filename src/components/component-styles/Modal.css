@@ -1,5 +1,5 @@
 .modal {
-  width: clamp(50%, 1600px, 90%);
+  width: clamp(70%, 1600px, 90%);
   height: 600px;
   margin: auto;
   padding: 0;
@@ -8,6 +8,11 @@
   display: flex;
   background: rgb(200, 233, 217);
   box-shadow: 0 10px 20px 0 rgb(0 0 0/0.5);
+  overflow: auto;
+}
+
+.modal-image {
+  width: 40vw;
 }
 
 

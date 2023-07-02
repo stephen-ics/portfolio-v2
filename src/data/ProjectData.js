@@ -1,5 +1,5 @@
-
 import React from 'react'
+
 
 const ProjectData = [
     {
@@ -159,6 +159,7 @@ const ProjectData = [
         tags: ['HTML5', 'CSS3', 'Javascript', 'Bootstrap', 'SCSS', 'Ruby'],
     },
 
+
     {
         id: 13,
         title: "Stock Stalker",
@@ -264,6 +265,4 @@ const ProjectData = [
         tags: ["HTML5", "CSS3", "Javascript", "OpenCV", "Tensorflow"],
     }
 ];
-  
 export default ProjectData
-

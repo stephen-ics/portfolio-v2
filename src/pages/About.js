@@ -5,6 +5,7 @@ import Art from '../pictures/hobbies/Art.jpeg'
 import Math from '../pictures/hobbies/Math.jpeg'
 import Piano from '../pictures/hobbies/Piano.webp'
 import Running from '../pictures/hobbies/Running.webp'
+import Self from '../pictures/Self.jpg'
 import Hobby from '../components/Hobby'
 import Cardflip from '../components/Cardflip'
 import Cardflip2 from '../components/Cardflip2'
@@ -195,7 +196,7 @@ const About = () => {
       <div className='flex flex-col text-slate-900'>
         <div className='flex items-start flex-wrap lg:justify-evenly justify-center'>
 
-          <motion.img variants={imageLeft} src={Logo} className='w-96 rounded-xl object-cover'/>
+          <motion.img variants={imageLeft} src={Self} className='w-96 h-96 rounded-full object-cover'/>
         
           <div className='flex flex-col lg:mt-0 mt-10 lg:ml-10'>
             <div className='flex flex-col items-center lg:items-start text-wrap break-words'>
