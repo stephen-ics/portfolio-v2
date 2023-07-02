@@ -384,7 +384,22 @@ export default function Home() {
       </motion.div>
       <motion.div className='homeProjectsContainer flex flex-col items-center xl:mt-32 mt-8'>
         <motion.div variants={imageUp}>
-          <HomeProjects title='StockStalker: Hack the 6ix Winner' date='August 2022' subtitle='To search, manage, and see the overall ESG performance' image='../projects/StockStalker.png' link='https://devpost.com/software/stock-stalker-4jrosz'/>
+          <HomeProjects title='FoundAIr: MacHacks 3 Winner' date='February 2023' subtitle='The first AI-powered business plan generator!' image='../projects/FoundAIr.png' link='https://devpost.com/software/foundair'/>
+        </motion.div>
+        <motion.div variants={imageUp}>
+          <HomeProjects title='Emergenchain: Hack the Valley Winner' date='October 2022' subtitle='A website that stores medical records on the blockchain for convenience and emergency access.' image='../projects/Emergenchain.gif' link='https://devpost.com/software/health-hub-hi0tmo'/>
+        </motion.div>
+        <motion.div variants={imageUp}>
+          <HomeProjects title='EN-FT: The GoldenHack 4.0 Winner' date='October 2022' subtitle='NFTs to incentivize environmental action.' image='../projects/EN-FT.png' link='https://devpost.com/software/en-ft'/>
+        </motion.div>
+        <motion.div variants={imageUp}>
+          <HomeProjects title='Just DAO It!: Hack the North 2022 Winner' date='September 2022' subtitle='A decentralized crypto mutual fund, by the people, for the people.' image='../projects/JustDaoIt.png' link='https://devpost.com/software/just-dao-it'/>
+        </motion.div>
+        <motion.div variants={imageUp}>
+          <HomeProjects title='Siri Model' date='August 2022' subtitle="The Siri Model showcases how text processing, language understanding, and information retrieval are employed to enable Siri's conversational capabilities." image='../projects/SiriModel.png' link='https://github.com/stephen-ics/Artificial-Intelligence'/>
+        </motion.div>
+        <motion.div variants={imageUp}>
+          <HomeProjects title='tmun.ca' date='August 2022' subtitle="Design, build, and maintain TMUN's website" image='../projects/tmun.png' link='https://github.com/TorontoModelUnitedNations/TorontoModelUnitedNations.github.io'/>
         </motion.div>
         <motion.div variants={imageUp}>
           <HomeProjects title='PlantUp: Backyard Hacks III Winner' date='July 2022' subtitle='To make gardening an exciting experience' image='../projects/PlantUp.png' link='https://devpost.com/software/plantup'/>
