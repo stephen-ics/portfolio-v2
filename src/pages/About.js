@@ -24,7 +24,7 @@ const About = () => {
       y: 0,
       opacity: 1,
       transition: {
-        staggerChildren: 0.25,
+
       },
     },
     exit: {
@@ -193,18 +193,18 @@ const About = () => {
       animate='visible'
       exit='exit'
     >
-      <div className='flex flex-col text-slate-900'>
+      <div className='flex flex-col text-slate-800'>
         <div className='flex items-start flex-wrap lg:justify-evenly justify-center'>
 
           <motion.img variants={imageLeft} src={Self} className='w-96 h-96 rounded-full object-cover border-green-400 border-4 border-solid'/>
         
           <div className='flex flex-col lg:mt-0 mt-10 lg:ml-10'>
             <div className='flex flex-col items-center lg:items-start text-wrap break-words'>
-              <motion.h1 variants={textUp} className='text-3xl text-center lg:text-left'>Hello! I'm Stephen 🐢</motion.h1>
-              <motion.h3 variants={textUp2} className='text-2xl text-center lg:text-left mt-2 text-green-700'>I'm a full-stack developer studying Systems Design Engineering @ UWaterloo!</motion.h3>
-              <motion.h3 variants={textUp3} className='text-xl font-normal text-center lg:text-left mt-2'>I specialize in React, Node.js, Python, and I am familiar with various databases. My enthusiasm stems</motion.h3>
-              <motion.h3 variants={textUp3} className='text-xl font-normal text-center lg:text-left'> from my extensive experience in hackathons, thriving in collaborative high-pressure environments. I code</motion.h3>
-              <motion.h3 variants={textUp3} className='text-xl font-normal text-center lg:text-left'>to create innovative solutions to everyday problems.</motion.h3>
+              <motion.h1 variants={textUp} className='text-5xl text-center lg:text-left'>Hello! I'm Stephen 🐢</motion.h1>
+              <motion.h3 variants={textUp} className='text-xl text-center lg:text-left mt-2 text-green-700 font-normal'>I'm a full-stack developer studying Systems Design Engineering @ UWaterloo!</motion.h3>
+              <motion.h3 variants={textUp} className='text-xl text-center lg:text-left font-normal'>I specialize in React, Node.js, Python, and I am familiar with various databases. My enthusiasm stems</motion.h3>
+              <motion.h3 variants={textUp} className='text-xl text-center lg:text-left font-normal'> from my extensive experience in hackathons, thriving in collaborative high-pressure environments. I code</motion.h3>
+              <motion.h3 variants={textUp} className='text-xl text-center lg:text-left font-normal'>to create innovative solutions to everyday problems.</motion.h3>
             </div>
             <motion.div variants={imageUp} className='mt-4'>
               <Progress />

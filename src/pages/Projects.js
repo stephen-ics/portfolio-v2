@@ -47,7 +47,7 @@ const Projects = () => {
   };
     
   return (
-    <motion.div className='text-slate-900 w-full flex flex-col'
+    <motion.div className='text-slate-800 w-full flex flex-col'
     variants={container}
     initial='hidden'
     animate='visible'

@@ -1,140 +1,129 @@
 :root {
-    --primary: #93e797;
-    --primary12: #7edb81;
-    --secondary: #7ebaff;
-    --secondary12: #7bafea;
-    --dark: #212121;
-    --light: #ffffff;
+  --primary: #93e797;
+  --primary12: #7edb81;
+  --secondary: #7ebaff;
+  --secondary12: #7bafea;
+  --dark: #212121;
+  --light: #ffffff;
 }
   
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: montserrat, sans-serif;
-    width: 100%;
-    min-height: 100vh;
-  }
-  
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: calc(15rem + 6vw);
+  height: calc(20rem + 6vw);
+  perspective: 1000px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 1024px) {
   .card {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: calc(15rem + 6vw);
-    height: calc(20rem + 6vw);
-    perspective: 1000px;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 0;
+    margin-right: 4rem;
   }
 
-  @media (min-width: 1024px) {
-    .card {
-      margin-left: 0;
-      margin-right: 4rem;
-    }
+}
 
-  }
 
-  
-  .cardInner {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
+.cardInner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
 
-  }
-  
-  .cardInner.isFlipped {
-    transform: rotateY(180deg);
-  }
-  
-  
-  .cardFace {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
-    overflow-y: auto;
-  }
-  
-  .cardFaceFront {
-    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .cardFaceFront h2 {
-    color: #FFF;
-    font-size: 32px;
-  }
-  
-  .cardFaceBack {
-    background-color: var(--light);
-    transform: rotateY(180deg);
-  }
-  
-  .cardContent {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .cardHeader {
-    position: relative;
-    padding: 30px 30px 20px;
-  }
-  
-  .cardHeader:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
-    z-index: -1;
-    border-radius: 0px 0px 50% 0px;
-  }
-  
-  .pp {
-    display: block;
-    width: 8rem;
-    height: 8rem;
-    margin: 0 auto 10px;
-    border-radius: 50%;
-    background-color: #FFF;
-    border: 5px solid rgb(31, 152, 82);
-    object-fit: cover;
-  }
-  
-  .cardHeader h2 {
-    color: #FFF;
-    font-size: 28px;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  .cardBody {
-    padding: 30px;
-  }
-  
-  .cardBody h3 {
-    color: var(--dark);
-    font-size: 24px;
-    font-weight: 600;
-  }
-  
-  .cardBody p {
-    color: var(--dark);
-    font-size: 16px;
-    line-height: 1.4;
-  }
+}
+
+.cardInner.isFlipped {
+  transform: rotateY(180deg);
+}
+
+
+.cardFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+.cardFaceFront {
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardFaceFront h2 {
+  color: #FFF;
+  font-size: 32px;
+}
+
+.cardFaceBack {
+  background-color: var(--light);
+  transform: rotateY(180deg);
+}
+
+.cardContent {
+  width: 100%;
+  height: 100%;
+}
+
+.cardHeader {
+  position: relative;
+  padding: 30px 30px 20px;
+}
+
+.cardHeader:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+
+.pp {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background-color: #FFF;
+  border: 5px solid rgb(31, 152, 82);
+  object-fit: cover;
+}
+
+.cardHeader h2 {
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cardBody {
+  padding: 30px;
+}
+
+.cardBody h3 {
+  color: var(--dark);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cardBody p {
+  color: var(--dark);
+  font-size: 16px;
+  line-height: 1.4;
+}

@@ -74,7 +74,7 @@ function Navbar() {
 ]
 
     return (
-      <div className='flex justify-center mb-40'>
+      <div className='flex justify-center mb-40 font-semibold'>
         <motion.header
           variants={dropIn}
           initial='hidden'
